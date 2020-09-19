@@ -1,0 +1,380 @@
+cover:
+  height_scheme: half
+  layout_scheme: featured
+  display:
+    home: true
+    archive: true
+    others: false
+  background: https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/046.jpg
+  logo: # https://gitee.com/xaoxuu/cdn-assets/raw/master/logo/xaoxuu/xaoxuu.cover@3x.png
+  title: ''
+  subtitle: ''
+  features:
+    - name: 博文
+      icon: fas fa-rss
+      img: https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f4f0.svg
+      url: /
+    - name: 归档
+      icon: fas fa-archive
+      img: https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f5c3.svg
+      url: blog/archives/
+      rel: nofollow
+    - name: 项目
+      icon: fas fa-book
+      img: https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f4bb.svg
+      url: wiki/
+    - name: 友链
+      icon: fas fa-link
+      img: https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f49e.svg
+      url: friends/
+      rel: nofollow
+      target: _self
+    - name: 关于
+      icon: fas fa-info-circle
+      img: https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f453.svg
+      url: about/
+      rel: nofollow
+
+navbar:
+  visiable: always # always, auto
+  logo:
+    img: https://gitee.com/xaoxuu/cdn-assets/raw/master/logo/xaoxuu/xaoxuu.navbar@3x.png
+    title: # XAOXUU
+  menu:
+    - name: 博文
+      icon: fas fa-rss
+      rows:
+        - name: 热门文章
+          icon: fas fa-fire
+        - name: 如何设计一个样式和逻辑分离的组件
+          url: /blog/2019-08-27-prohud/
+        - name: 使用链式语法打造一个对象类型转换库
+          url: /blog/2019-08-29-valuex/
+        - name: 心率管家 App 的设计与开发流程
+          url: /blog/2019-07-23-heartmate/
+        - name: hr
+        - name: 查看所有文章 <i class="fas fa-chevron-right fa-fw"></i>
+          url: /blog/archives/
+    - name: 项目
+      icon: fas fa-cube
+      rows:
+        - name: 热门项目
+          icon: fas fa-fire
+        - name: Volantis for Hexo
+          url: /wiki/volantis/
+        - name: ProHUD for Swift
+          url: /wiki/prohud/
+        - name: ValueX for ObjC
+          url: /wiki/valuex/
+        - name: Inspire for Swift
+          url: /wiki/inspire/
+        - name: hr
+        - name: 知识体系归纳
+          icon: fas fa-book
+        - name: Apple Developer
+          url: /wiki/ios/
+        - name: Git 实用教程
+          url: /wiki/git/
+        - name: hr
+        - name: 查看所有项目 <i class="fas fa-chevron-right fa-fw"></i>
+          url: /wiki/
+    - name: 更多
+      icon: fas fa-ellipsis-v
+      rows:
+        - name: 关于
+          icon: fas fa-user-circle
+          url: /about/
+        - name: hr
+        - name: 便笺
+          icon: fas fa-pen-square
+          url: /notes/
+        - name: 收藏夹
+          icon: fas fa-bookmark
+          url: /bookmark/
+        - name: 分享
+          icon: fas fa-share
+          rows:
+            - name: 网易云音乐歌单
+              icon: fas fa-music
+              url: /share/music/
+        - name: 友链
+          icon: fas fa-link
+          url: /friends/
+        - name: hr
+        - name: GitLab
+          icon: fab fa-gitlab
+          url: https://git.xaoxuu.com
+        - name: GitHub
+          icon: fab fa-github
+          url: https://github.com/xaoxuu
+
+
+
+article:
+  preview:
+    author: false
+  body:
+    top_meta: [title, author, date, category, counter]
+    footer_widget:
+      # ----------------
+      # 相关文章，需要安装插件 (for layout: post)
+      # npm i hexo-related-popular-posts
+      related_posts:
+        enable: true
+        max_count: 10
+      donate:
+        enable: false
+    bottom_meta: [updated, tags, btns, share]
+    meta_library:
+      author:
+        avatar: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png
+        name: Mr. X
+        url: https://xaoxuu.com
+      date:
+        title: ''
+        format: 'YYYY-MM-DD'
+      updated:
+        title: '最后更新于：'
+        format: 'llll'
+      share:
+        - id: qq
+          img: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/logo/128/qq.png
+        - id: qzone
+          img: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/logo/128/qzone.png
+        - id: weibo
+          img: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/logo/128/weibo.png
+        - id: qrcode
+          img: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/logo/128/wechat.png
+
+
+sidebar:
+  widget_library:
+    blogger:
+      class: blogger
+      display: [desktop] # [desktop, mobile]
+      avatar: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png
+      shape: rectangle # circle, rectangle
+      url: /about/
+      title:
+      subtitle: 山重水复疑无路 柳暗花明又一村
+      jinrishici: false # Poetry Today. You can set a string, and it will be displayed when loading fails.
+      social:
+        - icon: fas fa-rss
+          url: atom.xml
+        - icon: fas fa-envelope
+          url: mailto:me@xaoxuu.com
+        - icon: fab fa-github
+          url: https://github.com/xaoxuu/
+        - icon: fas fa-headphones-alt
+          url: https://music.163.com/#/user/home?id=63035382
+    guide:
+      class: grid
+      display: [desktop, mobile] # [desktop, mobile]
+      header:
+        icon: fas fa-map-signs
+        title: 站内导航
+      fixed: true
+      rows:
+        - name: 近期文章
+          icon: fas fa-clock
+          url: /
+        - name: 文章归档
+          icon: fas fa-archive
+          url: blog/archives/
+          rel: nofollow
+        - name: 项目Wiki
+          icon: fas fa-laptop-code
+          url: wiki/
+        - name: 歌单分享
+          icon: fas fa-compact-disc
+          url: share/music/
+          rel: nofollow
+        - name: 我的友链
+          icon: fas fa-link
+          url: friends/
+          rel: nofollow noopener noreferrer
+          target: _self
+        - name: 主题文档
+          icon: fas fa-book
+          url: https://xaoxuu.com/wiki/volantis/
+          rel: external nofollow noopener noreferrer
+          target: _blank
+        - name: 关于小站
+          icon: fas fa-info-circle
+          url: about/
+          rel: nofollow noopener noreferrer
+          target: _self
+
+    wiki-ios:
+      class: group
+      display: [desktop, mobile] # [desktop, mobile]
+      header:
+        icon: fas fa-chevron-left
+        title: CocoaPods
+        url: /wiki/
+
+    wiki-sh:
+      class: group
+      display: [desktop, mobile] # [desktop, mobile]
+      header:
+        icon: fas fa-chevron-left
+        title: Shell Script
+        url: /wiki/
+
+    wiki-hexo-theme:
+      class: group
+      display: [desktop, mobile] # [desktop, mobile]
+      header:
+        icon: fas fa-chevron-left
+        title: Hexo Themes
+        url: /wiki/
+
+    donate:
+      class: qrcode
+      display: [desktop, mobile] # [desktop, mobile]
+      height: 64px  # 不设置则自动高度
+      fancybox: true # 是否允许点击放大
+      images:
+        - https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/qrcode/wiki_volantis.png
+        - https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/qrcode/wiki_volantis.png
+
+    # 项目仓库
+    repos:
+      class: text
+      display: [desktop] # [desktop, mobile]
+      header:
+        icon: fab fa-github
+        title: 近期项目
+        url: https://github.com/xaoxuu/
+      content:
+        - '这些是近期更新的 iOS 开源库，如果喜欢请点个赞支持一下。'
+        - '[<img src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/proj/prohud/logo.png" height="50px">](https://github.com/xaoxuu/ProHUD)'
+        - '[<img src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/proj/valuex/logo.png" height="50px">](https://github.com/xaoxuu/ValueX)'
+        - '[<img src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/proj/inspire/logo.png" height="50px">](https://github.com/xaoxuu/Inspire)'
+
+
+    group-ios-interview:
+      class: group
+      display: [desktop, mobile] # [desktop, mobile]
+      header:
+        icon: fab fa-apple
+        title: Developer
+        url: /wiki/ios/
+
+    group-git:
+      class: group
+      display: [desktop, mobile] # [desktop, mobile]
+      header:
+        icon: fab fa-git-alt
+        title: Git 实用教程
+        url: /wiki/git/
+
+    group-note-dev:
+      class: group
+      display: [desktop, mobile] # [desktop, mobile]
+      header:
+        icon: fas fa-code
+        title: 开发笔记
+        url: /notes/
+
+    docs-volantis-latest:
+      class: group
+      display: [desktop, mobile] # [desktop, mobile]
+      seo_title: Volantis
+      header:
+        icon: fa fa-book
+        title: Volantis 文档导航 v4.0
+
+plugins:
+  issues:
+    enable: true
+  pjax:
+    banUrl:
+      - /share/music/
+  backstretch:
+    enable: false
+    images:
+      - https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/033.jpg
+      - https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/046.jpg
+      - https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/052.jpg
+      - https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/054.jpg
+
+
+
+site_footer:
+  layout: [social, source, copyright]
+  social:
+    # - img: https://cdn.jsdelivr.net/gh/volantis-x/cdn-org@1.1/icon/1322024-social-media/020-rss.svg
+    #   url: atom.xml
+    # - icon: fas fa-envelope
+    #   url: mailto:me@xaoxuu.com
+    # - img: https://cdn.jsdelivr.net/gh/volantis-x/cdn-org@1.1/icon/1322024-social-media/029-github.svg
+    #   url: https://github.com/volantis-x/
+    # - img: https://cdn.jsdelivr.net/gh/volantis-x/cdn-org@1.1/icon/1322024-social-media/033-spotify.svg
+    #   url: https://music.163.com/#/user/home?id=63035382
+    - icon: fas fa-rss
+      url: atom.xml
+    - icon: fas fa-envelope
+      url: mailto:me@xaoxuu.com
+    - icon: fab fa-github
+      url: https://github.com/xaoxuu/
+    - icon: fas fa-headphones-alt
+      url: https://music.163.com/#/user/home?id=63035382
+  copyright: '[Copyright © 2017-2020 Mr. X](https://xaoxuu.com)'
+
+comments:
+  service: 'disqus'
+  title: ''
+  disqus:
+    shortname: xaoxuu
+
+rightmenu:
+  # enable: false
+  layout: [wiki, note, hr, about, friends, github]
+  about:
+    name: 关于
+    icon: fa fa-user-circle
+    url: /about/
+  wiki:
+    name: 项目文档
+    icon: fa fa-cube
+    url: /wiki/
+  note:
+    name: 便笺
+    icon: fas fa-pen-square
+    url: /notes/
+  friends:
+    name: 友链
+    icon: fas fa-link
+    url: /friends/
+  github:
+    name: GitHub
+    icon: fab fa-github
+    url: https://github.com/xaoxuu
+
+
+tag_plugins:
+  checkbox:
+    interactive: false
+
+custom_css:
+  font_smoothing: true
+  cursor:
+    enable: false
+  sidebar:
+    effect: [shadow] # [shadow, floatable, blur]
+  body:
+    effect: [shadow] # [shadow, floatable, blur]
+  fontfamily:
+    logofont:
+      fontfamily: '"Varela Round", "PingFang SC", "Microsoft YaHei", Helvetica, Arial'
+      name: 'Varela Round'
+      url: https://cdn.jsdelivr.net/gh/volantis-x/cdn-fonts/VarelaRound/VarelaRound-Regular.ttf
+      weight: normal
+      style: normal
+    bodyfont:
+      fontfamily: 'UbuntuMono, "PingFang SC", "Microsoft YaHei", Helvetica, Arial'
+      name: #'UbuntuMono'
+      url: https://cdn.jsdelivr.net/gh/volantis-x/cdn-fonts/UbuntuMono/UbuntuMono-Regular.ttf
+      weight: normal
+      style: normal

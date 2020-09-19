@@ -6,7 +6,8 @@ cover: true
 toc: true
 mathjax: false
 summary: 通过文档记录自己的LeetCode刷题记录
-categories: LeetCode
+categories: 
+    - LeetCode
 tags:
   - LeetCode
 date: 2020-06-05 11:08:18

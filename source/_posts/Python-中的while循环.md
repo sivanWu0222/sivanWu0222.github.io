@@ -7,7 +7,8 @@ coverImg: /images/1.jpg
 toc: true
 mathjax: false
 summary: python 中常见的while循环 以及 python与其他语言不同的while-else循环执行流程,尤其要注意else的执行时机
-categories: python
+categories: 
+  - python
 tags:
   - python
 date: 2020-06-08 09:20:05

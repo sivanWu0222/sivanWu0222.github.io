@@ -7,9 +7,12 @@ coverImg: /images/1.jpg
 toc: True
 mathjax: True
 summary: 给定一个非空整数数组，除了某个元素只出现一次以外，其余每个元素均出现两次。找出那个只出现了一次的元素。
-categories: LeetCode
+categories: 
+  - LeetCode
+  - 位运算
 tags:
   - LeetCode
+  - 位运算
 date: 2020-05-26 12:29:22
 ---
 

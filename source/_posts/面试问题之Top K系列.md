@@ -7,7 +7,9 @@ coverImg: /images/1.jpg
 toc: true
 mathjax: false
 summary: 面试中求一个数组中前k大或者前k小的元素
-categories: 算法
+categories: 
+	- 面试
+	- 算法
 tags:
   - 算法
   - 面试

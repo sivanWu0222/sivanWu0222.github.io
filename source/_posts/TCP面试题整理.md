@@ -7,10 +7,12 @@ coverImg: /images/1.jpg
 toc: true
 mathjax: false
 summary: 计算机网络中关于TCP的高频面试题目整理
-categories: 面试
+categories: 
+  - 面试
+  - 计算机网络
 tags:
   - 计算机网络
-  - 面试整理
+  - 面试
 date: 2020-09-03 15:59:00
 
 

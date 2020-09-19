@@ -7,13 +7,14 @@ coverImg: /images/1.jpg
 toc: true
 mathjax: false
 summary: 面试题目整理
-categories: 面试
+categories: 
+  - 面试
+  - 计算机网络
 tags:
-  - 面试整理
+  - 面试
+  - 计算机网络
 date: 2020-09-04 18:48:00
 ---
-
-
 ## 大致过程
 客户端获取URL - > DNS解析 - > TCP连接 - >发送HTTP请求 - >服务器处理请求 - >返回报文 - >浏览器解析渲染页面 - > TCP断开连接
 

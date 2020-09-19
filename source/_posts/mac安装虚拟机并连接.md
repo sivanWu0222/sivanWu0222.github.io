@@ -6,9 +6,11 @@ cover: true
 toc: true
 mathjax: false
 summary: 使用Parallels Desktop安装本地下载好的ubuntu镜像，并通过secureCrt连接
-categories: 工具篇
+categories: 
+  - 工具篇
 tags:
   - 工具
+  - tools
 date: 2020-09-11 09:08:18
 ---
 > 最近准备复习操作系统的知识并通过linux实践，索性就安装了一个ubuntu虚拟机吧

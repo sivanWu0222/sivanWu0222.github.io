@@ -6,7 +6,9 @@ cover: false
 coverImg: /images/1.jpg
 toc: true
 mathjax: false
-categories: 刷题
+categories: 
+	- LeetCode
+	- 回溯
 keywords: 刷题
 tags:
   - LeetCode

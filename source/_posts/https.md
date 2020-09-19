@@ -6,11 +6,13 @@ cover: false
 coverImg: /images/1.jpg
 toc: true
 mathjax: false
-categories: 计算机网络
+categories: 
+  - 面试
+  - 计算机网络
 keywords: 计算机网络
 tags:
   - 计算机网络
-  - 面试整理
+  - 面试
 
 date: 2020-09-03 18:23:42
 ---

@@ -1,0 +1,27 @@
+---
+title: 微信小程序开发
+author: yirufeng
+top: false
+cover: true
+coverImg: /images/1.jpg
+toc: false
+mathjax: false
+summary: 正常使用pip install 安装第三方包需要从国外获取安装包的数据，速度较慢，这里我们可以加上一个 -i 选项后面来指定安装源
+categories: pip
+tags:
+  - pip
+date: 2020-06-02 11:27:29
+
+
+---
+
+
+
+[参考](https://blog.csdn.net/dss875914213/article/details/86500146)
+
+
+
+
+
+![image-20200603111535484](/Users/yirufeng/%E5%AE%9E%E4%B9%A0/%E9%A1%B9%E7%9B%AE/images/img/image-20200603111535484.png)
+

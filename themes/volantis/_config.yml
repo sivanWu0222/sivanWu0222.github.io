@@ -16,7 +16,7 @@ info:
 navbar:
   visiable: always # always, auto
   logo: # choose [img] or [icon + title]
-    img: https://gitee.com/xaoxuu/cdn-assets/raw/master/logo/xaoxuu/xaoxuu.navbar@3x.png
+    img: https://cdn.jsdelivr.net/gh/sivanWu0222/ImageHosting@master/uPic/diugai.com-16005176665088_gaitubao_293x115.png    
     icon: 
     title: 
   menu:

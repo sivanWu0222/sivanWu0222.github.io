@@ -6,7 +6,8 @@ cover: true
 toc: true
 mathjax: false
 summary: 总结他人的golang面试被遇到的问题
-categories: 面试
+categories: 
+    - 面试
 tags:
   - 求职
   - OS

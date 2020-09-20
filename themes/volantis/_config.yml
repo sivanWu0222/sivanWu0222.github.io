@@ -41,9 +41,14 @@ navbar:
     - name: 分享
       icon: fas fa-share
       rows:
-        - name: 网易云音乐歌单
-          icon: fas fa-music
-          url: /share/music/
+        - name: 热门文章
+          icon: fas fa-fire
+        - name: ProHUD 开源库的设计思路
+          url: blog/2019-08-27-prohud/
+        - name: ValueX：实用的安全对象类型转换库
+          url: blog/2019-08-29-valuex/
+        - name: 心率管家 App 的设计与开发
+          url: blog/2019-07-23-heartmate/
   search: Search...   # Search bar placeholder
 ############################### Navigation Bar ############################### > end
 
@@ -310,6 +315,7 @@ comments:
   hashover:
     src: https://example.com/(path/)comments.php
 ############################### Comments ############################### > end
+
 
 ############################### Sidebar ############################### > start
 sidebar:
@@ -671,7 +677,7 @@ rightmenu:
   source_docs:
     name: 本站源码
     icon: fa fa-code-branch
-    url: https://github.com/volantis-x/volantis-docs/
+    url: https://github.com/sivanWu0222/sivanWu0222.github.io
   source_theme:
     name: 主题源码
     icon: fa fa-code-branch
@@ -798,7 +804,7 @@ color_scheme:
 ############################### Custom css ############################### > start
 custom_css:
   cursor:
-    enable: #true
+    enable: true
     text: https://cdn.jsdelivr.net/gh/inkss/common@master/cursor/text.png
     pointer: https://cdn.jsdelivr.net/gh/inkss/common@master/cursor/pointer.png
     default: https://cdn.jsdelivr.net/gh/inkss/common@master/cursor/left_ptr.png

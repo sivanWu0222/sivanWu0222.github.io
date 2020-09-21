@@ -52,5 +52,4 @@ date: 2020-09-19 15:23:13
 
 | {% ghcard sivanWu0222, theme=vue %} |
 
-## 开源项目
-| {% ghcard sivanWu0222/SimpleERP %} | {% ghcard sivanWu0222/GetLinksFromSoBooks, theme=vue %} |
+

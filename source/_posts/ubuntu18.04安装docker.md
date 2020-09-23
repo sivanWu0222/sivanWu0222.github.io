@@ -10,7 +10,7 @@ categories:
 tags:
   - Ubuntu
   - docker
-date: 2099-09-23 08:41:19
+date: 2020-09-23 08:41:19
 ---
 ## 环境
 本操作基于如下环境：
@@ -60,3 +60,5 @@ docker 权限问题 `Got permission denied while trying to connect to the Docker
 3. `newgrp docker` ：更新用户组
 
 {% endfolding %}
+
+

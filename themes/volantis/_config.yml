@@ -334,8 +334,8 @@ sidebar:
       shape: circle # circle, rectangle
       url: /about/
       title: 逸如风
-      subtitle: 
-      jinrishici: true # Poetry Today. You can set a string, and it will be displayed when loading fails.
+      subtitle:  不甘曾经受虐，只为活出精彩
+      jinrishici: false # Poetry Today. You can set a string, and it will be displayed when loading fails.
       social:
         - icon: fas fa-rss
           url: /atom.xml

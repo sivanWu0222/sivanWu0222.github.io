@@ -1,4 +1,5 @@
 ---
-title: tags
-date: 2020-09-19 15:23:17
+layout: tag
+index: true
+title: 所有标签
 ---

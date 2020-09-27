@@ -1,7 +1,7 @@
 ---
 title: Demo
 author: yirufeng
-top: true
+pin: true
 toc: true
 mathjax: false
 summary: 演示页面
@@ -13,18 +13,7 @@ date: 2099-09-15 19:43:00
 ---
 
 
-大根堆与小根堆：只是要求整个堆以及子堆的最大值或最小值都在头部，并没有要求左比右大这样的约束。
-建堆的时间复杂度：近似于 O(N)
-
-
 前面有4个题目
-
-划分元素：
-荷兰国旗：
-经典快排：
-随机快排序：
-堆排序：heapInsert（建立堆的过程），heapify（调整堆的过程），
-
 
 
 所有样式来源于：https://xaoxuu.com/wiki/volantis/tag-plugins/

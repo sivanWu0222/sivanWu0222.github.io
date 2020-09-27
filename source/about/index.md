@@ -1,8 +1,11 @@
 ---
-title: 关于
-date: 2020-09-19 15:23:13
+layout: docs
+seo_title: 关于
+bottom_meta: false
+sidebar: []
+valine:
+  placeholder: 有什么想对我说的呢？
 ---
-
 
 {% tabs tab-id %}
 

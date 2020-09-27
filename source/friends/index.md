@@ -1,9 +1,8 @@
 ---
-title: friends
-date: 2020-09-19 18:29:11
+title: 我的朋友们 # 可选，这是友链页的标题
+layout: friends
+index: true
 ---
-
-
 
 {% sitegroup %}
 {% site xaoxuu, url=https://xaoxuu.com, screenshot=https://i.loli.net/2020/08/21/VuSwWZ1xAeUHEBC.jpg, avatar=https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png, description=简约风格 %}

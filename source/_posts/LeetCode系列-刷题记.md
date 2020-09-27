@@ -1,7 +1,7 @@
 ---
 title: (LeetCode系列)刷题记
 author: yirufeng
-top: true
+pin: true
 cover: true
 toc: true
 mathjax: false

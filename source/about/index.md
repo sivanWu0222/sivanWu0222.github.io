@@ -17,6 +17,11 @@ valine:
 
 **很多人问我为什么要努力：曾经的不如意，只有自己知道。社会虐我千万次，我命由我不由天。**
 
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=sivanWu0222&hide=javascript,html,css&theme=tokyonight)](https://github.com/anuraghazra/github-readme-stats)
+
+[![sivanWu's wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=yirufeng)](https://github.com/anuraghazra/github-readme-stats)
+
+![Lk5HvB](https://cdn.jsdelivr.net/gh/sivanWu0222/ImageHosting@master/uPic/Lk5HvB.png)
 <!-- endtab -->
 
 <!-- tab 其他 -->

@@ -883,9 +883,9 @@ custom_css:
 ############################### Analytics ############################### > start
 analytics:
   busuanzi: https://cdn.jsdelivr.net/gh/volantis-x/cdn-busuanzi@2.3/js/busuanzi.pure.mini.js
-  # leancloud: # 请使用自己的 id & key 以防止数据丢失
-    # app_id: u9j57bwJod4EDmXWdxrwuqQT-MdYXbMMI
-    # app_key: jfHtEKVE24j0IVCGHbvuFClp
+  leancloud: # 请使用自己的 id & key 以防止数据丢失
+    app_id: K2RVtHi7RnmoN6dovlDKafn8-gzGzoHsz
+    app_key: Qxmil0oqPFdDUyyIp2i1Xikt
     # custom_api_server: # 国际版一般不需要写，除非自定义了 API Server
 ############################### Analytics ############################### > end
 

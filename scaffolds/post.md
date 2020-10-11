@@ -5,10 +5,21 @@ author: yirufeng
 pin: true  # 是否置顶
 toc: true # 是否生成目录
 mathjax: false
-summary: 不基于找到数组排序后的最大差值
-categories: [分类a, 分类B]
+summary: 
+categories: [, ]
 tags:
-  - 排序
-  - 算法
+  - 
+  - 
 link: https://xaoxuu.com/blog/2017-07-05-hexo-blog/ # 引入外部文章
 ---
+
+{% note info, note info 默认主题色，适合中性的信息 %}
+{% noteblock, 标题（可选） %}
+
+Windows 10不是為所有人設計,而是為每個人設計
+
+{% endnoteblock %}
+
+{% folding green, 查看代码测试 %}
+
+{% endfolding %}

@@ -43,12 +43,12 @@ navbar:
       rows:
         - name: 热门文章
           icon: fas fa-fire
-        - name: ProHUD 开源库的设计思路
-          url: blog/2019-08-27-prohud/
-        - name: ValueX：实用的安全对象类型转换库
-          url: blog/2019-08-29-valuex/
-        - name: 心率管家 App 的设计与开发
-          url: blog/2019-07-23-heartmate/
+        - name: 面试问题之TopK系列
+          url: http://www.sivan.tech/2020/09/12/%E9%9D%A2%E8%AF%95%E9%97%AE%E9%A2%98%E4%B9%8BTop%20K%E7%B3%BB%E5%88%97/
+        # - name: ValueX：实用的安全对象类型转换库
+        #   url: blog/2019-08-29-valuex/
+        # - name: 心率管家 App 的设计与开发
+        #   url: blog/2019-07-23-heartmate/
   search: Search...   # Search bar placeholder
 ############################### Navigation Bar ############################### > end
 
@@ -611,8 +611,8 @@ plugins:
   # 除appID和appKEY外均为选填项
   artitalk:
     # Set `layout: artitalk` to enable in page
-    appId: ogP8qj3veMh0LFpFWMPOyF0X-MdYXbMMI # your appID
-    appKey: nHXLd3N3Jgh460t2iRQKWAtr # your appKEY
+    # appId: ogP8qj3veMh0LFpFWMPOyF0X-MdYXbMMI # your appID
+    # appKey: nHXLd3N3Jgh460t2iRQKWAtr # your appKEY
     # serverURL:  #leancloud绑定的安全域名，使用国际版的话不需要填写
     # lang: # 语言设置，zh为汉语，en为英语，es为西班牙语。默认为汉语
     # pageSize: #每页说说的显示数量

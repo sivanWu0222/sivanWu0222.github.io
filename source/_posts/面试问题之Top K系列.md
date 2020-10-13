@@ -16,8 +16,10 @@ tags:
 date: 2020-09-12 09:10:00
 ---
 ## 思路整理：
+{% folding green, 如图所示 %}
 1. ![aLjufN](https://cdn.jsdelivr.net/gh/sivanWu0222/ImageHosting@master/uPic/aLjufN.png)
 2. ![b8s2H2](https://cdn.jsdelivr.net/gh/sivanWu0222/ImageHosting@master/uPic/b8s2H2.png)
+{% endfolding %}
 
 ## 几种方法讲解
 > 以剑指offer40题为例，**求最小的k个数字**
@@ -28,6 +30,9 @@ date: 2020-09-12 09:10:00
 
 时间复杂度：O(n * logn)
 空间复杂度：O(1)
+
+
+{% folding green, 代码 %}
 
 ```go
 func getLeastNumbers(arr []int, k int) []int {
@@ -83,6 +88,8 @@ func swap(nums []int, i int, j int) {
 	nums[i], nums[j] = nums[j], nums[i]
 }
 ```
+{% endfolding %}
+
 
 ### 方法二：
 > 思路：冒泡排序每次都会将1个元素放置到最终位置上，我们可以冒泡k趟
@@ -90,6 +97,8 @@ func swap(nums []int, i int, j int) {
 时间复杂度：O(k * n)
 空间复杂度：O(1)
 
+
+{% folding green, 代码 %}
 ```go
 func getLeastNumbers(arr []int, k int) []int {
 	//需要冒泡k次
@@ -104,6 +113,8 @@ func getLeastNumbers(arr []int, k int) []int {
 	return arr[:k]
 }
 ```
+{% endfolding %}
+<!-- more -->
 
 ### 方法三：
 > 思路：构建一个容量为k的堆，不断遍历数据，插入后进行调整，最后依次返回组合成我们要的结果
@@ -114,6 +125,7 @@ func getLeastNumbers(arr []int, k int) []int {
 空间复杂度：O(K)
 
 
+{% folding green, 代码 %}
 ```go
 
 type IntHeap []int
@@ -172,8 +184,11 @@ func getLeastNumbers(arr []int, k int) []int {
 	}
 	return ret
 }
-
 ```
+{% endfolding %}
+
+
+
 
 ### 方法四：
 > 思路：随机选择，通过减治的思想利用快速排序中的partition方法可以对我们要求的那个划分轴进行快速选择，
@@ -185,6 +200,9 @@ func getLeastNumbers(arr []int, k int) []int {
 
 **会对传入的切片进行修改**
 
+
+
+{% folding green, 代码 %}
 ```go
 func partition(arr []int, start int, end int) int {
 	rand.Seed(time.Now().UnixNano())
@@ -228,8 +246,10 @@ func getLeastNumbers(arr []int, k int) []int {
 	return arr[:k]
 }
 ```
+{% endfolding %}
 
-
+## 方法四【最优解】：BFPRT
+[参考](http://localhost:4000/2020/10/12/BFPRT%E7%AE%97%E6%B3%95-Golang/)
 
 ## 参考
 [58沈剑讲解](https://mp.weixin.qq.com/s/FFsvWXiaZK96PtUg-mmtEw)

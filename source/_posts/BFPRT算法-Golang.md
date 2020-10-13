@@ -5,10 +5,13 @@ pin: true
 toc: true
 mathjax: false
 categories:
-  - null
+  - 算法
+  - BFPRT
 tags:
-  - null
-  - null
+  - BFPRT
+  - topK
+  - 找第几大或第几小
+  - 找前几大或前几小
 date: 2020-10-12 11:02:42
 summary:
 ---
@@ -23,14 +26,16 @@ summary:
 
 ## 具体流程：
 
+其实BFPRT算法与我们之前的快排唯一的区别就在于选择划分元素，之后的partition过程与我们的荷兰国旗划分是一样的。
+
 {% note info, note info 应用场景：无序数组中找到第K小或第K大的数，也可以找到前K大或前K小的数，因为**快速排序的partition长期期望时间复杂度为O(N)而BFPRT算法的时间复杂度稳定在O(N)** %}
 
 {% noteblock, 具体流程 %}
 ![wTcpJO](https://cdn.jsdelivr.net/gh/sivanWu0222/ImageHosting@master/uPic/wTcpJO.png)
-1. 将数组按照5个元素分成一组，最后一组不足5个元素的自成一组，
-2. 组内排序，并将所有数组的中位数组成一个新数组
-3. 获得新数组的中位数，使用这个中位数进行partition(partition与我们荷兰国旗问题保持一致)
-4. 之后判断我们要的第k小或者第k大是否在对应区间内，如果在的话就直接返回，否则选择一侧继续递归
+1. 将数组按照5个元素分成一组，最后一组不足5个元素的自成一组，**时间复杂度：O(1)**
+2. 组内排序，并将所有数组的中位数组成一个新数组，**时间复杂度：O(N)**
+3. 获得新数组的中位数，使用这个中位数进行partition(partition与我们荷兰国旗问题保持一致)，**时间复杂度：O(N)**
+4. 之后判断我们要的第k小或者第k大是否在对应区间内，如果在的话就直接返回，否则选择一侧继续递归，**时间复杂度：O(7/10 * n)**
 {% endnoteblock %}
 
 <!-- more -->

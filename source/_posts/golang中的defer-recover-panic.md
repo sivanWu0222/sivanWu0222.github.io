@@ -175,3 +175,11 @@ t: 5
 {% endfolding %}
 
 
+## 参考文章列表
+1. [5.4 panic 和 recover](https://draveness.me/golang/docs/part2-foundation/ch05-keyword/golang-panic-recover/)
+2. [Dive into stack and defer/panic/recover in go](http://hustcat.github.io/dive-into-stack-defer-panic-recover-in-go/)
+3. [Go官方](https://blog.golang.org/defer-panic-and-recover)
+4. [Golang 入门系列（十四）defer, panic和recover用法](https://www.cnblogs.com/fengchuiyizh/p/12299611.htmls)
+5. [理解Defer、Panic和Recover](https://www.cnblogs.com/sunshine-anycall/p/4746066.html)
+6. [Go面试：从一道判断题来谈panic和defer的调用机制和执行顺序](https://blog.csdn.net/pengpengzhou/article/details/107663338)
+

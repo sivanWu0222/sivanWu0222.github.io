@@ -14,13 +14,8 @@ tags:
 date: 2020-10-13 21:28:35
 summary: golang中的错误处理
 ---
-总结
-
-
-
 ## panic
 {% note info, note info panic其实就是我们其他语言中的throw exception %}
-
 
 ## recover
 {% note info, note info recover其实就是其他语言的try catch %}
@@ -30,8 +25,6 @@ summary: golang中的错误处理
 2. 在正常函数执行过程中，调用recover没有任何作用, 他会返回nil。如这样：fmt.Println(recover()) 。
 3. 如果当前的goroutine panic了，那么recover将会捕获这个panic的值，并且让程序正常执行下去。不会让程序crash。
 {% endnoteblock %}
-
-
 
 ## 总结
 {% noteblock, 总结 %}
@@ -44,7 +37,6 @@ summary: golang中的错误处理
 {% endnoteblock %}
 
 <!-- more -->
-
 
 ## defer 
 1. defer会在return之后执行，因此可能会对return的值进行修改

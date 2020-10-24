@@ -63,3 +63,12 @@ valine:
 {% ghcard sivanWu0222, theme=vue %}
 
 
+
+数据集：
+1. 动漫人脸数据集：图片尺寸:512*512 | 图片格式:JPG | 数目:140000张 | 大小:10.9GB [百度网盘](http://www.seeprettyface.com/images/dataset/anime.jpg)
+
+
+
+
+## matlab
+求一幅图像的熵值

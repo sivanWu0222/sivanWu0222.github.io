@@ -15,10 +15,10 @@ date: 2020-10-13 21:28:35
 summary: golang中的错误处理
 ---
 ## panic
-{% note info, note info panic其实就是我们其他语言中的throw exception %}
+{% note info, panic其实就是我们其他语言中的throw exception %}
 
 ## recover
-{% note info, note info recover其实就是其他语言的try catch %}
+{% note info, recover其实就是其他语言的try catch %}
 
 {% noteblock, 注意 %}
 1. recover如果想起作用的话， 必须在defered函数中使用。
@@ -165,7 +165,6 @@ t: 5
 -------------------------
 ```
 {% endfolding %}
-
 
 ## 参考文章列表
 1. [5.4 panic 和 recover](https://draveness.me/golang/docs/part2-foundation/ch05-keyword/golang-panic-recover/)

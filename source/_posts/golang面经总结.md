@@ -38,24 +38,64 @@ date: 2099-06-06 11:08:18
 16. 链路追踪怎么实现
 
 ## Golang语言相关
-1. golang协程i/o多路复用机制
-2. golang有什么设计很巧妙的地方吗，举几个例子。
-3. go gmp 调度 4次
-4. go 垃圾回收，什么时候触发 2次
-5. go 常见数据结构
-6. go map结构实现，并发安全否
-7. 实现string ，拷贝构造，主要内存开辟析构（没答好)
-8. Slice、map都是安全的吗
-9. go语言的性能的优劣
-10. 线程安全的map锁分段的细节
-11. 了解中间件吗?有什么好处
-12. 有一个高并发的场景该怎么处理
-13. golang 协程机制
-14. 协程的栈空间大小有限制吗？会主动扩展吗？
-15. golang context 应用场景
-16. context 的数据结构（树）
-17. golang 的 waitGroup 用法
-18. golang 性能问题怎么排查？（profile）
+1. go的channel 有缓存无缓存如何定义，区别 [参考](https://www.flysnow.org/2017/04/17/go-in-action-go-channel.html)
+   1. 注意点：如果一个通道被关闭了，我们就不能往这个通道里发送数据了，如果发送的话，会引起painc异常。但是，我们还可以接收通道里的数据，如果通道里没有数据的话，接收的数据是零值.
+   2. 无缓冲的通道指的是通道的大小为0，也就是说，这种类型的通道在接收前没有能力保存任何值，它要求发送goroutine和接收goroutine同时准备好，才可以完成发送和接收操作。
+   3. 从上面无缓冲的通道定义来看，发送goroutine和接收gouroutine必须是同步的，同时准备后，如果没有同时准备好的话，先执行的操作就会阻塞等待，直到另一个相对应的操作准备好为止。这种无缓冲的通道我们也称之为同步通道。
+   4. 有缓冲通道内部有一个类似于队列机制的缓冲区，定义的时候通过make的第2个参数指定缓冲区大小，如果容量满了，接收将会阻塞，如果缓冲区空，发送将会阻塞。
+   5. 如果给定了一个缓冲区容量，那么通道就是异步的，只要缓冲区有未使用空间用于发送数据，或还包含可以接收的数据，那么其通信就会无阻塞地进行
+2. goroutine内存泄漏场景  [参考](https://blog.csdn.net/leeright/article/details/94466831)
+   1. goroutine泄漏描述：如果你启动了一个 goroutine，但并没有符合预期的退出，直到程序结束，此goroutine才退出，这种情况就是 goroutine 泄露。
+3. go并发为什么快
+4. go垃圾回收
+5. go协程 java线程区别
+6. go数组和slice的区别
+   1. 数组定长，定义的时候就需要确定。切片长度不定，append时会自动扩容
+   2. 相同大小数组可以赋值，会拷贝全部内容。slice赋值和指针一样。数组和slice之间不能相互赋值。当然slice有自己的copy函数
+   3. 数组也可以进行切片，返回值是一个slice，改变slice时会同步修改数组内容，相当于取得了这个数组的指针
+7. sync.Once的实现原理（上次哔哩哔哩面试问到了，幸亏我事后看了一眼是类似双重检验锁的实现方式哦），让我写出来，我写出了一大半，还让我运行一下，我运行不出来
+8.  context包有没有用过，我说没用过
+9.  进程，线程，携程的区别
+10. go中导致内存泄漏的原因
+11. gin框架如何实现，我说用go内置的net http包实现的
+12. 逃逸分析讲一下
+13. 了解内存泄漏吗？有什么危害？
+14. 一道很简单的Go题目，Go怎么做深拷贝。
+15. Map是线程安全的吗？怎么解决并发安全问题
+16. sync.Map 怎么解决线程安全问题？看过源码吗？
+17. copy是操作符还是内置函数
+18. slice的底层原理
+19. map的底层原理
+20. Go里面一个协程能保证绑定在一个内核线程上面的。
+21. defer的执行顺序
+22. defer A ; defer B ; defer panic("") A和B能不能执行到
+23. Go切片和数据之间的区别
+24. 切片怎么扩容,扩容过程中需不需要重新写入
+25. Go的协程可以不可以自己让出cpu
+26. Go的协程可以只挂在一个线程上面吗
+27. 一个协程挂起换入另外一个协程是什么过程？
+28. golang中channel调用问题，
+29. 切片和数组区别和底层
+30. defer recover panic 执行顺序
+31. go多线程
+32. golang协程i/o多路复用机制
+33. golang有什么设计很巧妙的地方吗，举几个例子。
+34. go gmp 调度 4次
+35. go 垃圾回收，什么时候触发 2次
+36. go 常见数据结构
+37. go map结构实现，并发安全否
+38. 实现string ，拷贝构造，主要内存开辟析构（没答好)
+39. Slice、map都是安全的吗
+40. go语言的性能的优劣
+41. 线程安全的map锁分段的细节
+42. 了解中间件吗?有什么好处
+43. 有一个高并发的场景该怎么处理
+44. golang 协程机制
+45. 协程的栈空间大小有限制吗？会主动扩展吗？
+46. golang context 应用场景
+47. context 的数据结构（树）
+48. golang 的 waitGroup 用法
+49. golang 性能问题怎么排查？（profile）
 
 ## 算法相关
 1. 手写代码：找出一个数组中长度等于k且阈值大于等于threshold的所有连续的子数组(遍历一遍就完事了)
@@ -189,6 +229,9 @@ func main() {
 15. get与post的区别
 16. HTTP 请求的报文格式
 17. TIME_WAIT？有什么方法可以避免 TIME_WAIT？TIME_WAIT 是主动断开连接的一方还是被动断开的一方？
+18. 自己写的：ICMP
+    1.  参考：https://blog.csdn.net/baidu_37964071/article/details/80514340
+    2.  自己总结的笔记
 
 
 
@@ -256,3 +299,19 @@ func main() {
 ## nginx
 1. nginx的master-worker 和 php-fpm的master-worker有什么区别？
 2. https的工作过程
+
+
+
+
+UM_distinctid=1724bb829dab80-03c40bedb73ed3-30647d01-1aeaa0-1724bb829dba7c; __utma=227300495.920813298.1590926727.1590926727.1590926727.1; __utmz=227300495.1590926727.1.1.utmcsr=ccnu.edu.cn|utmccn=(referral)|utmcmd=referral|utmcct=/; ASP.NET_SessionId=m0kc1bbs4si04hegacxrjeqm; ASP.NET_SessionId_NS_Sig=oenCV6mdxD576BTn
+
+
+UM_distinctid=1724bb829dab80-03c40bedb73ed3-30647d01-1aeaa0-1724bb829dba7c; __utma=227300495.920813298.1590926727.1590926727.1590926727.1; __utmz=227300495.1590926727.1.1.utmcsr=ccnu.edu.cn|utmccn=(referral)|utmcmd=referral|utmcct=/; ASP.NET_SessionId=m0kc1bbs4si04hegacxrjeqm; ASP.NET_SessionId_NS_Sig=oenCV6mdxD576BTn
+
+
+二楼开敞座位区：http://kjyy.ccnu.edu.cn/ClientWeb/pro/ajax/device.aspx?byType=devcls&classkind=8&display=fp&md=d&room_id=101699189&purpose=&selectOpenAty=&cld_name=default&date=2020-10-21&fr_start=08%3A05&fr_end=11%3A05&act=get_rsv_sta&_=1603238382190
+
+一楼开敞座位区：http://kjyy.ccnu.edu.cn/ClientWeb/pro/ajax/device.aspx?byType=devcls&classkind=8&display=fp&md=d&room_id=101699179&purpose=&selectOpenAty=&cld_name=default&date=2020-10-21&fr_start=21%3A50&fr_end=00%3A50&act=get_rsv_sta&_=1603201467558
+
+预约一楼的1310：
+http://kjyy.ccnu.edu.cn/ClientWeb/pro/ajax/reserve.aspx?dialogid=&dev_id=101699914&lab_id=&kind_id=&room_id=&type=dev&prop=&test_id=&term=&number=&test_name=&start=2020-10-21+08%3A08&end=2020-10-21+22%3A00&start_time=0800&end_time=2200&up_file=&memo=&act=set_resv&_=1603165018595

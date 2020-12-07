@@ -16,6 +16,10 @@ tags:
 date: 2020-09-12 09:10:00
 ---
 ## 思路整理：
+
+<!-- more -->
+
+
 {% folding green, 如图所示 %}
 1. ![aLjufN](https://cdn.jsdelivr.net/gh/sivanWu0222/ImageHosting@master/uPic/aLjufN.png)
 2. ![b8s2H2](https://cdn.jsdelivr.net/gh/sivanWu0222/ImageHosting@master/uPic/b8s2H2.png)
@@ -114,7 +118,6 @@ func getLeastNumbers(arr []int, k int) []int {
 }
 ```
 {% endfolding %}
-<!-- more -->
 
 ### 方法三：
 > 思路：构建一个容量为k的堆，不断遍历数据，插入后进行调整，最后依次返回组合成我们要的结果

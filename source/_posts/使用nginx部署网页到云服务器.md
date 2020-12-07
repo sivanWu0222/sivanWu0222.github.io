@@ -22,6 +22,9 @@ summary:
 本地环境：Mac OS
 {% endnoteblock %}
 
+<!-- more -->
+
+
 {% noteblock, 需要辅助工具： %}
 1. 可以远程连接服务器的工具，这里使用的是**secure CRT**
 2. 可以上传文件到服务器的工具，这里使用的是**FileZilla**
@@ -41,4 +44,3 @@ summary:
 ## 参考链接
 [nginx安装并进行配置](https://blog.csdn.net/gudada010/article/details/105558987)
 
-<!-- more -->

@@ -20,6 +20,9 @@ summary: golang中的错误处理
 ## recover
 {% note info, recover其实就是其他语言的try catch %}
 
+<!-- more -->
+
+
 {% noteblock, 注意 %}
 1. recover如果想起作用的话， 必须在defered函数中使用。
 2. 在正常函数执行过程中，调用recover没有任何作用, 他会返回nil。如这样：fmt.Println(recover()) 。
@@ -36,7 +39,6 @@ summary: golang中的错误处理
 
 {% endnoteblock %}
 
-<!-- more -->
 
 ## defer 
 1. defer会在return之后执行，因此可能会对return的值进行修改

@@ -1,5 +1,5 @@
 ---
-title: Golang的序列化
+title: golang的序列化
 author: yirufeng
 pin: false
 toc: true

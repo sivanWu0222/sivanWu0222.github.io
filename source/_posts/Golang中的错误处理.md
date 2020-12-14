@@ -1,5 +1,5 @@
 ---
-title: Golang中的错误处理
+title: golang中的错误处理
 author: yirufeng
 pin: false
 toc: true
@@ -17,6 +17,7 @@ date: 2020-10-05 20:46:39
 
 ## 自定义错误
 {% noteblock info %}
+
 1. 因为error是一个接口，因此我们可以自定义一个error
 2. 实际开发中我们要判断错误的类型，直接进行类型断言（也可以通过switch进行类型断言分支）
 {% endnoteblock %}

@@ -21,12 +21,11 @@ valine:
 
 [![sivanWu's wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=yirufeng)](https://github.com/anuraghazra/github-readme-stats)
 
-![Lk5HvB](https://cdn.jsdelivr.net/gh/sivanWu0222/ImageHosting@master/uPic/Lk5HvB.png)
+
+![ecLGa6](https://cdn.jsdelivr.net/gh/sivanWu0222/ImageHosting@master/uPic/ecLGa6.png)
 <!-- endtab -->
 
 <!-- tab 其他 -->
-
-！！！
 
 <!-- endtab -->
 

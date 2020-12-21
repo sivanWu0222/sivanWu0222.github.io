@@ -19,6 +19,10 @@ date: 2020-12-13 19:57:08
 
 JWT通常用在请求头的`Authorization`字段中，形如：`Authorization: Bearer <token>`，也是最标准传递JWT的方法
 
+
+
+<!-- more -->
+
 ![tVw6eU](https://cdn.jsdelivr.net/gh/sivanWu0222/ImageHosting@master/uPic/tVw6eU.png)
 
 ![KRB23n](https://cdn.jsdelivr.net/gh/sivanWu0222/ImageHosting@master/uPic/KRB23n.png)

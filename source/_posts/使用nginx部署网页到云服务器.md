@@ -1,7 +1,7 @@
 ---
 title: 使用nginx部署网页到云服务器
 author: yirufeng
-pin: true
+pin: false
 toc: true
 mathjax: false
 categories:

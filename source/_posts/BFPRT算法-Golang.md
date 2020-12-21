@@ -1,7 +1,7 @@
 ---
 title: BFPRT算法-Golang
 author: yirufeng
-pin: true
+pin: false
 toc: true
 mathjax: false
 categories:

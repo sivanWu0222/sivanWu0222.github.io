@@ -1,7 +1,7 @@
 ---
 title: Golang中刷题关于切片的一些坑
 author: yirufeng
-pin: true
+pin: false
 toc: true
 mathjax: false
 categories:

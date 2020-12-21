@@ -1,7 +1,7 @@
 ---
 title: 面试问题之Top K系列
 author: yirufeng
-pin: true
+pin: false
 cover: true
 coverImg: /images/1.jpg
 toc: true

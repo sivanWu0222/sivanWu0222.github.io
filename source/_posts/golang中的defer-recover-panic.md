@@ -1,7 +1,7 @@
 ---
 title: golang中的defer-recover-panic
 author: yirufeng
-pin: true
+pin: false
 toc: true
 mathjax: false
 categories:

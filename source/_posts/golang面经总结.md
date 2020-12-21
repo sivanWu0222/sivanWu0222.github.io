@@ -19,23 +19,6 @@ tags:
 date: 2099-06-06 11:08:18
 ---
 
-## 无法分类的问题
-1. 讲一下协程和线程的区别 3次
-2. 进程和线程的区别 1次
-3. Epoll
-4. rpc框架序列化解决了什么问题
-5. grpc框架
-6. 一致性hash是怎么做的 为什么
-7. 讲讲levelDB和RockesDB的区别
-8. 分布式锁改进和优化
-9. 怎么处理锁分段
-10. 缓存一致性问题怎么解决的优劣呢？
-11. hash的选型和一致性hash
-12. rpc框架解决了什么问题
-13. grpc和jsonrpc的优劣
-14. 分布式框架的解决方案
-15. 路由网关和注册中心的实现
-16. 链路追踪怎么实现
 
 ## Golang语言相关
 1. go的channel 有缓存无缓存如何定义，区别 [参考](https://www.flysnow.org/2017/04/17/go-in-action-go-channel.html)
@@ -59,6 +42,9 @@ date: 2099-06-06 11:08:18
 10. go中导致内存泄漏的原因
 11. gin框架如何实现，我说用go内置的net http包实现的
 12. 逃逸分析讲一下
+
+<!-- more -->
+
 13. 了解内存泄漏吗？有什么危害？
 14. 一道很简单的Go题目，Go怎么做深拷贝。
 15. Map是线程安全的吗？怎么解决并发安全问题
@@ -301,17 +287,21 @@ func main() {
 2. https的工作过程
 
 
+## 其他问题
+1. 讲一下协程和线程的区别 3次
+2. 进程和线程的区别 1次
+3. Epoll
+4. rpc框架序列化解决了什么问题
+5. grpc框架
+6. 一致性hash是怎么做的 为什么
+7. 讲讲levelDB和RockesDB的区别
+8. 分布式锁改进和优化
+9. 怎么处理锁分段
+10. 缓存一致性问题怎么解决的优劣呢？
+11. hash的选型和一致性hash
+12. rpc框架解决了什么问题
+13. grpc和jsonrpc的优劣
+14. 分布式框架的解决方案
+15. 路由网关和注册中心的实现
+16. 链路追踪怎么实现
 
-
-UM_distinctid=1724bb829dab80-03c40bedb73ed3-30647d01-1aeaa0-1724bb829dba7c; __utma=227300495.920813298.1590926727.1590926727.1590926727.1; __utmz=227300495.1590926727.1.1.utmcsr=ccnu.edu.cn|utmccn=(referral)|utmcmd=referral|utmcct=/; ASP.NET_SessionId=m0kc1bbs4si04hegacxrjeqm; ASP.NET_SessionId_NS_Sig=oenCV6mdxD576BTn
-
-
-UM_distinctid=1724bb829dab80-03c40bedb73ed3-30647d01-1aeaa0-1724bb829dba7c; __utma=227300495.920813298.1590926727.1590926727.1590926727.1; __utmz=227300495.1590926727.1.1.utmcsr=ccnu.edu.cn|utmccn=(referral)|utmcmd=referral|utmcct=/; ASP.NET_SessionId=m0kc1bbs4si04hegacxrjeqm; ASP.NET_SessionId_NS_Sig=oenCV6mdxD576BTn
-
-
-二楼开敞座位区：http://kjyy.ccnu.edu.cn/ClientWeb/pro/ajax/device.aspx?byType=devcls&classkind=8&display=fp&md=d&room_id=101699189&purpose=&selectOpenAty=&cld_name=default&date=2020-10-21&fr_start=08%3A05&fr_end=11%3A05&act=get_rsv_sta&_=1603238382190
-
-一楼开敞座位区：http://kjyy.ccnu.edu.cn/ClientWeb/pro/ajax/device.aspx?byType=devcls&classkind=8&display=fp&md=d&room_id=101699179&purpose=&selectOpenAty=&cld_name=default&date=2020-10-21&fr_start=21%3A50&fr_end=00%3A50&act=get_rsv_sta&_=1603201467558
-
-预约一楼的1310：
-http://kjyy.ccnu.edu.cn/ClientWeb/pro/ajax/reserve.aspx?dialogid=&dev_id=101699914&lab_id=&kind_id=&room_id=&type=dev&prop=&test_id=&term=&number=&test_name=&start=2020-10-21+08%3A08&end=2020-10-21+22%3A00&start_time=0800&end_time=2200&up_file=&memo=&act=set_resv&_=1603165018595

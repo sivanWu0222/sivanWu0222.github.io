@@ -1,7 +1,7 @@
 ---
 title: jwt-go的使用
 author: yirufeng
-pin: true
+pin: false
 toc: true
 mathjax: false
 categories:

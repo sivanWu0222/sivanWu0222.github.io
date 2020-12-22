@@ -2,12 +2,10 @@
 layout: docs
 seo_title: 关于
 bottom_meta: false
-sidebar: []
+sidebar: [blogger, webinfo, tagcloud, category]
 valine:
   placeholder: 有什么想对我说的呢？
 ---
-
-
 
 🐶浪开发者，坐标武汉
 

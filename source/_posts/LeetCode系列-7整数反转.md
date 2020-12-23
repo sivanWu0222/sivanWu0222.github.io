@@ -6,6 +6,7 @@ cover: true
 toc: true
 mathjax: false
 summary: 对整数进行反转，我们需要熟记32位有符号整数的两个边界，需要注意的两个点：1. 如何处理负数 2. 需要考虑整数溢出的情况
+sidebar: [blogger, webinfo, tagcloud, category]
 categories: 
     - LeetCode
 tags:

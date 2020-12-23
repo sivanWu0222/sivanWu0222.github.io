@@ -6,6 +6,7 @@ cover: false
 coverImg: /images/1.jpg
 toc: true
 mathjax: false
+sidebar: [blogger, webinfo, tagcloud, category]
 categories: 
   - 面试
   - 计算机网络

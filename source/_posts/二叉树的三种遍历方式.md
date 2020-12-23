@@ -4,6 +4,7 @@ author: yirufeng
 pin: false
 toc: true
 mathjax: false
+sidebar: [blogger, webinfo, tagcloud, category]
 categories: 
   - 算法
   - 面试

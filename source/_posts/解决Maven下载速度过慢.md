@@ -8,6 +8,7 @@ toc: false
 mathjax: false
 categories: maven
 keywords: maven
+sidebar: [blogger, webinfo, tagcloud, category]
 tags:
   - maven
 date: 2020-05-21 11:18:42

@@ -5,6 +5,7 @@ top: false
 toc: true
 mathjax: false
 summary: 通过docker中的容器隔离机制我们实现mysql的主从复制，从而避免了单点故障
+sidebar: [blogger, webinfo, tagcloud, category]
 categories: 
   - mysql
 tags:

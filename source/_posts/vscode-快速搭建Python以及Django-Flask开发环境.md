@@ -1,8 +1,7 @@
 ---
 title: 'vscode 快速搭建Python以及Django,Flask开发环境'
 author: yirufeng
-top: true
-cover: true
+sidebar: [blogger, webinfo, tagcloud, category]
 toc: True
 mathjax: false
 summary: 如何使用vs code快速搭建python开发环境，python中的基本配置，以及开发django和flask的环境

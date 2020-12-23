@@ -8,6 +8,7 @@ toc: false
 mathjax: false
 summary: Mac 下的Pycharm快捷键大全以便加快开发进度 参考：https://www.jianshu.com/p/82cdc0eddb16
 categories: Tools
+sidebar: [blogger, webinfo, tagcloud, category]
 tags:
   - Pycharm
   - Tools

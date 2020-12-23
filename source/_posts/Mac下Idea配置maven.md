@@ -9,6 +9,7 @@ mathjax: false
 summary: idea中配置maven：参考：https://jingyan.baidu.com/article/a3a3f811cd5f0b8da2eb8abf.html
 categories: maven
 keywords: maven
+sidebar: [blogger, webinfo, tagcloud, category]
 tags:
   - maven
   - Idea

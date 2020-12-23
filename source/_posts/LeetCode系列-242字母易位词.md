@@ -6,6 +6,7 @@ cover: true
 toc: True
 mathjax: false
 summary: 字母易位词，指的是两个单词只是字母的排列顺序不同，换言之就是字母的种类数以及字母出现的次数都一致
+sidebar: [blogger, webinfo, tagcloud, category]
 categories: 
     - LeetCode
 tags:

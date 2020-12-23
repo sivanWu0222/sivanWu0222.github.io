@@ -9,6 +9,7 @@ mathjax: false
 summary: Mac下安装Redis并进行相关的配置以及安装后的目录介绍 参考：https://www.jianshu.com/p/bb7c19c5fc47
 categories: redis
 keywords: redis
+sidebar: [blogger, webinfo, tagcloud, category]
 tags:
   - redis
 date: 2020-05-22 10:31:26

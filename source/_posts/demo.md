@@ -5,6 +5,7 @@ pin: true
 toc: true
 mathjax: false
 summary: 演示页面
+sidebar: [blogger, webinfo, tagcloud, category]
 categories: 
   - demo
 tags:

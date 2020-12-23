@@ -7,6 +7,7 @@ coverImg: /images/1.jpg
 toc: false
 mathjax: false
 summary: 正常使用pip install 安装第三方包需要从国外获取安装包的数据，速度较慢，这里我们可以加上一个 -i 选项后面来指定安装源
+sidebar: [blogger, webinfo, tagcloud, category]
 categories: 
   - python
   - pip

@@ -6,6 +6,7 @@ cover: true
 toc: true
 mathjax: false
 summary: 通过文档记录自己的LeetCode刷题记录
+sidebar: [blogger, webinfo, tagcloud, category]
 categories: 
   - LeetCode
 tags:

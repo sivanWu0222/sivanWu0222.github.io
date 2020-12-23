@@ -5,6 +5,7 @@ author: yirufeng
 pin: true  # 是否置顶
 toc: true # 是否生成目录
 mathjax: false
+sidebar: [blogger, webinfo, tagcloud, category]
 summary: 
 categories: [, ]
 tags:

@@ -5,6 +5,7 @@ pin: false
 toc: true
 mathjax: false
 summary: 
+sidebar: [blogger, webinfo, tagcloud, category]
 categories:
   - go
   - json

@@ -5,6 +5,7 @@ pin: false
 toc: true
 mathjax: false
 summary: golang中命令行参数的使用
+sidebar: [blogger, webinfo, tagcloud, category]
 categories:
   - go
 tags:

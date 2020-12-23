@@ -7,6 +7,7 @@ coverImg: /images/1.jpg
 toc: true
 mathjax: false
 summary: 面试题目整理
+sidebar: [blogger, webinfo, tagcloud, category]
 categories: 
   - 面试
   - 计算机网络

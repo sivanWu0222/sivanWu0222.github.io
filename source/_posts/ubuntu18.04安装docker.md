@@ -5,6 +5,7 @@ top: true
 toc: true
 mathjax: false
 summary: ubuntu18.04 下安装docker 并使用命令查看、
+sidebar: [blogger, webinfo, tagcloud, category]
 categories: 
     - docker
 tags:

@@ -5,6 +5,7 @@ pin: false
 toc: true
 mathjax: false
 summary: Golang中的错误处理
+sidebar: [blogger, webinfo, tagcloud, category]
 categories:
   - go
   - 错误

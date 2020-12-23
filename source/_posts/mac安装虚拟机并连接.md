@@ -6,6 +6,7 @@ cover: true
 toc: true
 mathjax: false
 summary: 使用Parallels Desktop安装本地下载好的ubuntu镜像，并通过secureCrt连接
+sidebar: [blogger, webinfo, tagcloud, category]
 categories: 
   - 工具篇
 tags:

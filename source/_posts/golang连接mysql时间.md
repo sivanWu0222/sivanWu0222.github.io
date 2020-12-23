@@ -4,6 +4,7 @@ author: yirufeng
 top: true
 toc: true
 mathjax: false
+sidebar: [blogger, webinfo, tagcloud, category]
 categories: 
   - Golang
 keywords: Golang

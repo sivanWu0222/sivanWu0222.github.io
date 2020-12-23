@@ -3,6 +3,7 @@ title: go中的heap实现大根堆与小根堆
 author: yirufeng
 top: true
 toc: true
+sidebar: [blogger, webinfo, tagcloud, category]
 categories: 
 	- 面试
 	- 算法

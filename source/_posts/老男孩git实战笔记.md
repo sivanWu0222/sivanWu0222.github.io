@@ -6,6 +6,7 @@ cover: true
 coverImg: /images/1.jpg
 toc: true
 mathjax: false
+sidebar: [blogger, webinfo, tagcloud, category]
 summary: 老男孩git实战课程的笔记，通过故事描述git的具体操作过程，视频参考：https://www.bilibili.com/video/BV19E411f76x?p=1
 categories: 
   - 工具

@@ -5,6 +5,7 @@ pin: false
 toc: true
 mathjax: false
 summary: golang中关于文件的操作
+sidebar: [blogger, webinfo, tagcloud, category]
 categories:
   - go
 tags:

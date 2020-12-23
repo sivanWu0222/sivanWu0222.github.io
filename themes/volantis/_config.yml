@@ -335,7 +335,7 @@ sidebar:
       shape: rectangle # circle, rectangle
       url: /about/
       title: 逸如风
-      subtitle:  披星戴月找寻人生最美的风景!
+      subtitle:  忠于自己，披星戴月奔向理想和你!
       jinrishici: false # Poetry Today. You can set a string, and it will be displayed when loading fails.
       social:
         - icon: fas fa-rss

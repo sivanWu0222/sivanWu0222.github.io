@@ -161,14 +161,13 @@ func main() {
     fmt.Println(bitmap.Check(30))
 }
 ```
-
 1.  给定一个二叉树，从根节点出发，按照前序遍历的顺序打印每个节点，最后回到根节点，比如
 2.  根据这个打印结果，把树给建立起来
 3.  二叉树中任意 3 个节点的最近公共祖先
 4.  搜索旋转数组最小值
 5.  不区分大小写的 C 字符串比较
 6.  判断一个点是否在封闭图形里边，封闭图形所有点坐标都给出，说思路（这个查了下有个专门的算法 https://www.zhihu.com/question/26551754 任一射线穿过多边形，奇数个交点则位于多边形之内，偶数个交点则位于多边形之外）
-
+7. 三数之和
 
 
 
@@ -212,15 +211,18 @@ func main() {
 11. 问了网络的协议栈 为什么要分层
 12. 网络连接的各层的状态
 13. 说一下URL的格式，越详细越好
-14. http的请求方法有哪些
-15. get与post的区别
-16. HTTP 请求的报文格式
-17. TIME_WAIT？有什么方法可以避免 TIME_WAIT？TIME_WAIT 是主动断开连接的一方还是被动断开的一方？
-18. 自己写的：ICMP
+14. http的请求方法有哪些 ![Q1BBEG](https://cdn.jsdelivr.net/gh/sivanWu0222/ImageHosting@master/uPic/Q1BBEG.png)
+15. 网络中的状态码：![jcVmoh](https://cdn.jsdelivr.net/gh/sivanWu0222/ImageHosting@master/uPic/jcVmoh.png)
+16. get与post的区别 
+17. HTTP 请求的报文格式
+18. TIME_WAIT？有什么方法可以避免 TIME_WAIT？TIME_WAIT 是主动断开连接的一方还是被动断开的一方？
+19. 自己写的：ICMP
     1.  参考：https://blog.csdn.net/baidu_37964071/article/details/80514340
     2.  自己总结的笔记
-
-
+20. HTTP1.x 和 HTTP2.0 的区别
+21. DNS 的工作流程
+22. 讲一下所知道的状态码，重点说一下 304
+23. HTTP 缓存（强制缓存、协商缓存）
 
 ## MySql相关
 1. mysql 索引 2次

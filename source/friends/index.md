@@ -9,4 +9,10 @@ index: true
 {% site 极客兔兔, url=https://geektutu.com/, screenshot=https://i.loli.net/2020/08/21/Vzbu3i8fXs6Nh5Y.jpg, avatar=https://cdn.jsdelivr.net/gh/inkss/common@master/static/web/avatar.jpg, description=golang从零实现系列教程 %}
 {% site 面向信仰编程, url=https://draveness.me/, screenshot=https://i.loli.net/2020/08/22/d24zpPlhLYWX6D1.png, avatar=https://cdn.jsdelivr.net/gh/MHuiG/imgbed@master/data/p.png, description=draveness博客 %}
 {% site Go语言设计与实现, url=https://draveness.me/golang/, screenshot=https://i.loli.net/2020/08/22/dFRWXm52OVu8qfK.png, avatar=https://cdn.jsdelivr.net/gh/Colsrch/images/Colsrch/avatar.jpg, description=Go语言设计与实现在线书籍 %}
+{% site 致力于分享Go语言编程, url=https://mojotv.cn/, screenshot=https://cdn.jsdelivr.net/gh/sivanWu0222/ImageHosting@master/uPic/xaBP8n.png, avatar=https://mojotv.cn/assets/image/logo01.png, description=致力于分享Go语言编程 %}
+
 {% endsitegroup %}
+
+
+
+https://mojotv.cn/

@@ -20,6 +20,20 @@ tags:
 date: 2099-06-06 11:08:18
 ---
 
+## 字节跳动 - golang - 实习
+
+### 面经1
+完整文章：
+1. https://ericsmoon.github.io/post/ByteDanceInterview0118/
+2. https://www.nowcoder.com/discuss/364438
+
+## 字节跳动 - 校招
+
+
+## 字节跳动 - 社招
+
+
+
 
 ## Golang语言相关
 1. go的channel 有缓存无缓存如何定义，区别 [参考](https://www.flysnow.org/2017/04/17/go-in-action-go-channel.html)

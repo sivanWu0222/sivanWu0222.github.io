@@ -253,7 +253,7 @@ func getLeastNumbers(arr []int, k int) []int {
 {% endfolding %}
 
 ## 方法四【最优解】：BFPRT
-[参考](http://localhost:4000/2020/10/12/BFPRT%E7%AE%97%E6%B3%95-Golang/)
+[参考](http://www.sivan.tech/2020/10/12/BFPRT%E7%AE%97%E6%B3%95-Golang/)
 
 ## 参考
 [58沈剑讲解](https://mp.weixin.qq.com/s/FFsvWXiaZK96PtUg-mmtEw)

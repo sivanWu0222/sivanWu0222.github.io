@@ -11,8 +11,15 @@ categories: [, ]
 tags:
   - 
   - 
-link: https://xaoxuu.com/blog/2017-07-05-hexo-blog/ # 引入外部文章
 ---
+
+{% noteblock,  %}
+
+
+{% endnoteblock %}
+
+
+{% note info,  %}
 
 {% note info, note info 默认主题色，适合中性的信息 %}
 {% noteblock, 标题（可选） %}

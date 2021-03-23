@@ -201,18 +201,215 @@ mysql> update user set user.Host='%' where user.User='root'; mysql> flush privil
 18. 最后利⽤NAVICAT等⼯具进⾏测试即可：![uFYbgl](https://cdn.jsdelivr.net/gh/sivanWu0222/ImageHosting@master/uPic/uFYbgl.png)
 
 ## redis安装
+操作存放在`~`目录下的`redis-5.0.8.tar.gz`
 
-{% note info, `` %}
-{% note info, `` %}
-{% note info, `` %}
+1. {% note info, `cd /usr/local/` %}
+2. {% note info, ` mkdir redis ` %}
+3. {% note info, `cd redis` %}
+4. {% note info, `tar zxvf /root/redis-5.0.8.tar.gz -C ./` %}
+5. {% note info, `cd redis-5.0.8/` %}
+6. {% note info, `make && make install` %}
+7. {% note info, `cd utils/` %}
+8. {% note info, `./install_server.sh` %}：全部选择默认配置即可(直接回车)：![c55LQP](https://cdn.jsdelivr.net/gh/sivanWu0222/ImageHosting@master/uPic/c55LQP.png)
+9. 查看状态：{% note info, `systemctl status redis_6379.service` %} 得到如下图中的结果![dkA27L](https://cdn.jsdelivr.net/gh/sivanWu0222/ImageHosting@master/uPic/dkA27L.png)
+10. {% note info, `redis-server` %}
+11. {% note info, `redis-cli` %}
+12. {% note info, `vim /etc/redis/6379.conf` %}
+  - 设置允许远程连接：将`bind 127.0.0.1`修改为`0.0.0.0`
+  - 设置访问密码：将`#requirepass foobared`修改为`requirepass 你想设置的密码`
+  - 重启redis服务：{% note info, `systemctl restart redis_6379.service` %}
+  - 执行：{% note info, `redis-cli` %} 
+13. 之后redis客户端执行命令都需要访问密码，使用{% note info, `auth 我们设置的redis密码` %}
 
-{% noteblock,  %}
+## 安装消息队列rabbitMQ
+因为 RabbitMQ 需要 erlang环境的⽀持，所以必须先安装`erlang`。我们这⾥要安装的是 `erlang-22.3.3-1.el7.x86_64.rpm`，所以首先执行如下命令来安装其对应的yum repo ：``
+
+
+注意：如果之前安装了rabbitMQ以及erlang，所以执行如下命令卸载rabbitMQ和erlang
+```shell
+yum list | grep erlang
+yum -y remove erlang-*
+yum remove erlang.x86_64
+```
+```shell
+rabbitmqctl app_stop
+yum list | grep rabbitmq
+yum -y remove rabbitmq-server.noarch
+```
+
+1. {% note info, `curl -s https://packagecloud.io/install/repositories/rabbitmq/erlang/script.rpm.sh | sudo bash` %}
+2. {% note info, `yum install erlang-22.3.3-1.el7.x86_64` %}
+3. 执行{% note info, `erl` %}命令查看是否安装成功，![bzef2G](https://cdn.jsdelivr.net/gh/sivanWu0222/ImageHosting@master/uPic/bzef2G.png)
+4. 安装rabbitMQ：
+  1. {% note info, `curl -s https://packagecloud.io/install/repositories/rabbitmq/rabbitmq-server/script.rpm.sh | sudo bash` %}
+  2. {% note info, `yum install rabbitmq-server-3.8.3-1.el7.noarch` %}
+5. 设置RABBITMQ开机启动：{% note info, `chkconfig rabbitmq-server on` %}
+6. 启动RABBITMQ服务：{% note info, `systemctl start rabbitmq-server.service` %}
+7. 开启WEB可视化管理插件：{% note info, `rabbitmq-plugins enable rabbitmq_management` %}
+8. 访问可视化管理界⾯：`你的服务器IP:15672`
+9. 我们可以在后台先添加⼀个⽤户/密码对：{% note info, `rabbitmqctl add_user 可视化用户名 可视化用户名对应的密码` %} 和 {% note info, `rabbitmqctl set_user_tags 可视化用户名 administrator` %}
+10. 登录网页：`你的服务器IP:15672` ![5FKYuj](https://cdn.jsdelivr.net/gh/sivanWu0222/ImageHosting@master/uPic/5FKYuj.png)
+
+
+## tomcat安装部署
+操作存放在`~`目录下的`apache-tomcat-8.5.55.tar.gz`
+1. {% note info, `cd /usr/local/` %}
+2. {% note info, `mkdir tomcat` %}
+3. {% note info, `cd tomcat` %}
+4. {% note info, `tar -zxvf /root/apache-tomcat-8.5.55.tar.gz -C ./` %}
+5. {% note info, `cd apache-tomcat-8.5.55/bin` %}
+6. {% note info, `./startup.sh` %} ，访问`主机ip地址:8080`得到下图的网页内容：![gpjAfM](https://cdn.jsdelivr.net/gh/sivanWu0222/ImageHosting@master/uPic/gpjAfM.png)
+7. {% note info, `cd /etc/rc.d/init.d/` %}
+8. {% note info, `touch tomcat` %}
+9. {% note info, `chmod +x tomcat` %}，键入如下内容：
+```
+#!/bin/bash 
+#chkconfig:- 20 90 
+#description:tomcat 
+#processname:tomcat 
+TOMCAT_HOME=/usr/local/tomcat/apache-tomcat-8.5.55 
+case $1 in
+  start) su root $TOMCAT_HOME/bin/startup.sh;; 
+  stop) su root $TOMCAT_HOME/bin/shutdown.sh;; 
+  *) echo "require start|stop" ;;
+esac
+```
+这样后续对于Tomcat的开启和关闭只需要执⾏如下命令即可：`service tomcat start`和`service tomcat stop`
+10. {% note info, `chkconfig --add tomcat` %}
+11. {% note info, `chkconfig tomcat on` %}
+
+
+
+## nginx安装
+操作存放在`~`目录下的`nginx-1.17.10.tar.gz`
+
+1. {% note info, `cd /usr/local/` %}
+2. {% note info, `mkdir nginx` %}
+3. {% note info, `cd nginx` %}
+4. {% note info, `tar zxvf /root/nginx-1.17.10.tar.gz -C ./` %}
+5. {% note info, `yum -y install pcre-devel` %}
+6. {% note info, `yum -y install openssl openssl-devel` %}
+7. 编译并安装：
+  - {% note info, ` cd nginx-1.17.10/` %}
+  - {% note info, `./configure` %}
+  - {% note info, `make && make install` %}
+  - 安装完成之后，nginx可执行位置位于：`/usr/local/nginx/sbin/nginx`
+8. 启动nginx：{% note info, `/usr/local/nginx/sbin/nginx` %}
+  - 如果想停⽌Nginx服务，可执⾏：`/usr/local/nginx/sbin/nginx -s stop`
+  - 如果修改了配置⽂件后想重新加载Nginx，可执⾏：`/usr/local/nginx/sbin/nginx -s reload`
+  - 注意其配置⽂件位于：`/usr/local/nginx/conf/nginx.conf`
+9. 验证：访问主机ip地址可以得到下图中的网页：![fKZxIX](https://cdn.jsdelivr.net/gh/sivanWu0222/ImageHosting@master/uPic/fKZxIX.png)
+
+## 安装docker
+
+
+1. 安装docker：{% note info, `yum install -y docker` %}
+2. 开启docker服务：{% note info, `systemctl start docker.service` %}
+3. 查看安装结果：{% note info, `docker version` %}
+4. 设置开机启动：{% note info, `systemctl enable docker.service` %}
+5. 配置DOCKER镜像下载加速：
+  - 直接编辑配置⽂件：{% note info, `vim /etc/docker/daemon.json` %}
+  - 加⼊加速镜像源地址即可：
+```
+{
+  "registry-mirrors": ["http://hub-mirror.c.163.com"]
+}
+```
+6. 加完加速地址后，重新加载配置⽂件，重启 docker 服务即可：{% note info,  `systemctl daemon-reload` %} 和 {% note info,  `systemctl restart docker.service` %}
+
+## kubernetes集群部署
+> 因为是集群，暂时没有做
+
+## ELASTICSEARCH集群部署
+> 因为是集群，暂时没有做
+
+## ZOOKEEPER安装部署
+操作存放在`~`目录下的`apache-zookeeper-3.6.1-bin.tar.gz`
+
+1. {% note info,  `cd /usr/local/` %}
+2. {% note info,  `mkdir zookeeper` %}
+3. {% note info,  `cd zookeeper/` %}
+4. {% note info,  `tar -zxvf /root/apache-zookeeper-3.6.1-bin.tar.gz -C ./` %}
+5. {% note info,  `cd apache-zookeeper-3.6.1-bin/` %}
+6. {% note info,  `mkdir data` %}
+7. {% note info,  `cd conf/` %}
+8. {% note info,  `cp zoo_sample.cfg zoo.cfg` %}
+9. {% note info,  `sudo vim zoo.cfg` %}：修改配置⽂件`zoo.cfg`，将其中的dataDir修改为上⾯刚创建的data⽬录。
+10. {% note info,  `cd ..` %}
+11. {% note info,  `./bin/zkServer.sh start` %}
+12. {% note info,  `./bin/zkServer.sh status` %}
+13. {% note info,  `vim /etc/profile` %}，尾部加入zookeeper的bin路径配置即可：
+```
+export ZOOKEEPER_HOME=/usr/local/zookeeper/apache-zookeeper-3.6.1-bin 
+export PATH=$PATH:$ZOOKEEPER_HOME/bin
+```
+14. {% note info,  `source /etc/profile` %}
+15. 进入目录：{% note info,  `cd /etc/rc.d/init.d` %}，创建文件，并赋予执行权限，{% note info,  `touch zookeeper` %}与{% note info,  `chmod +x zookeeper` %}
+16. 编辑zookeeper文件{% note info,  `vim zookeeper` %}：
+```
+#!/bin/bash 
+#chkconfig:- 20 90 
+#description:zookeeper 
+#processname:zookeeper 
+ZOOKEEPER_HOME=/usr/local/zookeeper/apache-zookeeper-3.6.1-bin 
+export JAVA_HOME=/usr/local/java/jdk1.8.0_161 # 此处根据你的实际情况更换对 应 
+case $1 in
+  start) su root $ZOOKEEPER_HOME/bin/zkServer.sh start;; stop) su root $ZOOKEEPER_HOME/bin/zkServer.sh stop;; status) su root $ZOOKEEPER_HOME/bin/zkServer.sh status;; restart) su root $ZOOKEEPER_HOME/bin/zkServer.sh restart;; *) echo "require start|stop|status|restart" ;;
+esac
+```
+17. 最后加入开启启动即可：{% note info,  `chkconfig --add zookeeper` %} 和 {% note info,  `chkconfig zookeeper on` %}
+
+
+## 消息队列kafka安装部署
+> 因为Kafka依赖zookeeper，所以得先安装zookeeper
+
+操作存放在`~`目录下的`kafka_2.12-2.5.0.tgz`
+
+1. {% note info,  `cd /usr/local/` %}
+2. {% note info,  `mkdir kafka` %}
+3. {% note info,  `cd kafka` %}
+4. {% note info,  `tar -zxvf /root/kafka_2.12-2.5.0.tgz -C ./` %}
+5. {% note info,  `cd /usr/local/kafka/kafka_2.12-2.5.0` %}
+6. {% note info,  `mkdir logs` %}
+7. {% note info,  `cd config/` %}
+8. 修改配置⽂件，⼀是将其中的`log.dirs`修改为上⾯刚创建的logs⽬录，其他选项可以按需配置{% note info,  `vim server.properties` %}
+9. 另外关注⼀下连接ZooKeeper的相关配置，根据实际情况进⾏配置：![anf5Xj](https://cdn.jsdelivr.net/gh/sivanWu0222/ImageHosting@master/uPic/anf5Xj.png)
+10. 启动kafka：{% note info,  `./bin/kafka-server-start.sh ./config/server.properties` %}。如果需要后台启动，则加上`-daemon`参数即可，也就是执行命令：{% note info,  `./bin/kafka-server-start.sh -daemon ./config/server.properties` %}
+11. ⾸先创建⼀个名为codesheep的topic：{% note info,  `./bin/kafka-topics.sh --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1 --topic codesheep` %} ![u4xtBh](https://cdn.jsdelivr.net/gh/sivanWu0222/ImageHosting@master/uPic/u4xtBh.png)
+  - 创建完成以后，可以使⽤命令来列出⽬前已有的topic列表
+  - 接下来创建⼀个⽣产者，⽤于在codesheep这个topic上⽣产消息：{% note info,  `./bin/kafka-console-producer.sh --bootstrap-server localhost:9092 --topic codesheep` %}
+  - ⽽后接着创建⼀个消费者，⽤于在codesheep这个topic上获取消息：{% note info,  `./bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic codesheep` %}
+  - 此时⽣产者发出的消息，在消费者端可以获取到：![TnUlHU](https://cdn.jsdelivr.net/gh/sivanWu0222/ImageHosting@master/uPic/TnUlHU.png)
+
+
+{% note info,  `` %}
+{% note info,  `` %}
+{% note info,  `` %}
+{% note info,  `` %}
+{% note info,  `` %}
+{% note info,  `` %}
+{% note info,  `` %}
+{% note info,  `` %}
+{% note info,  `` %}
+{% note info,  `` %}
+{% note info,  `` %}
+{% note info,  `` %}
+{% note info,  `` %}
+{% note info,  `` %}
+{% note info,  `` %}
+{% note info,  `` %}
+
+
+
+## 消息队列KAFKA安装部署
+
+{% noteblock, `` %}
 
 
 {% endnoteblock %}
 
 
-{% note info,  %}
+{% note info,  `` %}
 
 {% noteblock, 标题（可选） %}
 
@@ -223,3 +420,6 @@ Windows 10不是為所有人設計,而是為每個人設計
 {% folding green, 查看代码测试 %}
 
 {% endfolding %}
+
+
+

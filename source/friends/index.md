@@ -7,15 +7,16 @@ index: true
 {% site 飞雪无情, url=https://www.flysnow.org/archives/, screenshot=https://i.loli.net/2020/08/21/VuSwWZ1xAeUHEBC.jpg, avatar=https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png, description=Go各种框架教程等 %}
 {% site 极客兔兔, url=https://geektutu.com/, screenshot=https://i.loli.net/2020/08/21/Vzbu3i8fXs6Nh5Y.jpg, avatar=https://cdn.jsdelivr.net/gh/inkss/common@master/static/web/avatar.jpg, description=golang从零实现系列教程 %}
 {% site 致力于分享Go语言编程, url=https://mojotv.cn/, screenshot=https://cdn.jsdelivr.net/gh/sivanWu0222/ImageHosting@master/uPic/xaBP8n.png, avatar=https://mojotv.cn/assets/image/logo01.png, description=致力于分享Go语言编程 %}
+
+{% site 泫(深圳腾讯音乐), url=https://blog.cugxuan.cn/
+, screenshot=https://cdn.jsdelivr.net/gh/sivanWu0222/ImageHosting@master/uPic/gROkXJ.png, avatar=https://image.cugxuan.cn/avater.jpg, description=本科地大硕士华科大佬 %}
+
 {% endsitegroup %}
 
 ## Golang
 {% sitegroup %}
 
-https://strikefreedom.top/category/revealing-series
-
 {% site 潘建锋, url=https://strikefreedom.top/, screenshot=https://cdn.jsdelivr.net/gh/sivanWu0222/ImageHosting@master/uPic/oWeoS8.png, avatar=https://cdn.jsdelivr.net/gh/sivanWu0222/ImageHosting@master/uPic/G2FuPm.png, description=Golang技术大牛 %}
-
 
 {% site 曹春晖(Go<<语言高级编程>>作者), url=https://github.com/cch123, screenshot=https://cdn.jsdelivr.net/gh/sivanWu0222/ImageHosting@master/uPic/xnYQaG.png, avatar=https://cdn.jsdelivr.net/gh/sivanWu0222/ImageHosting@master/uPic/xYaCT5.png, description=Go夜读中的滴滴大佬 %}
 
@@ -34,7 +35,6 @@ https://strikefreedom.top/category/revealing-series
 {% site jiajun的编程思想, url=https://jiajunhuang.com/
 , screenshot=https://cdn.jsdelivr.net/gh/sivanWu0222/ImageHosting@master/uPic/06azjJ.png, avatar=https://cdn.jsdelivr.net/gh/sivanWu0222/ImageHosting@master/uPic/VVreSj.png, description=, github:%}
 {% endsitegroup %}
-
 
 ### 一些课程推荐
 1. 极客时间的《Go进阶训练营》

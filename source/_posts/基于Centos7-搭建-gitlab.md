@@ -59,7 +59,7 @@ enabled=1
 1. 刚才修改过了 yum 源，因此先重新生成缓存：`yum makecache` {% note info, （此步骤执行时间较长，一般需要 3~5 分钟左右，请耐心等待）%}
 2. 安装 GitLab：：`yum install -y gitlab-ce` {% note info, （此步骤执行时间较长，一般需要 3~5 分钟左右，请耐心等待）%}
 3. 配置 GitLab 的域名（非必需）：打开 `/etc/gitlab/gitlab.rb` 文件，在第 13 行附近找到 `external_url 'http://gitlab.example.com'`，将单引号中的内容改为自己的域名（带上协议头，末尾无斜杠），并按 Ctrl + S 保存。例如：`external_url 'http://work.myteam.com'` 记得将域名通过 A 记录解析到 centos7对应的IP 哦。
-4. 初始化 GitLab：特别重要！使用如下命令初始化 GitLab：`sudo gitlab-ctl reconfigure` {% note info, （此步骤执行时间较长，一般需要 5~10 分钟左右，请耐心等待）%}
+4. 设置完成后使用如下命令重启 GitLab的配置：`sudo gitlab-ctl reconfigure` + 重启gitlab服务`sudo gitlab-ctl restart`{% note info, （此步骤执行时间较长，一般需要 5~10 分钟左右，请耐心等待）%}
 5. 至此，我们已经成功地在 CentOS 7 上搭建了 GitLab。 现在可以在这里（http://centoss7主机ip地址/）访问 GitLab 了。
 {% endfolding %}
 

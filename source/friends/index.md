@@ -32,9 +32,13 @@ index: true
 
 {% site 煎鱼的迷之博客, url=https://eddycjy.com/posts/, screenshot=https://cdn.jsdelivr.net/gh/sivanWu0222/ImageHosting@master/uPic/e25nTV.png, avatar=https://cdn.jsdelivr.net/gh/sivanWu0222/ImageHosting@master/uPic/4XVLYC.png, description=知其然，知其所以然, github: https://github.com/EDDYCJY/blog%}
 
-{% site jiajun的编程思想, url=https://jiajunhuang.com/
-, screenshot=https://cdn.jsdelivr.net/gh/sivanWu0222/ImageHosting@master/uPic/06azjJ.png, avatar=https://cdn.jsdelivr.net/gh/sivanWu0222/ImageHosting@master/uPic/VVreSj.png, description=, github:%}
+{% site jiajun的编程思想, url=https://jiajunhuang.com/, screenshot=https://cdn.jsdelivr.net/gh/sivanWu0222/ImageHosting@master/uPic/06azjJ.png, avatar=https://cdn.jsdelivr.net/gh/sivanWu0222/ImageHosting@master/uPic/VVreSj.png, description=, github:%}
+
+{% site 云原生实验室, url=https://fuckcloudnative.io/, screenshot=https://cdn.jsdelivr.net/gh/sivanWu0222/ImageHosting@master/uPic/ZptGlI.png, avatar=https://fuckcloudnative.io/logo.webp, description=, github:https://github.com/fanux/%}
 {% endsitegroup %}
+
+
+
 
 ### 一些课程推荐
 1. 极客时间的《Go进阶训练营》
@@ -47,9 +51,10 @@ index: true
 
 ### Go杂志
 1. [A journel with go](https://medium.com/a-journey-with-go)
-
+2. [Go101](https://gfw.go101.org/article/operators.html)
 
 ## 书籍
 1. go高级编程
 2. [go语言设计与实现](https://draveness.me/golang/)
 3. go学习笔记
+4. 曹大的go从源码到应用

@@ -17,8 +17,6 @@ tags:
 date: 2021-03-24 21:55:58
 summary:
 ---
-
-
 # gorm的使用
 
 ## 安装
@@ -29,9 +27,6 @@ summary:
 ### 前提
 1. 新建一个数据库gorm_project
 2. 指定使用Utf8编码
-
-
-
 
 ### 数据库连接
 
@@ -264,7 +259,6 @@ func main() {
 
 #### 查询表是否存在
 {% folding green, 对应的代码 %}
-
 
 ```go
 package main
@@ -822,18 +816,13 @@ func main() {
 可以指定外键以及关联字段的名称：`gorm:"many2many:中间表名称;ForeignKey:可以是当前表也可以是另外一个表的主键;AssociationForeignKey:只能是除了ForeignKey的另外一个表的主键"`
 
 注意：如果我们两个model的序号不是Id，而是别的名字，我们要自己加上gorm标签指定是主键
-
 ![kyOGNUPIl7modHW](https://i.loli.net/2021/03/24/kyOGNUPIl7modHW.png)
 
 ## 【一对一操作】增加数据
-
-
 create的时候是会给我们进行一个关联插入的，也就是创建userProfile的时候指定的属性User我们是没有办法确定user的id的值，
 而且我们也没有必要写，因为Gorm插入的时候是会关联插入的，也就是首先会在user_profile中插入一条记录，
 然后再插入user表的一条记录，并将user_profile的id作为新插入user的外键
 {% folding green, 对应的代码 %}
-
-
 ```go
 package main
 

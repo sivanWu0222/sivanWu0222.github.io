@@ -14,18 +14,11 @@ tags:
   - python
 date: 2020-06-08 09:20:05
 ---
-
-
-
 # while
 
 > python除了正常的while 循环，还可以在while循环后带上一个else分支，那么执行流程是怎么样的呢？
 
-
-
 话不多说，上来三段代码：
-
-
 
 - ```python
   # while 循环如果被打断，则不执行else

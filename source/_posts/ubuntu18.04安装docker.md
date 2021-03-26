@@ -51,9 +51,9 @@ date: 2020-09-23 08:41:19
 <!-- more -->
 
 ## docker安装后使用遇到的问题：
-docker 权限问题 `Got permission denied while trying to connect to the Docker daemon socket at 。。。`
+> docker 权限问题 `Got permission denied while trying to connect to the Docker daemon socket at 。。。`
 
-解决方法：通过将当前用户添加到docker用户组可以避免之后的命令使用sudo
+**解决方法：**通过将当前用户添加到docker用户组可以避免之后的命令使用sudo
 {% folding cyan, 查看步骤 %}
 
 1. `sudo groupadd docker` ：添加docker用户组

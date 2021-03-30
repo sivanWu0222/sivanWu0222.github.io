@@ -1,7 +1,7 @@
 ---
 title: 基本数据结构-slice
 author: yirufeng
-pin: true
+pin: false
 toc: true
 mathjax: false
 sidebar:

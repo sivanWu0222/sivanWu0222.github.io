@@ -1,7 +1,7 @@
 ---
 title: go底层汇编学习
 author: yirufeng
-pin: true
+pin: false
 toc: true
 mathjax: false
 sidebar:

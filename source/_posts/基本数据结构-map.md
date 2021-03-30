@@ -1,7 +1,7 @@
 ---
 title: 基本数据结构-map
 author: yirufeng
-pin: true
+pin: false
 toc: true
 mathjax: false
 sidebar:

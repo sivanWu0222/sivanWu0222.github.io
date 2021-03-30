@@ -1,7 +1,7 @@
 ---
 title: Golang中使用gdb调试工具
 author: yirufeng
-pin: true
+pin: false
 toc: true
 mathjax: false
 sidebar:

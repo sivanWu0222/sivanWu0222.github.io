@@ -1,7 +1,7 @@
 ---
 title: gorm学习使用
 author: yirufeng
-pin: true
+pin: false
 toc: true
 mathjax: false
 sidebar:

@@ -1,7 +1,7 @@
 ---
 title: redis知识汇总
 author: yirufeng
-pin: true
+pin: false
 toc: true
 mathjax: false
 sidebar:

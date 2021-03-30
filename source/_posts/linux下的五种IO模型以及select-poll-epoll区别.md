@@ -1,7 +1,7 @@
 ---
 title: linux下的五种网络IO模型以及select/poll/epoll区别
 author: yirufeng
-pin: true
+pin: false
 toc: true
 mathjax: false
 sidebar:

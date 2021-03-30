@@ -1,7 +1,7 @@
 ---
 title: 极客时间-畅聊Go发展和面试
 author: yirufeng
-pin: true
+pin: false
 toc: true
 mathjax: false
 sidebar:

@@ -1,7 +1,7 @@
 ---
 title: Golang-逃逸分析
 author: yirufeng
-pin: true
+pin: false
 toc: true
 mathjax: false
 sidebar:

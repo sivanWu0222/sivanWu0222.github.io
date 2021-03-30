@@ -35,19 +35,21 @@ index: true
 {% site jiajun的编程思想, url=https://jiajunhuang.com/, screenshot=https://cdn.jsdelivr.net/gh/sivanWu0222/ImageHosting@master/uPic/06azjJ.png, avatar=https://cdn.jsdelivr.net/gh/sivanWu0222/ImageHosting@master/uPic/VVreSj.png, description=, github:%}
 
 {% site 云原生实验室, url=https://fuckcloudnative.io/, screenshot=https://cdn.jsdelivr.net/gh/sivanWu0222/ImageHosting@master/uPic/ZptGlI.png, avatar=https://fuckcloudnative.io/logo.webp, description=, github:https://github.com/fanux/%}
+
+
+
 {% endsitegroup %}
-
-
-
 
 ### 一些课程推荐
 1. 极客时间的《Go进阶训练营》
 2. [一些技术团队博客汇总](https://bitseatech.com/t/2302?p=1)
+3. [wego](https://www.yuque.com/wegoer/set/gopher-stickers)
 
 ### 公众号
 1. 码农桃花源
 2. 码洞
 3. 开发内功修炼
+
 
 ### Go杂志
 1. [A journel with go](https://medium.com/a-journey-with-go)

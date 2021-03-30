@@ -1,7 +1,7 @@
 ---
 title: iTeach与广州的羁绊
 author: yirufeng
-pin: true
+pin: false
 toc: true
 mathjax: false
 sidebar:

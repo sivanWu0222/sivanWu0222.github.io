@@ -15,6 +15,7 @@ index: true
 
 ## Golang
 {% sitegroup %}
+{% site 鸟窝大佬(rpcx作者)原百度现微博, url=https://colobu.com/, screenshot=https://cdn.jsdelivr.net/gh/sivanWu0222/ImageHosting@master/uPic/rMXgBx.png, avatar=https://colobu.com/images/logos/golang6.png, description=Golang技术大牛 %}
 
 {% site 潘建锋, url=https://strikefreedom.top/, screenshot=https://cdn.jsdelivr.net/gh/sivanWu0222/ImageHosting@master/uPic/oWeoS8.png, avatar=https://cdn.jsdelivr.net/gh/sivanWu0222/ImageHosting@master/uPic/G2FuPm.png, description=Golang技术大牛 %}
 

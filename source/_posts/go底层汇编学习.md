@@ -6,7 +6,7 @@ toc: true
 mathjax: false
 sidebar:
   - blogger
-  - webinfo
+  - webinfos
   - tagcloud
   - category
 categories:

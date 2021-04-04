@@ -63,7 +63,7 @@ yum remove git
 1. `cd /usr/local/`
 2. `mkdir java`
 3. `cd java`
-4. `tar -zxvf /root/jdk-8u161-linux-x64.tar.gz -C ./` %}
+4. `tar -zxvf /root/jdk-8u161-linux-x64.tar.gz -C ./`
 5. 编辑`/etc/profile`⽂件，在⽂件尾部加⼊如下JDK环境配置即可：
 ```shell
 JAVA_HOME=/usr/local/java/jdk1.8.0_161 
@@ -103,12 +103,13 @@ export PATH=/usr/local/node/node-v12.16.3-linux-x64/bin:$PATH
 
 1. 执行`tar zxvf Python-3.8.3.tgz`，则可以在当前⽬录得到⽂件夹：Python-3.8.3
 2. 安装相关预备环境：`yum install zlib-devel bzip2-devel openssl-devel ncurses-devel sqlite-devel readline-devel tk-devel gcc make`
-3. 编译并安装：等安装过程完毕，`/usr/local/python3` ⽬录就会⽣成了
+3. 编译并安装：
 ```shell
 cd Python-3.8.3/
 ./configure prefix=/usr/local/python3
 make && make install
 ```
+等安装过程完毕，`/usr/local/python3` ⽬录就会⽣成了
 4. 我们还需要将刚刚安装⽣成的⽬录`/usr/local/python3`⾥的python3可执⾏⽂件做⼀份软链接，链接到`/usr/bin`下，⽅便后续使⽤python3
 ```shell
 ln -s /usr/local/python3/bin/python3 /usr/bin/python3 
@@ -155,7 +156,7 @@ export PATH=$MAVEN_HOME/bin:$PATH
 4. `mv mysql-5.7.30-linux-glibc2.12-x86_64 mysql`
 5. 创建MYSQL⽤户和⽤户组：`groupadd mysql` 和 `useradd -g mysql mysql`
 6. 修改MYSQL⽬录的归属⽤户：`chown -R mysql:mysql ./`
-7. 准备mysql的配置文件：
+7. 准备mysql的配置文件：在`/etc`⽬录下新建`my.cnf`⽂件
 ```
 [mysql] 
 # 设置mysql客户端默认字符集 
@@ -202,14 +203,18 @@ datadir=/usr/local/mysql/data
   1. `mysql -u root -p` 之后键入我们上面保存的密码
   2. 进入mysql命令行：执行如下命令更换密码：⽐如这⾥将密码设置成简单的“111111”了。
     ```
-    mysql>alter user user() identified by "111111"; mysql>flush privileges;
+    mysql>alter user user() identified by "111111"; 
+    mysql>flush privileges;
     ```
 17. 设置主机远程登陆：
 ```
 mysql> use mysql; 
-mysql> update user set user.Host='%' where user.User='root'; mysql> flush privileges;
+mysql> update user set user.Host='%' where user.User='root'; 
+mysql> flush privileges;
 ```
 18. 最后利⽤NAVICAT等⼯具进⾏测试即可：![uFYbgl](https://cdn.jsdelivr.net/gh/sivanWu0222/ImageHosting@master/uPic/uFYbgl.png)
+
+注意：如果在最后的navicat工具连接不上自己的虚拟机，请确保防火墙关闭。
 
 
 {% endfolding %}
@@ -227,14 +232,14 @@ mysql> update user set user.Host='%' where user.User='root'; mysql> flush privil
 7. `cd utils/`
 8. `./install_server.sh`：全部选择默认配置即可(直接回车)：![c55LQP](https://cdn.jsdelivr.net/gh/sivanWu0222/ImageHosting@master/uPic/c55LQP.png)
 9. 查看状态：`systemctl status redis_6379.service` 得到如下图中的结果![dkA27L](https://cdn.jsdelivr.net/gh/sivanWu0222/ImageHosting@master/uPic/dkA27L.png)
-10. `redis-server`
-11. `redis-cli`
-12. `vim /etc/redis/6379.conf`
-  - 设置允许远程连接：将`bind 127.0.0.1`修改为`0.0.0.0`
+10. `redis-cli` 
+11. `vim /etc/redis/6379.conf`
+  - 设置允许远程连接：将`bind 127.0.0.1`修改为`bind 0.0.0.0`
+  - 重启redis服务：`systemctl restart redis_6379.service`
   - 设置访问密码：将`#requirepass foobared`修改为`requirepass 你想设置的密码`
   - 重启redis服务：`systemctl restart redis_6379.service`
   - 执行`redis-cli`
-13. 之后redis客户端执行命令都需要访问密码，使用`auth 我们设置的redis密码`
+12. 之后redis客户端执行命令都需要访问密码，使用`auth 我们设置的redis密码`
 
 {% endfolding %}
 
@@ -281,7 +286,7 @@ yum -y remove rabbitmq-server.noarch
 6. `./startup.sh` ，访问`主机ip地址:8080`得到下图的网页内容：![gpjAfM](https://cdn.jsdelivr.net/gh/sivanWu0222/ImageHosting@master/uPic/gpjAfM.png)
 7. `cd /etc/rc.d/init.d/`
 8. `touch tomcat`
-9. `chmod +x tomcat`，键入如下内容：
+9. `chmod +x tomcat`，接下来编辑`tomcat`文件并键入如下内容：
 ```
 #!/bin/bash 
 #chkconfig:- 20 90 
@@ -359,29 +364,34 @@ esac
 6. `mkdir data`
 7. `cd conf/`
 8. `cp zoo_sample.cfg zoo.cfg`
-9. `sudo vim zoo.cfg`：修改配置⽂件`zoo.cfg`，将其中的dataDir修改为上⾯刚创建的data⽬录。
+9. `sudo vim zoo.cfg`：修改配置⽂件`zoo.cfg`，将其中的dataDir(`/usr/local/zookeeper/apache-zookeeper-3.6.1-bin/data`)修改为上⾯刚创建的data⽬录。
 10. `cd ..`
-11. `./bin/zkServer.sh start`
-12. `./bin/zkServer.sh status`
+11. `./bin/zkServer.sh start` 
+12. `./bin/zkServer.sh status` 显示的结果如下：![CBPjNm](https://cdn.jsdelivr.net/gh/sivanWu0222/ImageHosting@master/uPic/CBPjNm.png) **因为我们安装的是3.6.1的版本(在3.5.5版本及以上，Zookeeper 提供了一个内嵌的Jetty容器来运行 AdminServer，默认占用的是 8080端口，AdminServer 主要是来查看 Zookeeper 的一些状态，如果机器上有其他程序（比如：Tomcat）占用了 8080 端口，也会导致 Starting zookeeper … FAILED TO START 的问题。)：如果出现Starting zookeeper ... FAILED TO START，请在我们刚才的zoo.cfg配置文件最后添加配置项，修改后重启即可：**
+```
+# admin port
+admin.serverPort=9000
+```
 13. `vim /etc/profile` ，尾部加入zookeeper的bin路径配置即可：
 ```
 export ZOOKEEPER_HOME=/usr/local/zookeeper/apache-zookeeper-3.6.1-bin 
 export PATH=$PATH:$ZOOKEEPER_HOME/bin
 ```
 14. `source /etc/profile`
-15. 进入目录：note info,  `cd /etc/rc.d/init.d`，创建文件，并赋予执行权限，`touch zookeeper`与`chmod +x zookeeper`
+15. 进入目录：`cd /etc/rc.d/init.d`，创建文件，并赋予执行权限，`touch zookeeper`与`chmod +x zookeeper`
 16. 编辑zookeeper文件`vim zookeeper`：
 ```
 #!/bin/bash 
-#chkconfig:- 20 90 
-#description:zookeeper 
-#processname:zookeeper 
+#chkconfig: - 20 90 
+#description: zookeeper 
+#processname: zookeeper 
 ZOOKEEPER_HOME=/usr/local/zookeeper/apache-zookeeper-3.6.1-bin 
 export JAVA_HOME=/usr/local/java/jdk1.8.0_161 # 此处根据你的实际情况更换对 应 
 case $1 in
   start) su root $ZOOKEEPER_HOME/bin/zkServer.sh start;; stop) su root $ZOOKEEPER_HOME/bin/zkServer.sh stop;; status) su root $ZOOKEEPER_HOME/bin/zkServer.sh status;; restart) su root $ZOOKEEPER_HOME/bin/zkServer.sh restart;; *) echo "require start|stop|status|restart" ;;
 esac
-```
+``` 
+注意：如果出现`service zookeeper does not support chkconfig`说明我们这个zookeeper文件没写对，重新检查是否和上面的内容一致。
 17. 最后加入开启启动即可：`chkconfig --add zookeeper` 和 `chkconfig zookeeper on`
 {% endfolding %}
 
@@ -398,13 +408,13 @@ esac
 5. `cd /usr/local/kafka/kafka_2.12-2.5.0`
 6. `mkdir logs`
 7. `cd config/`
-8. 修改配置⽂件，⼀是将其中的`log.dirs`修改为上⾯刚创建的logs⽬录，其他选项可以按需配置`vim server.properties`
+8. 修改配置⽂件`server.properties`，⼀是将其中的`log.dirs`修改为上⾯刚创建的logs⽬录，其他选项可以按需配置`vim server.properties`
 9. 另外关注⼀下连接ZooKeeper的相关配置，根据实际情况进⾏配置：![anf5Xj](https://cdn.jsdelivr.net/gh/sivanWu0222/ImageHosting@master/uPic/anf5Xj.png)
-10. 启动kafka：{`./bin/kafka-server-start.sh ./config/server.properties`。如果需要后台启动，则加上`-daemon`参数即可，也就是执行命令：`./bin/kafka-server-start.sh -daemon ./config/server.properties`
+10. 启动kafka：在kafka根目录下执行`./bin/kafka-server-start.sh ./config/server.properties` 或者如果需要后台启动，则加上`-daemon`参数即可，也就是执行命令：`./bin/kafka-server-start.sh -daemon ./config/server.properties`
 11. ⾸先创建⼀个名为codesheep的topic：`./bin/kafka-topics.sh --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1 --topic codesheep` ![u4xtBh](https://cdn.jsdelivr.net/gh/sivanWu0222/ImageHosting@master/uPic/u4xtBh.png)
   - 创建完成以后，可以使⽤命令来列出⽬前已有的topic列表
   - 接下来创建⼀个⽣产者，⽤于在codesheep这个topic上⽣产消息：`./bin/kafka-console-producer.sh --bootstrap-server localhost:9092 --topic codesheep`
-  - ⽽后接着创建⼀个消费者，⽤于在codesheep这个topic上获取消息：`./bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic codesheep`
+  - ⽽后**在另外一个终端**创建⼀个消费者，⽤于在codesheep这个topic上获取消息：`./bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic codesheep`
   - 此时⽣产者发出的消息，在消费者端可以获取到：![TnUlHU](https://cdn.jsdelivr.net/gh/sivanWu0222/ImageHosting@master/uPic/TnUlHU.png)
 
 {% endfolding %}

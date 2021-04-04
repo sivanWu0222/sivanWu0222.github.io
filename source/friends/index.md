@@ -3,13 +3,17 @@ title: 我的朋友们 # 可选，这是友链页的标题
 layout: friends
 index: true
 ---
+
+
+## 一些技术大牛或团队
 {% sitegroup %}
 {% site 飞雪无情, url=https://www.flysnow.org/archives/, screenshot=https://i.loli.net/2020/08/21/VuSwWZ1xAeUHEBC.jpg, avatar=https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png, description=Go各种框架教程等 %}
 {% site 极客兔兔, url=https://geektutu.com/, screenshot=https://i.loli.net/2020/08/21/Vzbu3i8fXs6Nh5Y.jpg, avatar=https://cdn.jsdelivr.net/gh/inkss/common@master/static/web/avatar.jpg, description=golang从零实现系列教程 %}
 {% site 致力于分享Go语言编程, url=https://mojotv.cn/, screenshot=https://cdn.jsdelivr.net/gh/sivanWu0222/ImageHosting@master/uPic/xaBP8n.png, avatar=https://mojotv.cn/assets/image/logo01.png, description=致力于分享Go语言编程 %}
 
-{% site 泫(深圳腾讯音乐), url=https://blog.cugxuan.cn/
-, screenshot=https://cdn.jsdelivr.net/gh/sivanWu0222/ImageHosting@master/uPic/gROkXJ.png, avatar=https://image.cugxuan.cn/avater.jpg, description=本科地大硕士华科大佬 %}
+{% site 泫(深圳腾讯音乐), url=https://blog.cugxuan.cn/, screenshot=https://cdn.jsdelivr.net/gh/sivanWu0222/ImageHosting@master/uPic/gROkXJ.png, avatar=https://image.cugxuan.cn/avater.jpg, description=本科地大硕士华科大佬 %}
+
+{% site 美团技术团队, url=https://tech.meituan.com/, screenshot=https://cdn.jsdelivr.net/gh/sivanWu0222/ImageHosting@master/uPic/oOZmdm.png, avatar=https://cdn.jsdelivr.net/gh/sivanWu0222/ImageHosting@master/uPic/4VfVoN.png, description=美团技术团队 %}
 
 {% endsitegroup %}
 

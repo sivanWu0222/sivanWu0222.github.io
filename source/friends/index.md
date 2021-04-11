@@ -11,11 +11,14 @@ index: true
 {% site 极客兔兔, url=https://geektutu.com/, screenshot=https://i.loli.net/2020/08/21/Vzbu3i8fXs6Nh5Y.jpg, avatar=https://cdn.jsdelivr.net/gh/inkss/common@master/static/web/avatar.jpg, description=golang从零实现系列教程 %}
 {% site 致力于分享Go语言编程, url=https://mojotv.cn/, screenshot=https://cdn.jsdelivr.net/gh/sivanWu0222/ImageHosting@master/uPic/xaBP8n.png, avatar=https://mojotv.cn/assets/image/logo01.png, description=致力于分享Go语言编程 %}
 
-{% site 泫(深圳腾讯音乐), url=https://blog.cugxuan.cn/, screenshot=https://cdn.jsdelivr.net/gh/sivanWu0222/ImageHosting@master/uPic/gROkXJ.png, avatar=https://image.cugxuan.cn/avater.jpg, description=本科地大硕士华科大佬 %}
 
 {% site 美团技术团队, url=https://tech.meituan.com/, screenshot=https://cdn.jsdelivr.net/gh/sivanWu0222/ImageHosting@master/uPic/oOZmdm.png, avatar=https://cdn.jsdelivr.net/gh/sivanWu0222/ImageHosting@master/uPic/4VfVoN.png, description=美团技术团队 %}
 
+{% site 阿里云RDS-数据库内核组, url=http://mysql.taobao.org/monthly/, screenshot=https://cdn.jsdelivr.net/gh/sivanWu0222/ImageHosting@master/uPic/FgOWpO.png, avatar=, description=阿里云RDS-数据库内核组 %}
+
 {% endsitegroup %}
+
+
 
 ## Golang
 {% sitegroup %}
@@ -23,7 +26,7 @@ index: true
 
 {% site 潘建锋, url=https://strikefreedom.top/, screenshot=https://cdn.jsdelivr.net/gh/sivanWu0222/ImageHosting@master/uPic/oWeoS8.png, avatar=https://cdn.jsdelivr.net/gh/sivanWu0222/ImageHosting@master/uPic/G2FuPm.png, description=Golang技术大牛 %}
 
-{% site 曹春晖(Go<<语言高级编程>>作者), url=https://github.com/cch123, screenshot=https://cdn.jsdelivr.net/gh/sivanWu0222/ImageHosting@master/uPic/xnYQaG.png, avatar=https://cdn.jsdelivr.net/gh/sivanWu0222/ImageHosting@master/uPic/xYaCT5.png, description=Go夜读中的滴滴大佬 %}
+{% site 曹春晖(Go<<语言高级编程>>作者), url=https://xargin.com/, screenshot=https://cdn.jsdelivr.net/gh/sivanWu0222/ImageHosting@master/uPic/xnYQaG.png, avatar=https://cdn.jsdelivr.net/gh/sivanWu0222/ImageHosting@master/uPic/xYaCT5.png, description=Go夜读中的滴滴大佬, github: https://github.com/cch123 %}
 
 {% site 柴树杉晖(《Go语言高级编程》《Go语法树入门》《WebAssembly标准入门》作者), url=https://github.com/chai2010, screenshot=https://cdn.jsdelivr.net/gh/sivanWu0222/ImageHosting@master/uPic/J9cDhD.png, avatar=https://cdn.jsdelivr.net/gh/sivanWu0222/ImageHosting@master/uPic/J4ralm.png, description=蚂蚁杭州（云原生工程系统） %}
 
@@ -39,7 +42,14 @@ index: true
 
 {% site jiajun的编程思想, url=https://jiajunhuang.com/, screenshot=https://cdn.jsdelivr.net/gh/sivanWu0222/ImageHosting@master/uPic/06azjJ.png, avatar=https://cdn.jsdelivr.net/gh/sivanWu0222/ImageHosting@master/uPic/VVreSj.png, description=, github:%}
 
-{% site 云原生实验室, url=https://fuckcloudnative.io/, screenshot=https://cdn.jsdelivr.net/gh/sivanWu0222/ImageHosting@master/uPic/ZptGlI.png, avatar=https://fuckcloudnative.io/logo.webp, description=, github:https://github.com/fanux/%}
+{% site 云原生实验室, url=https://fuckcloudnative.io/, screenshot=https://cdn.jsdelivr.net/gh/sivanWu0222/ImageHosting@master/uPic/ZptGlI.png, avatar=https://fuckcloudnative.io/logo.webp, description=, github:https://github.com/fanux/ %}
+
+{% site CloudNative 架构, url=http://team.jiunile.com/, screenshot=https://cdn.jsdelivr.net/gh/sivanWu0222/ImageHosting@master/uPic/W1mJKa.png, avatar=, description=%}
+
+{% site mohuishou, url=https://lailin.xyz/, screenshot=https://cdn.jsdelivr.net/gh/sivanWu0222/ImageHosting@master/uPic/GGlenY.png, avatar=https://avatars.githubusercontent.com/u/15172509?v=4, description=, github:https://github.com/mohuishou %}
+
+
+{% site 泫(深圳腾讯音乐), url=https://blog.cugxuan.cn/, screenshot=https://cdn.jsdelivr.net/gh/sivanWu0222/ImageHosting@master/uPic/gROkXJ.png, avatar=https://image.cugxuan.cn/avater.jpg, description=本科地大硕士华科大佬 %}
 
 
 

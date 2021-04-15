@@ -418,7 +418,7 @@ sidebar:
           text: '本站总字数：'   # 需要启用 wordcount
           unit: '字'
         visitcounter:
-          service: leancloud  # busuanzi, leancloud
+          service: busuanzi  # busuanzi, leancloud
           siteuv:
             enable: true
             text: '本站访客数：'
@@ -460,7 +460,7 @@ site_footer:
   # layout of footer: [aplayer, social, license, info, copyright]
   layout: [analytics, copyright]
   social:
-    - icon: fas fa-qq red
+    - icon: fas fa-qq 
       url: www.github.com/sivanWu0222
     # or
     # - img:
@@ -475,7 +475,7 @@ site_footer:
     <span id="lc-sv">本站总访问量为 <span id='number'><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 次</span>
     <span id="lc-uv">访客数为 <span id='number'><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 人</span>
   # site copyright
-  copyright: '[Copyright © 2016-2020 yirufeng](/)'
+  copyright: '[Copyright © 2016-2021 yirufeng](/)'
   # You can add your own property here. (Support markdown, for example: br: '<br>')
   br: '<br>'
 ############################### Site Footer ############################### > end
@@ -891,9 +891,9 @@ custom_css:
 ############################### Analytics ############################### > start
 analytics:
   busuanzi: https://cdn.jsdelivr.net/gh/volantis-x/cdn-busuanzi@2.3/js/busuanzi.pure.mini.js
-  leancloud: # 请使用自己的 id & key 以防止数据丢失
-    app_id: K2RVtHi7RnmoN6dovlDKafn8-gzGzoHsz
-    app_key: Qxmil0oqPFdDUyyIp2i1Xikt
+  # leancloud: # 请使用自己的 id & key 以防止数据丢失
+    # app_id: K2RVtHi7RnmoN6dovlDKafn8-gzGzoHsz
+    # app_key: Qxmil0oqPFdDUyyIp2i1Xikt
     # custom_api_server: # 国际版一般不需要写，除非自定义了 API Server
 ############################### Analytics ############################### > end
 

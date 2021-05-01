@@ -28,6 +28,9 @@ index: true
 
 {% site 曹春晖(Go<<语言高级编程>>作者), url=https://xargin.com/, screenshot=https://cdn.jsdelivr.net/gh/sivanWu0222/ImageHosting@master/uPic/xnYQaG.png, avatar=https://cdn.jsdelivr.net/gh/sivanWu0222/ImageHosting@master/uPic/xYaCT5.png, description=Go夜读中的滴滴大佬, github: https://github.com/cch123 %}
 
+
+
+
 {% site 柴树杉晖(《Go语言高级编程》《Go语法树入门》《WebAssembly标准入门》作者), url=https://github.com/chai2010, screenshot=https://cdn.jsdelivr.net/gh/sivanWu0222/ImageHosting@master/uPic/J9cDhD.png, avatar=https://cdn.jsdelivr.net/gh/sivanWu0222/ImageHosting@master/uPic/J4ralm.png, description=蚂蚁杭州（云原生工程系统） %}
 
 
@@ -67,7 +70,7 @@ index: true
 1. 码农桃花源
 2. 码洞
 3. 开发内功修炼
-4. TechPaper
+4. TechPaper(曹大的微信公众号，曹大的博客：https://xargin.com/)
 
 
 ### Go杂志

@@ -198,16 +198,16 @@ valine:
 ![yFtivi](https://cdn.jsdelivr.net/gh/sivanWu0222/ImageHosting@master/uPic/yFtivi.png)
 {% endtimenode %}
 {% timenode  %}
-
+愿你历尽千帆，终能得偿所愿。
 {% endtimenode %}
 {% timenode  %}
-
+如果我走到人生十字路口，我知道哪条路是对的， 毫无例外，我就知道，但我从不走，为什么？因为妈的太苦了。
 {% endtimenode %}
 {% timenode  %}
-
+别让别人告诉你，你成不了才。如果你有梦想的话，就要去捍卫它。
 {% endtimenode %}
 {% timenode  %}
-
+把手握紧，厚积薄发，你，只有付出，付出你的时间，赌上你的尊严，拿出你的全部，当别人打游戏时你在学习，当别人睡懒觉时你在学习，你含着泪在深夜里舞蹈，在回忆里奔跑，没有人在年少时想成为一个普通人。尽管生活，它会剥夺你的所爱践踏你的尊严，把你踩在脚下遍体鳞伤，但你怎能倒下？但你身后是你的挚爱，那些曾受过的伤，都是你送给未来自己最好的礼物。
 {% endtimenode %}
 {% timenode  %}
 

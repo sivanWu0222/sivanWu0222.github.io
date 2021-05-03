@@ -10,8 +10,6 @@ index: true
 {% site 飞雪无情, url=https://www.flysnow.org/archives/, screenshot=https://i.loli.net/2020/08/21/VuSwWZ1xAeUHEBC.jpg, avatar=https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png, description=Go各种框架教程等 %}
 {% site 极客兔兔, url=https://geektutu.com/, screenshot=https://i.loli.net/2020/08/21/Vzbu3i8fXs6Nh5Y.jpg, avatar=https://cdn.jsdelivr.net/gh/inkss/common@master/static/web/avatar.jpg, description=golang从零实现系列教程 %}
 {% site 致力于分享Go语言编程, url=https://mojotv.cn/, screenshot=https://cdn.jsdelivr.net/gh/sivanWu0222/ImageHosting@master/uPic/xaBP8n.png, avatar=https://mojotv.cn/assets/image/logo01.png, description=致力于分享Go语言编程 %}
-
-
 {% site 美团技术团队, url=https://tech.meituan.com/, screenshot=https://cdn.jsdelivr.net/gh/sivanWu0222/ImageHosting@master/uPic/oOZmdm.png, avatar=https://cdn.jsdelivr.net/gh/sivanWu0222/ImageHosting@master/uPic/4VfVoN.png, description=美团技术团队 %}
 
 {% site 阿里云RDS-数据库内核组, url=http://mysql.taobao.org/monthly/, screenshot=https://cdn.jsdelivr.net/gh/sivanWu0222/ImageHosting@master/uPic/FgOWpO.png, avatar=, description=阿里云RDS-数据库内核组 %}
@@ -73,6 +71,9 @@ index: true
 4. TechPaper(曹大的微信公众号，曹大的博客：https://xargin.com/)
 
 
+### bilibili_up主推荐
+1. go夜读
+
 ### Go杂志
 1. [A journel with go](https://medium.com/a-journey-with-go)
 2. [Go101](https://gfw.go101.org/article/operators.html)
@@ -84,3 +85,4 @@ index: true
 4. 曹大的go从源码到应用
 5. [《Go入门指南》](https://github.com/unknwon/the-way-to-go_ZH_CN)
 5. 无闻老师的课程：https://study.163.com/course/courseLearn.htm?courseId=306002#/learn/video?lessonId=421024&courseId=306002
+6. [Go101](https://github.com/golang101/golang101)

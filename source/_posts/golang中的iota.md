@@ -16,9 +16,9 @@ summary: golang中关于iota的用法
 
 
 
-{% note info, note info 经常有面试官甩出个const以及iota的面试题 %}
+{% note info, 经常有面试官甩出个const以及iota的面试题 %}
 
-如下便是国内某公司的面试题：
+> 如下便是国内某公司的面试题：
 {% folding green, 回答输出结果 %}
 ```go
 package main
@@ -67,15 +67,15 @@ func main() {
 2. 所有注释行和空行全部忽略：
    1. 注意：`_` 并不是一个空行，它是一个省略了标识符也省略了表达式的常量定义，这一点你需要清楚，不要大意。
 3. 没有表达式的常量定义复用上一行的表达式：例如如下的代码，j中没有写表达式，那么j是复用上一行表达式的即`j = iota`，但此时iota的值会为2
-   ```go
-   const (
-     i = iota
-     j
-   )
-   ```
+  ```go
+  const (
+    i = iota
+    j
+  )
+  ```
 4. 从第一行开始，iota 从 0 逐行加一：也就是说赋值表达式里无论是否引用了 iota，也无论引用了多少次，iota 的都会从常量定义块的第一行（注意这里不计空行和注释）开始计数，从 0 开始，逐行加一，例如上面代码
-   ```go
-   const (
+  ```go
+  const (
     i = 7   //iota = 1
     j       //iota = 2
     k       //iota = 3
@@ -89,7 +89,7 @@ func main() {
     n       //iota = 5
     o       //iota = 6
   )
-   ```
+  ```
 5. 替换所有 iota：直接将表达式中的iota全部替换为我们上一步写出的值即可
 {% endnoteblock %}
 

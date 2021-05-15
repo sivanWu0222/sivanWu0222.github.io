@@ -15,10 +15,41 @@ date: 2099-09-15 19:43:00
 
 
 
-[文章头部frot-matter编写参考](https://xaoxuu.com/wiki/volantis/page-settings/front-matter/)
+[文章头部frot-matter编写参考](https://volantis.js.org/v5/page-settings/)
 
 
-所有样式来源于：https://xaoxuu.com/wiki/volantis/tag-plugins/
+所有样式来源于：https://volantis.js.org/v5/tag-plugins/
+
+
+## text
+带 {% u 下划线 %} 的文本；带 {% emp 着重号 %} 的文本；带 {% wavy 波浪线 %} 的文本；带 {% del 删除线 %} 的文本
+
+键盘样式的文本：{% kbd ⌘ %} + {% kbd D %}
+
+密码样式的文本：{% psw 这里没有验证码 %}
+
+## span
+
+各种颜色的标签，包括：{% span red, 红色 %}、{% span yellow, 黄色 %}、{% span green, 绿色 %}、{% span cyan, 青色 %}、{% span blue, 蓝色 %}、{% span gray, 灰色 %}。
+
+超大号文字：
+
+{% span center logo large, Volantis %} {% span center small, A Wonderful Theme for Hexo %}
+
+## p
+
+{% p red, 红色 %}
+{% p yellow, 黄色 %}
+{% p green, 绿色 %}
+{% p cyan, 青色 %}
+{% p blue, 蓝色 %}
+{% p gray, 灰色 %}
+
+{% p center logo large, Volantis %}
+{% p center small, A Wonderful Theme for Hexo %}
+
+## note
+{% note 样式参数, 文本内容 %}
 
 ## issue标签
 [参考](https://xaoxuu.com/wiki/volantis/tag-plugins/issues/)
@@ -57,18 +88,18 @@ date: 2099-09-15 19:43:00
 
 ## github卡片标签
 
-| {% ghcard xaoxuu %} | {% ghcard xaoxuu, theme=vue %} |
-| -- | -- |
-| {% ghcard xaoxuu, theme=buefy %} | {% ghcard xaoxuu, theme=solarized-light %} |
-| {% ghcard xaoxuu, theme=onedark %} | {% ghcard xaoxuu, theme=solarized-dark %} |
-| {% ghcard xaoxuu, theme=algolia %} | {% ghcard xaoxuu, theme=calm %} |
+| {% ghcard xaoxuu %}                | {% ghcard xaoxuu, theme=vue %}             |
+| ---------------------------------- | ------------------------------------------ |
+| {% ghcard xaoxuu, theme=buefy %}   | {% ghcard xaoxuu, theme=solarized-light %} |
+| {% ghcard xaoxuu, theme=onedark %} | {% ghcard xaoxuu, theme=solarized-dark %}  |
+| {% ghcard xaoxuu, theme=algolia %} | {% ghcard xaoxuu, theme=calm %}            |
 
 
-| {% ghcard volantis-x/hexo-theme-volantis %} | {% ghcard volantis-x/hexo-theme-volantis, theme=vue %} |
-| -- | -- |
-| {% ghcard volantis-x/hexo-theme-volantis, theme=buefy %} | {% ghcard volantis-x/hexo-theme-volantis, theme=solarized-light %} |
-| {% ghcard volantis-x/hexo-theme-volantis, theme=onedark %} | {% ghcard volantis-x/hexo-theme-volantis, theme=solarized-dark %} |
-| {% ghcard volantis-x/hexo-theme-volantis, theme=algolia %} | {% ghcard volantis-x/hexo-theme-volantis, theme=calm %} |
+| {% ghcard volantis-x/hexo-theme-volantis %}                | {% ghcard volantis-x/hexo-theme-volantis, theme=vue %}             |
+| ---------------------------------------------------------- | ------------------------------------------------------------------ |
+| {% ghcard volantis-x/hexo-theme-volantis, theme=buefy %}   | {% ghcard volantis-x/hexo-theme-volantis, theme=solarized-light %} |
+| {% ghcard volantis-x/hexo-theme-volantis, theme=onedark %} | {% ghcard volantis-x/hexo-theme-volantis, theme=solarized-dark %}  |
+| {% ghcard volantis-x/hexo-theme-volantis, theme=algolia %} | {% ghcard volantis-x/hexo-theme-volantis, theme=calm %}            |
 
 ## 分栏标签
 

@@ -20,13 +20,59 @@ date: 2021-05-12 16:22:25
 summary:
 ---
 
-> 本环境基于Macos搭建
+> 本环境基于Macos搭建，运行的go版本是1.14.11，由于原先使用的1.15.5依赖包对应版本不存在或冲突修改后无法解决，所以只能修改go版本
+
+
+# 沈逸老师go-micro搭建环境
+
+
+## 搭建成功使用命令:
+1. `go get github.com/micro/go-micro/v2`
+2. `go get github.com/micro/go-plugins/registry/consul/v2`
+
+参考：https://segmentfault.com/a/1190000023529475
+
+## 搭建过程中遇到的问题：
+
+```go
+# github.com/coreos/etcd/clientv3/balancer/resolver/endpoint
+../../../../../go/pkg/mod/github.com/coreos/etcd@v3.3.25+incompatible/clientv3/balancer/resolver/endpoint/endpoint.go:114:78: undefined: resolver.BuildOption
+../../../../../go/pkg/mod/github.com/coreos/etcd@v3.3.25+incompatible/clientv3/balancer/resolver/endpoint/endpoint.go:182:31: undefined: resolver.ResolveNowOption
+# github.com/coreos/etcd/clientv3/balancer/picker
+../../../../../go/pkg/mod/github.com/coreos/etcd@v3.3.25+incompatible/clientv3/balancer/picker/err.go:37:44: undefined: balancer.PickOptions
+../../../../../go/pkg/mod/github.com/coreos/etcd@v3.3.25+incompatible/clientv3/balancer/picker/roundrobin_balanced.go:55:54: undefined: balancer.PickOptions
+# github.com/micro/go-micro/transport/quic
+../../../../../go/pkg/mod/github.com/micro/go-micro@v1.18.0/transport/quic/quic.go:54:12: q.s.Close undefined (type quic.Session has no field or method Close)
+../../../../../go/pkg/mod/github.com/micro/go-micro@v1.18.0/transport/quic/quic.go:121:3: unknown field 'IdleTimeout' in struct literal of type quic.Config
+```
+
+解决办法：go.mod文件夹中加上下面两句话
+```
+replace google.golang.org/grpc => google.golang.org/grpc v1.26.0
+replace github.com/lucas-clemente/quic-go => github.com/lucas-clemente/quic-go v0.14.1
+```
+参考：
+1. https://github.com/etcd-io/etcd/issues/12124#issuecomment-674368288
+2. https://github.com/etcd-io/etcd/issues/11931
+3. https://www.codenong.com/cs109250534/
+4. 推荐：https://studygolang.com/articles/32791
+
+
+遇到的问题2：`panic: qtls.ConnectionState not compatible with tls.ConnectionState`
+
+最后以上的问题都采用一种策略，删除原有go版本并且下载go1.14.11版本得到了解决，之后执行命令`go get -u github.com/micro/go-micro`
+就是go的版本不要使用go1.15
+
+# 租房网搭建环境：
+
+
 ## 前言
 > 如果网速很慢，经常io timeout，可以执行如下两条命令：
 ```shell
 go env -w GO111MODULE=on
 go env -w GOPROXY=https://goproxy.cn,direct
 ```
+
 
 ## 安装protoc
 1. [下载可执行文件](https://github.com/protocolbuffers/protobuf/releases)
@@ -120,6 +166,10 @@ import (
 micro version 2.0.0
 ```
 
+### 方法三：直接下载二进制文件
+1. 点击[下载地址](https://github.com/micro/micro/releases/tag/v2.0.0)进行下载
+2. 将我们的`micro`可执行程序移动到`/usr/local/bin/`
+
 <!-- more -->
 
 ## consul环境搭建
@@ -162,7 +212,57 @@ export PATH=$PATH:$GOPATH/bin:$HOME/Library/consul
 3. [docker安装consul集群](https://www.jianshu.com/p/0fe826b7017f)
 
 
+## 遇到的问题
+1. ![uFB8I0](https://cdn.jsdelivr.net/gh/sivanWu0222/ImageHosting@master/uPic/uFB8I0.png)：[参考解决方案](https://stackoverflow.com/questions/39665379/fully-qualified-import-path-in-auto-generated-code)
+自己是在goland中新建一个Proto文件夹并编写了一个新的proto文件测试发现可以通过
+
 
 ## References
 1. [macOS配置Go Micro开发环境](https://zhuanlan.zhihu.com/p/104488946?hmsr=toutiao.io)
 
+
+
+
+
+
+
+
+"""
+画图：
+
+打平的图
+
+横坐标的每一个值都是一个三元组，
+    三元组的第1个值代表第1个通道的bin的内容，
+
+一个是整体的图，所有图片的像素三元组都在这个线上
+    bin=4：画出四条线：HSV,HLS,YUV,YCrCb
+    bin=8：画出四条线：HSV,HLS,YUV,YCrCb
+    bin=16：画出四条线：HSV,HLS,YUV,YCrCb
+    bin=32：画出四条线：HSV,HLS,YUV,YCrCb
+    bin=64：画出四条线：HSV,HLS,YUV,YCrCb
+
+另外几个是有bin分组的图:
+    bin=4：画一个图，三条线的内容如下
+        好图：
+        普通：
+        效果不好：
+    bin=8：画一个图，三条线的内容如下
+        好图：
+        普通：
+        效果不好：
+    bin=16：画一个图，三条线的内容如下
+        好图：
+        普通：
+        效果不好：
+    bin=32：画一个图，三条线的内容如下
+        好图：
+        普通：
+        效果不好
+    bin=64：画一个图，三条线的内容如下
+        好图：
+        普通：
+        效果不好
+
+一共画10个图
+"""

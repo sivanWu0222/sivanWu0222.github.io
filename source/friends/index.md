@@ -26,9 +26,6 @@ index: true
 
 {% site 曹春晖(Go<<语言高级编程>>作者), url=https://xargin.com/, screenshot=https://cdn.jsdelivr.net/gh/sivanWu0222/ImageHosting@master/uPic/xnYQaG.png, avatar=https://cdn.jsdelivr.net/gh/sivanWu0222/ImageHosting@master/uPic/xYaCT5.png, description=Go夜读中的滴滴大佬, github: https://github.com/cch123 %}
 
-
-
-
 {% site 柴树杉晖(《Go语言高级编程》《Go语法树入门》《WebAssembly标准入门》作者), url=https://github.com/chai2010, screenshot=https://cdn.jsdelivr.net/gh/sivanWu0222/ImageHosting@master/uPic/J9cDhD.png, avatar=https://cdn.jsdelivr.net/gh/sivanWu0222/ImageHosting@master/uPic/J4ralm.png, description=蚂蚁杭州（云原生工程系统） %}
 
 
@@ -55,8 +52,6 @@ index: true
 
 {% site 泫(深圳腾讯音乐), url=https://blog.cugxuan.cn/, screenshot=https://cdn.jsdelivr.net/gh/sivanWu0222/ImageHosting@master/uPic/gROkXJ.png, avatar=https://image.cugxuan.cn/avater.jpg, description=本科地大硕士华科大佬 %}
 
-
-
 {% endsitegroup %}
 
 ### 一些课程推荐
@@ -69,7 +64,7 @@ index: true
 2. 码洞
 3. 开发内功修炼
 4. TechPaper(曹大的微信公众号，曹大的博客：https://xargin.com/)
-
+5. Golang Contributor Club
 
 ### bilibili_up主推荐
 1. go夜读
@@ -86,3 +81,13 @@ index: true
 5. [《Go入门指南》](https://github.com/unknwon/the-way-to-go_ZH_CN)
 5. 无闻老师的课程：https://study.163.com/course/courseLearn.htm?courseId=306002#/learn/video?lessonId=421024&courseId=306002
 6. [Go101](https://github.com/golang101/golang101)
+   
+## go进阶
+1. [曹大的源码分析](https://github.com/cch123/golang-notes)
+2. [Go语言设计与实现](https://draveness.me/golang/)
+3. [Go语言原本](https://golang.design/under-the-hood/)
+4. [深度阅读之<<Mastering Go>>](https://mp.weixin.qq.com/s/3JnJskE_bK6AeUSeQThhfg)
+5. [Mastering Go](https://github.com/PacktPublishing/Mastering-Go-Second-Edition)
+6. [Go101](https://gfw.go101.org/article/operators.html)
+7.  （饶神 + 曹大 + 鸟窝 + Golang Contributor Club）的文章
+8.  

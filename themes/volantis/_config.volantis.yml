@@ -1,5 +1,5 @@
 cover:
-  height_scheme: half
+  height_scheme: full
   layout_scheme: featured
   display:
     home: true

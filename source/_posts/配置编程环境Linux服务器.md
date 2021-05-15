@@ -1,7 +1,7 @@
 ---
 title: 配置编程环境Linux服务器
 author: yirufeng
-pin: true
+pin: false
 toc: true
 mathjax: false
 sidebar:

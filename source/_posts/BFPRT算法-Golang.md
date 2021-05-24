@@ -157,3 +157,17 @@ func BFPRT(nums []int, start int, end int, k int) int {
 ```
 {% endfolding %}
 
+## 总结：
+按照沈剑老师的总结：
+> TopK，不难；其思路优化过程，不简单：
+
+1. 全局排序，O(n*lg(n))
+2. 局部排序，只排序TopK个数，O(n*k)
+3. 堆，TopK个数也不排序了，O(n*lg(k))
+4. 分治法，每个分支“都要”递归，例如：快速排序，O(n*lg(n))
+5. 减治法，“只要”递归一个分支，例如：二分查找O(lg(n))，随机选择O(n)
+6. TopK的另一个解法：随机选择+partition
+7. 本文讲解的bfprt，时间复杂度长期稳定在O(N)
+
+## References
+1. [参考](https://mp.weixin.qq.com/s?__biz=MjM5ODYxMDA5OQ==&mid=2651961587&idx=1&sn=54bf39db7043cc638315caf70f24d94b&chksm=bd2d0d2f8a5a84395246be4522d10fbfc1f744658047d5fb3fad8e9f3c3d76baab3a2ce84867&scene=21#wechat_redirect)

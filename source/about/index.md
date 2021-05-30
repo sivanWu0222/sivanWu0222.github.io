@@ -210,7 +210,7 @@ valine:
 把手握紧，厚积薄发，你，只有付出，付出你的时间，赌上你的尊严，拿出你的全部，当别人打游戏时你在学习，当别人睡懒觉时你在学习，你含着泪在深夜里舞蹈，在回忆里奔跑，没有人在年少时想成为一个普通人。尽管生活，它会剥夺你的所爱践踏你的尊严，把你踩在脚下遍体鳞伤，但你怎能倒下？但你身后是你的挚爱，那些曾受过的伤，都是你送给未来自己最好的礼物。
 {% endtimenode %}
 {% timenode  %}
-
+正如巴尔扎克在人间喜剧中所言，革新者全靠了不起的信心支持，才有勇气在不可知的天地中前进。（But as Balzac said in The Human Comedy: The innovator is supported by great confidence. To have the courage to move forward in the unknown.）
 {% endtimenode %}
 {% timenode  %}
 

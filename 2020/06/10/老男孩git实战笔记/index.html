@@ -1,0 +1,2520 @@
+<!DOCTYPE html>
+<html>
+<head hexo-theme='https://github.com/volantis-x/hexo-theme-volantis/tree/5.0.0.alpha.0'>
+  <meta charset="utf-8">
+  <!-- SEO相关 -->
+  
+    
+  
+  <!-- 渲染优化 -->
+  <meta name="renderer" content="webkit">
+  <meta name="force-rendering" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="HandheldFriendly" content="True" >
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta http-equiv='x-dns-prefetch-control' content='on' />
+
+  <!-- 页面元数据 -->
+  
+  <title>老男孩git实战视频笔记 - 逸如风的个人博客</title>
+  
+    <meta name="keywords" content="git">
+  
+
+  
+
+  <!-- feed -->
+  
+
+  <!-- import meta -->
+  
+
+  <!-- link -->
+  <link rel='dns-prefetch' href='https://cdn.jsdelivr.net'>
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.14/css/all.min.css">
+
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/l-lin/font-awesome-animation/dist/font-awesome-animation.min.css">
+
+  
+
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-waves@0.7.6/dist/waves.min.css">
+
+  
+
+  
+
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10/dist/APlayer.min.css">
+  
+
+  
+
+  <!-- import link -->
+  
+
+  
+    
+      
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.18.1/styles/solarized-light.css">
+
+    
+  
+  
+    
+<link rel="stylesheet" href="/css/style.css">
+
+  
+  
+  
+  <!-- 脚本懒加载函数 -->
+  <script>
+  function loadScript(src, cb) {
+    var HEAD = document.getElementsByTagName('head')[0] || document.documentElement;
+    var script = document.createElement('script');
+    script.setAttribute('type','text/javascript');
+    if (cb) script.onload = cb;
+    script.setAttribute('src', src);
+    HEAD.appendChild(script);
+  }
+  //https://github.com/filamentgroup/loadCSS
+  !function(c){"use strict";var e=function(e,t,n,r){var o,i=c.document,a=i.createElement("link");if(t)o=t;else{var d=(i.body||i.getElementsByTagName("head")[0]).childNodes;o=d[d.length-1]}var f=i.styleSheets;if(r)for(var l in r)r.hasOwnProperty(l)&&a.setAttribute(l,r[l]);a.rel="stylesheet",a.href=e,a.media="only x",function e(t){if(i.body)return t();setTimeout(function(){e(t)})}(function(){o.parentNode.insertBefore(a,t?o:o.nextSibling)});var s=function(e){for(var t=a.href,n=f.length;n--;)if(f[n].href===t)return e();setTimeout(function(){s(e)})};function u(){a.addEventListener&&a.removeEventListener("load",u),a.media=n||"all"}return a.addEventListener&&a.addEventListener("load",u),(a.onloadcssdefined=s)(u),a};"undefined"!=typeof exports?exports.loadCSS=e:c.loadCSS=e}("undefined"!=typeof global?global:this);
+  </script>
+  <script id="loadcss"></script>
+</head>
+
+<body>
+  <header class="l_header always shadow blur "  >
+  <div class='container'>
+  <div class='wrapper'>
+    <div class='nav-sub'>
+      <p class="title"></p>
+      <ul class='switcher nav-list-h m-phone' id="pjax-header-nav-list">
+        <li><a class="s-comment fas fa-comments fa-fw" target="_self" href='javascript:void(0)'></a></li>
+        
+          <li><a class="s-toc fas fa-list fa-fw" target="_self" href='javascript:void(0)'></a></li>
+        
+      </ul>
+    </div>
+		<div class="nav-main">
+      
+        
+        <a class="title flat-box" target="_self" href='/'>
+          
+            <img no-lazy class='logo' src='https://cdn.jsdelivr.net/gh/sivanWu0222/ImageHosting@master/uPic/diugai.com-16005176665088_gaitubao_293x115.png'/>
+          
+          
+          
+        </a>
+      
+
+			<div class='menu navigation'>
+				<ul class='nav-list-h m-pc'>
+          
+          
+          
+            
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover" href=/
+                  
+                  
+                  
+                    id="home"
+                  >
+                  <i class='fas fa-blog fa-fw'></i>博客
+                </a>
+                
+              </li>
+            
+          
+          
+            
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover" href=/categories/
+                  
+                  
+                  
+                    id="categories"
+                  >
+                  <i class='fas fa-folder-open fa-fw'></i>分类
+                </a>
+                
+              </li>
+            
+          
+          
+            
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover" href=/tags/
+                  
+                  
+                  
+                    id="tags"
+                  >
+                  <i class='fas fa-tags fa-fw'></i>标签
+                </a>
+                
+              </li>
+            
+          
+          
+            
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover" href=/archives/
+                  
+                  
+                  
+                    id="archives"
+                  >
+                  <i class='fas fa-archive fa-fw'></i>归档
+                </a>
+                
+              </li>
+            
+          
+          
+            
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover" href=/friends/
+                  
+                  
+                  
+                    id="friends"
+                  >
+                  <i class='fas fa-link fa-fw'></i>友链
+                </a>
+                
+              </li>
+            
+          
+          
+            
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover" href=/about/
+                  
+                  
+                  
+                    id="about"
+                  >
+                  <i class='fas fa-info-circle fa-fw'></i>关于
+                </a>
+                
+              </li>
+            
+          
+          
+            
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover" 
+                  
+                  
+                  >
+                  <i class='fas fa-share fa-fw'></i>分享
+                </a>
+                
+                  <ul class="list-v">
+                    
+                      
+            
+              <li class='header'>
+                <i class='fas fa-fire fa-fw'></i>热门文章
+              </li>
+            
+          
+                    
+                      
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover" href=http://www.sivan.tech/2020/09/12/%E9%9D%A2%E8%AF%95%E9%97%AE%E9%A2%98%E4%B9%8BTop%20K%E7%B3%BB%E5%88%97/
+                  
+                  
+                  
+                    id="http:wwwsivantech20200912E99DA2E8AF95E997AEE9A298E4B98BTop20KE7B3BBE58897"
+                  >
+                  面试问题之TopK系列
+                </a>
+                
+              </li>
+            
+          
+                    
+                  </ul>
+                
+              </li>
+            
+          
+          
+				</ul>
+			</div>
+
+      <div class="m_search">
+        <form name="searchform" class="form u-search-form">
+          <i class="icon fas fa-search fa-fw"></i>
+          <input type="text" class="input u-search-input" placeholder="Search..." />
+        </form>
+      </div>
+
+			<ul class='switcher nav-list-h m-phone'>
+				
+					<li><a class="s-search fas fa-search fa-fw" target="_self" href='javascript:void(0)'></a></li>
+				
+				<li>
+          <a class="s-menu fas fa-bars fa-fw" target="_self" href='javascript:void(0)'></a>
+          <ul class="menu-phone list-v navigation white-box">
+            
+              
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover" href=/
+                  
+                  
+                  
+                    id="home"
+                  >
+                  <i class='fas fa-blog fa-fw'></i>博客
+                </a>
+                
+              </li>
+            
+          
+            
+              
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover" href=/categories/
+                  
+                  
+                  
+                    id="categories"
+                  >
+                  <i class='fas fa-folder-open fa-fw'></i>分类
+                </a>
+                
+              </li>
+            
+          
+            
+              
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover" href=/tags/
+                  
+                  
+                  
+                    id="tags"
+                  >
+                  <i class='fas fa-tags fa-fw'></i>标签
+                </a>
+                
+              </li>
+            
+          
+            
+              
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover" href=/archives/
+                  
+                  
+                  
+                    id="archives"
+                  >
+                  <i class='fas fa-archive fa-fw'></i>归档
+                </a>
+                
+              </li>
+            
+          
+            
+              
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover" href=/friends/
+                  
+                  
+                  
+                    id="friends"
+                  >
+                  <i class='fas fa-link fa-fw'></i>友链
+                </a>
+                
+              </li>
+            
+          
+            
+              
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover" href=/about/
+                  
+                  
+                  
+                    id="about"
+                  >
+                  <i class='fas fa-info-circle fa-fw'></i>关于
+                </a>
+                
+              </li>
+            
+          
+            
+              
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover" 
+                  
+                  
+                  >
+                  <i class='fas fa-share fa-fw'></i>分享
+                </a>
+                
+                  <ul class="list-v">
+                    
+                      
+            
+              <li class='header'>
+                <i class='fas fa-fire fa-fw'></i>热门文章
+              </li>
+            
+          
+                    
+                      
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover" href=http://www.sivan.tech/2020/09/12/%E9%9D%A2%E8%AF%95%E9%97%AE%E9%A2%98%E4%B9%8BTop%20K%E7%B3%BB%E5%88%97/
+                  
+                  
+                  
+                    id="http:wwwsivantech20200912E99DA2E8AF95E997AEE9A298E4B98BTop20KE7B3BBE58897"
+                  >
+                  面试问题之TopK系列
+                </a>
+                
+              </li>
+            
+          
+                    
+                  </ul>
+                
+              </li>
+            
+          
+            
+          </ul>
+        </li>
+			</ul>
+		</div>
+	</div>
+  </div>
+</header>
+
+  <div class="l_body">
+    <div class="l_cover">
+  
+    
+    
+        <div class='cover-wrapper post featured' style="display: none;">
+          
+            <div class='cover-backstretch'></div>
+          
+          <div class='cover-body'>
+  <div class='top'>
+    
+      <img no-lazy class='logo' src='https://cdn.jsdelivr.net/gh/sivanWu0222/ImageHosting@master/uPic/diugai.com-16005176665088_gaitubao_293x115.png'/>
+    
+    
+    
+  </div>
+  <div class='bottom'>
+    <div class='menu navigation'>
+      <div class='list-h'>
+        
+          
+            <a href="/"
+              
+              
+              id="home">
+              <i class='fas fa-blog fa-fw'></i><p>博客</p>
+            </a>
+          
+            <a target="_blank" rel="noopener" href="https://github.com/sivanWu0222"
+              
+              
+              id="https:githubcomsivanWu0222">
+              <i class='fab fa-github fa-fw'></i><p>Github</p>
+            </a>
+          
+            <a href="http://www.sivan.tech/AlgoBook/"
+              
+              
+              id="http:wwwsivantechAlgoBook">
+              <i class='fas fa-book fa-fw'></i><p>算法</p>
+            </a>
+          
+            <a href="/projects/"
+              
+              
+              id="projects">
+              <i class='fas fa-tags fa-fw'></i><p>项目</p>
+            </a>
+          
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+          <div class="scroll-down" style="display: none;"><i class="fa fa-chevron-down scroll-down-effects"></i></div>
+        </div>
+    
+  
+  </div>
+  
+    <div class='safearea'>
+      <div class='body-wrapper' id="pjax-container">
+        
+          <!--此文件用来存放一些不方便取值的变量--> 
+<!--思路大概是将值藏到重加载的区域内--> 
+ 
+ 
+ 
+<div id="pjax-data" style="display: none"> 
+  <div id="pjax-ispage">true</div> 
+  <div id="pjax-pageTitle">老男孩git实战视频笔记</div> 
+  <div id="pjax-enable-cover">true</div> 
+  <div id="pjax-comment-path"></div> 
+  <div id="pjax-comment-placeholder"></div> 
+</div> 
+ 
+ 
+<script> 
+  // 处理封面 此时 jquery 还没加载 
+  if ("half" == "none") { // 移除封面 
+    document.getElementsByClassName('cover-wrapper')[0].style.display = "none"; 
+    document.getElementsByClassName('l_header', 'cover-wrapper')[0].classList.add("show"); 
+  } else { 
+    if ("half" == "half") { // 半屏 
+      document.getElementsByClassName('cover-wrapper')[0].setAttribute('id', 'half'); 
+      document.getElementsByClassName('scroll-down')[0].style.display = "none"; 
+    } else if ("half" == "full") { // 全屏 
+      document.getElementsByClassName('cover-wrapper')[0].setAttribute('id', 'full'); 
+      document.getElementsByClassName('scroll-down')[0].style.display = ""; 
+    } 
+    document.getElementsByClassName('cover-wrapper')[0].style.display = ""; 
+    document.getElementsByClassName('l_header', 'cover-wrapper')[0].classList.remove("show"); 
+  } 
+</script> 
+ 
+
+        
+        
+
+<div class='l_main'>
+  <article class="article post white-box reveal md shadow article-type-post" id="post" itemscope itemprop="blogPost">
+  
+
+
+  
+  <div class="article-meta" id="top">
+    
+    
+    
+      <h1 class="title">
+        老男孩git实战视频笔记
+      </h1>
+      <div class='new-meta-box'>
+        
+          
+            
+<div class='new-meta-item author'>
+  <a class='author' href="/" rel="nofollow">
+    <img no-lazy src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/qrcode/github@volantis.png">
+    <p>yirufeng</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  <div class='new-meta-item category'>
+    <a class='notlink'>
+      <i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>
+      <a class="category-link" href="/categories/%E5%B7%A5%E5%85%B7/">工具</a><span class="sep"></span><a class="category-link" href="/categories/%E5%B7%A5%E5%85%B7/git/">git</a>
+    </a>
+  </div>
+
+
+          
+        
+          
+            <div class="new-meta-item date">
+  <a class='notlink'>
+    <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：Jun 10, 2020</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  <div class="new-meta-item browse busuanzi">
+    <a class='notlink'>
+      <i class="fas fa-eye fa-fw" aria-hidden="true"></i>
+      <p>
+        <span id="busuanzi_value_page_pv">
+          <i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i>
+        </span>
+        次浏览
+      </p>
+    </a>
+  </div>
+
+
+          
+        
+      </div>
+    
+  </div>
+
+
+  
+  <p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV19E411f76x?p=1">本笔记来自视频观看后的总结</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/wupeiqi/p/7295372.html">老师自己总结全文参考</a></p>
+<p><a target="_blank" rel="noopener" href="https://git-scm.com/book/zh/v2">git使用参考网站</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.liaoxuefeng.com/wiki/896043488029600/897013573512192">廖雪峰git教程</a></p>
+<p>本课参考自己下载的对应视频教材的 <strong>git实战课堂笔记</strong></p>
+<h1 id="01-git-是什么"><a href="#01-git-是什么" class="headerlink" title="01 git 是什么"></a>01 git 是什么</h1><h1 id="git-是什么"><a href="#git-是什么" class="headerlink" title="git 是什么"></a>git 是什么</h1><ul>
+<li>分布式</li>
+<li>版本控制</li>
+<li>软件</li>
+</ul>
+<p>版本管理发展的历史：</p>
+<ol>
+<li>多文件管理，只是不同的文件命名，电脑上有多个文件<img src="/Users/yirufeng/%E5%AE%9E%E4%B9%A0/%E9%A1%B9%E7%9B%AE/images/img/image-20200610211737949.png" class="lazyload" data-srcset="/Users/yirufeng/%E5%AE%9E%E4%B9%A0/%E9%A1%B9%E7%9B%AE/images/img/image-20200610211737949.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="image-20200610211737949"></li>
+<li>本地版本管理系统：电脑上只显示一个文件，会将其他版本下的文件隐藏起来，<img src="/Users/yirufeng/%E5%AE%9E%E4%B9%A0/%E9%A1%B9%E7%9B%AE/images/img/image-20200610211716255.png" class="lazyload" data-srcset="/Users/yirufeng/%E5%AE%9E%E4%B9%A0/%E9%A1%B9%E7%9B%AE/images/img/image-20200610211716255.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="image-20200610211716255"></li>
+<li>集中式版本控制：<img src="/Users/yirufeng/%E5%AE%9E%E4%B9%A0/%E9%A1%B9%E7%9B%AE/images/img/image-20200610211317057.png" class="lazyload" data-srcset="/Users/yirufeng/%E5%AE%9E%E4%B9%A0/%E9%A1%B9%E7%9B%AE/images/img/image-20200610211317057.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="image-20200610211317057"> 类似于百度网盘，将所有的版本都存在中央服务器，最有代表性的软件就是<strong>SVN</strong>。 缺点：如果计算机连不上中央服务器，或者服务器挂掉，那么将会文件同步不到服务器上。</li>
+<li>分布式版本控制：<img src="/Users/yirufeng/%E5%AE%9E%E4%B9%A0/%E9%A1%B9%E7%9B%AE/images/img/image-20200610211649662.png" class="lazyload" data-srcset="/Users/yirufeng/%E5%AE%9E%E4%B9%A0/%E9%A1%B9%E7%9B%AE/images/img/image-20200610211649662.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="image-20200610211649662"></li>
+</ol>
+<p>对于集中式的版本而言，所有的版本信息都存在服务器上，而每个具体的计算机都只有一个版本，或者一个文件，而没有历史版本。而对于分布式，每个计算机都存在着所有版本信息，因此中心服务器挂掉之后，不会影响每个计算机存在的各自的版本，我们之后推上去到中心服务器即可。</p>
+<p>注意：如果本地计算机写了一个新功能，首先会提交到本地的版本信息库中，然后再从自己的版本信息库中同步到远程服务器的中心。而集中式要想推只能推一个，但是分布式中心挂掉，不影响本地推代码到本地版本库中，最后推到远程即可。</p>
+<h1 id="02-为什么要做版本控制"><a href="#02-为什么要做版本控制" class="headerlink" title="02 为什么要做版本控制"></a>02 为什么要做版本控制</h1><p>………..写好的功能可以回到上一个版本，很方便，不用来回删除代码或加上代码</p>
+<h1 id="03-安装git"><a href="#03-安装git" class="headerlink" title="03 安装git"></a>03 安装git</h1><p><img src="/Users/yirufeng/%E5%AE%9E%E4%B9%A0/%E9%A1%B9%E7%9B%AE/images/img/image-20200610213541958.png" class="lazyload" data-srcset="/Users/yirufeng/%E5%AE%9E%E4%B9%A0/%E9%A1%B9%E7%9B%AE/images/img/image-20200610213541958.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="image-20200610213541958"></p>
+<p>装上之后，我们可以在电脑上进行版本控制了，<strong>但是还是只是局限在本地</strong>。没有办法放到服务器(仓库)上，github或gitlab就属于服务器。</p>
+<p><a target="_blank" rel="noopener" href="https://git-scm.com/book/zh/v2/%E8%B5%B7%E6%AD%A5-%E5%AE%89%E8%A3%85-Git">git安装参考</a></p>
+<h1 id="04-东北热创业初期"><a href="#04-东北热创业初期" class="headerlink" title="04 东北热创业初期"></a>04 东北热创业初期</h1><p>一个人开发一个东北热平台，期间使用版本控制开发</p>
+<h2 id="2-1-第一阶段：单枪匹马开始干"><a href="#2-1-第一阶段：单枪匹马开始干" class="headerlink" title="2.1 第一阶段：单枪匹马开始干"></a>2.1 第一阶段：单枪匹马开始干</h2><p>如果想让git 帮助我们进行版本控制(其实就是帮助我们管理文件或文件夹)，需要进行如下几步：</p>
+<ol>
+<li><p>进入要管理的文件夹</p>
+</li>
+<li><p>初始化：<code>git init</code> (相当于做了标记，提名谁是老大管理我们要管理文件夹下的这些文件以及文件夹)</p>
+</li>
+<li><p>检测当前文件夹下的文件的状态：<code>git status</code></p>
+</li>
+<li><p>管理文件或文件夹 检测之后采用 <code>git add 文件名</code> 管理文件。</p>
+</li>
+<li><p>按照正常流程，这一步还是要加上的，加上个人信息的配置(邮箱，用户名)，这样提交的时候就有了个人信息。<img src="/Users/yirufeng/%E5%AE%9E%E4%B9%A0/%E9%A1%B9%E7%9B%AE/images/img/image-20200611073453989.png" class="lazyload" data-srcset="/Users/yirufeng/%E5%AE%9E%E4%B9%A0/%E9%A1%B9%E7%9B%AE/images/img/image-20200611073453989.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="image-20200611073453989">。【仅需执行如下命令一次即可】</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.email &quot;&quot;</span><br><span class="line">git config --global user.name &quot;&quot;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>生成版本：<code>git commit -m &#39;版本的描述信息&#39;</code></p>
+</li>
+</ol>
+<p>注意：<code>git add .</code> 其中<code>.</code>代表当前文件夹下没有被管理进去的所有文件</p>
+<ol start="7">
+<li>通过<code>git log</code> 查看之前git commit 提交的所有记录</li>
+</ol>
+<p>注意git中三种文件状态的变化：</p>
+<ul>
+<li>红色：git 未被管理的文件或修改后未被管理的文件 红色-&gt;绿色：<code>git add 文件名/.</code></li>
+<li>绿色：git 管理起来的文件，但是没有还没有生成版本。执行<code>git commit -m &#39;版本信息&#39;</code>会帮助我们生成版本</li>
+<li>生成版本</li>
+</ul>
+<h1 id="05"><a href="#05" class="headerlink" title="05"></a>05</h1><p>git commit 之前需要配置信息，查看04即可</p>
+<h1 id="06-git-三大区域"><a href="#06-git-三大区域" class="headerlink" title="06 git 三大区域"></a>06 git 三大区域</h1><p>工作区：当我们执行<code>git init</code> 之后，写代码的时候正在操作的文件夹，文件夹里面的文件里面有两种状态(已管理的文件，新文件或修改的文件)。git会自动检测文件是否是新文件，或者原来已管理的文件又修改则自动变成修改的文件。为什么会自动检测：因为我们执行了<code>git init</code></p>
+<p>暂存区：可以理解为暂时临时先放在这里。如果文件提交到暂存区，不想要我们可以回滚到工作区。 通过<code>git add </code> 将文件从工作区提交到暂存区</p>
+<p>版本库：通过<code>git commit </code>将暂存区的文件提交到版本库中</p>
+<p><img src="/Users/yirufeng/%E5%AE%9E%E4%B9%A0/%E9%A1%B9%E7%9B%AE/images/img/image-20200611075555062.png" class="lazyload" data-srcset="/Users/yirufeng/%E5%AE%9E%E4%B9%A0/%E9%A1%B9%E7%9B%AE/images/img/image-20200611075555062.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="image-20200611075555062"></p>
+<p>因为我们知道工作区和版本区是有必要的，为什么需要暂存区呢？</p>
+<p>暂存区我们可以理解为缓冲区，就是可以理解为我们冲动的时候想要做的事，但是事后又不想要。所以暂存区可以理解为给你冷静的时间，让你可以回去也可以继续。</p>
+<h1 id="07-回滚"><a href="#07-回滚" class="headerlink" title="07 回滚"></a>07 回滚</h1><p>通过<code>git log </code>看到所有版本的记录</p>
+<p>通过<code>git reset --hard 版本号</code>来回滚到指定版本号的记录</p>
+<p>有时我们遇到如下几种情况：</p>
+<p>版本迭代：v1-&gt;v2-&gt;v3-&gt;v4-&gt;v5  但是我们从v5回滚到了v3之后，又想回滚到v4。此时通过<code>git log</code> 看不到v4的提交记录，但是通过<code>git reflog</code>可以看到</p>
+<p>如果我们想回到v4，那么执行<code>git reset --hard 版本号</code> 版本号可以通过<code>git reflog</code>命令看到。也就是回滚到版本后面的状态需要通过<code>git reflog</code>查看版本号</p>
+<h2 id="2-2-第二阶段：拓展新功能"><a href="#2-2-第二阶段：拓展新功能" class="headerlink" title="2.2 第二阶段：拓展新功能"></a>2.2 第二阶段：拓展新功能</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git add</span><br><span class="line">git commit -m &#39;&#39;</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="2-3-第三阶段：约饭世界"><a href="#2-3-第三阶段：约饭世界" class="headerlink" title="2.3 第三阶段：约饭世界"></a>2.3 第三阶段：约饭世界</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git add</span><br><span class="line">git commit -m &#39;&#39;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>遇到有关部门查处，我们要进行回滚，回滚到之前的版本</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git log 查看之前的回滚记录</span><br><span class="line">git reset --hard 版本号</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p>约饭功能可以继续上线，回滚的不是原来的状态，而是回滚到原来状态之后的版本，通过<code>git log</code>是看不到记录的，需要通过<code>git reflog</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git reflog</span><br><span class="line">git reset --hard 版本号</span><br></pre></td></tr></table></figure>
+
+<p><img src="/Users/yirufeng/%E5%AE%9E%E4%B9%A0/%E9%A1%B9%E7%9B%AE/images/img/image-20200611104048150.png" class="lazyload" data-srcset="/Users/yirufeng/%E5%AE%9E%E4%B9%A0/%E9%A1%B9%E7%9B%AE/images/img/image-20200611104048150.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="image-20200611104048150"></p>
+</li>
+</ul>
+<h1 id="08-git-命令小结"><a href="#08-git-命令小结" class="headerlink" title="08 git 命令小结"></a>08 git 命令小结</h1><h2 id="2-4-总结"><a href="#2-4-总结" class="headerlink" title="2.4 总结"></a>2.4 总结</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br><span class="line">git add</span><br><span class="line">git commit</span><br><span class="line">git log</span><br><span class="line">git reflog</span><br><span class="line">git reset --hard 版本号</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>各个区域来回切换：</p>
+<p><img src="/Users/yirufeng/%E5%AE%9E%E4%B9%A0/%E9%A1%B9%E7%9B%AE/images/img/image-20200611083038941.png" class="lazyload" data-srcset="/Users/yirufeng/%E5%AE%9E%E4%B9%A0/%E9%A1%B9%E7%9B%AE/images/img/image-20200611083038941.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="image-20200611083038941"></p>
+<ul>
+<li>比如我们在项目文件夹下修改了index.html 但是没有add和commit，那么修改完之后使用如下命令就可以回到修改前的状态</li>
+</ul>
+<p><code>git checkout -- index.html</code></p>
+<p>比如我们在项目文件夹下修改了index.html 但是只是<code>git add</code>，那么修改完之后使用如下命令就可以回到修改前的状态</p>
+<p><code>git reset HEAD index.html</code></p>
+<h1 id="09-分支"><a href="#09-分支" class="headerlink" title="09 分支"></a>09 分支</h1><p>前面讲的例子中，我们在第一个版本开发了东北热（共100个文件），之后第二个版本添加了短视频的功能(只是在东北热的基础上修改了10个文件，并且增加了20个文件)</p>
+<ul>
+<li>问题：git 在第二个版本发布时，保存了哪些文件？</li>
+</ul>
+<p>版本2只保存了修改的文件(是修改文件的全部哦，而不是只修改的部分)，没有修改的那90个文件还都在版本1中，版本2中并没有保存，另外需要注意的是版本2有一个指针指向版本1。当我们获取版本2的文件的时候，版本2利用指针拉取版本1的文件，首先从版本1中拉取没有改变的文件，之后从再从版本2中加载修改的文件。</p>
+<h1 id="10-紧急修复线上bug的思路"><a href="#10-紧急修复线上bug的思路" class="headerlink" title="10 紧急修复线上bug的思路"></a>10 紧急修复线上bug的思路</h1><p>默认主干线的分支名字叫做master，在master上可以分其他分支，名字自己定义。修改完之后合并到master</p>
+<h2 id="2-5-第四阶段-开发一个商城"><a href="#2-5-第四阶段-开发一个商城" class="headerlink" title="2.5 第四阶段 开发一个商城"></a>2.5 第四阶段 开发一个商城</h2><p>在开发商城的时候，如果线上的约饭功能遇到了紧急bug，那么如何处理呢？</p>
+<p>此时可以新建一个分支开发商城，当我们遇到紧急bug的时候直接回到原始的没有开发商城之前，在此基础上新建一个分支来修复bug，修复完成后再上线。此时切换到我们开发商城的那个分支继续开发，不会耽搁我们开发商城以及修改Bug。</p>
+<p><img src="/Users/yirufeng/%E5%AE%9E%E4%B9%A0/%E9%A1%B9%E7%9B%AE/images/img/image-20200611114532550.png" class="lazyload" data-srcset="/Users/yirufeng/%E5%AE%9E%E4%B9%A0/%E9%A1%B9%E7%9B%AE/images/img/image-20200611114532550.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="image-20200611114532550"></p>
+<p><img src="/Users/yirufeng/%E5%AE%9E%E4%B9%A0/%E9%A1%B9%E7%9B%AE/images/img/image-20200611122401535.png" class="lazyload" data-srcset="/Users/yirufeng/%E5%AE%9E%E4%B9%A0/%E9%A1%B9%E7%9B%AE/images/img/image-20200611122401535.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="image-20200611122401535"></p>
+<h1 id="11-基于分支修复线上bug的具体过程"><a href="#11-基于分支修复线上bug的具体过程" class="headerlink" title="11 基于分支修复线上bug的具体过程"></a>11 基于分支修复线上bug的具体过程</h1><p><code>git branch</code> 目前所处在的分支</p>
+<p><code>git branch 分支名</code> 创建分支</p>
+<p><code>git checkout 分支名</code> 切换到指定的分支，</p>
+<p>当我们基于目前的代码创建一个分支之后，在该分支上开发不影响master分支。</p>
+<p>c1 -&gt; c2 -&gt; c3(master)</p>
+<p>此时我们开发商城功能，因此新建一个分支</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">git branch dev</span><br><span class="line">git checkout dev</span><br><span class="line">开发过程中此时遇到了线上的紧急Bug修复</span><br><span class="line">git add .</span><br><span class="line">git commit .</span><br><span class="line">切换到master分支下新建bug分支</span><br><span class="line">git checkout master</span><br><span class="line">git branch bug</span><br><span class="line">git checkout bug</span><br><span class="line">修复完成，</span><br><span class="line">git add .</span><br><span class="line">git commit -m &#39;&#39;</span><br><span class="line">此时需要合并分支</span><br><span class="line">git checkout master  </span><br><span class="line">git merge bug  相当于站在master分支中，将bug分支拉过来</span><br><span class="line">bug完全修复完成,此时应该删掉bug分支</span><br><span class="line">git branch -d bug</span><br><span class="line">此时可以切换到dev分支继续开发我们的商城，但是原来是基于c3开发的，那个时候bug还没有修复，所以我们先不要管继续开发我们的商城。开发完毕之后</span><br><span class="line">git checkout dev</span><br><span class="line">git status</span><br><span class="line">git add .</span><br><span class="line">git commit -m &#39;&#39;</span><br><span class="line">此时合并新功能到master分支</span><br><span class="line">git checkout master</span><br><span class="line">git merge dev  此时会报错，冲突。为什么会产生冲突呢？因为我们此时线上的版本是修改了bug，而dev分支新建的时候线上的bug还没有修复，会有不一样的地方，因此会产生冲突，此时git不知道如何处理，就会冲突，会在冲突文件中展示各个分支的冲突。我们需要手动解决冲突，解决完之后执行如下代码</span><br><span class="line">git status</span><br><span class="line">git add .</span><br><span class="line">git commit -m &#39;&#39;</span><br></pre></td></tr></table></figure>
+
+<p>何时会冲突：如果我们新建的分支基于c3，但是合并该分支到master的时候，master此时不是c3那个版本就会冲突。如果没有冲突则会自动合并。</p>
+<h1 id="12-命令总结和工作流"><a href="#12-命令总结和工作流" class="headerlink" title="12 命令总结和工作流"></a>12 命令总结和工作流</h1><ul>
+<li><p>查看分支</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git branch</span><br></pre></td></tr></table></figure>
+
+
+</li>
+</ul>
+<ul>
+<li><p>创建分支</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git branch 分支名称</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>切换分支</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git checkout 分支名称</span><br><span class="line">git checkout -b 创建并切换分支</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>分支合并(可能产生冲突，找到冲突的文件快速修改即可，后面还会介绍一个软件来修改冲突)，注意：要合并到那里就要切换到哪里，之后再合并分支，比如我想合并dev，那么首先就要<code>git checkout master</code>  <strong>切换分支再合并</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git merge 要合并的分支</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>删除分支</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git branch -d 分支名称</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+<p>git使用的工作流：以后使用git的时候，我们至少有两个分支master以及dev,我们要在dev分支上进行开发</p>
+<h1 id="13-github"><a href="#13-github" class="headerlink" title="13 github"></a>13 github</h1><p>使用步骤：</p>
+<ol>
+<li>创建github账号</li>
+<li>创建仓库</li>
+<li>本地仓库推送到github</li>
+</ol>
+<p>大公司都在用Gitlab 因为只需要一个搭建服务器的钱，并且代码不会泄露</p>
+<h1 id="14-基于github做代码托管"><a href="#14-基于github做代码托管" class="headerlink" title="14 基于github做代码托管"></a>14 基于github做代码托管</h1><p><code>git remote add origin https://github.com/WuPeiqi/dbhot.git</code> 相当于给后面的网址起了一个别名叫origin</p>
+<p>之后我们可以使用<code>git push -u origin master</code> 将我们本地编写的master分支内容推送上去，其他分支内容不会推送哦。</p>
+<p>因此可以使用<code>git push -u origin 分支名</code> 将分支推送上去</p>
+<p>当我们来到公司之后：</p>
+<p><code>git clone 网址</code> 直接克隆代码到本地，此时虽然<code>git branch</code>显示只有一个分支，但是其实所有分支都克隆下来了，我们可以直接使用<code>git checkotu 分支名</code>进行切换</p>
+<h2 id="2-6-第5阶段：进军三里屯"><a href="#2-6-第5阶段：进军三里屯" class="headerlink" title="2.6 第5阶段：进军三里屯"></a>2.6 第5阶段：进军三里屯</h2><ol>
+<li><p>给远程仓库起别名</p>
+<p><code>git remote add origin 网址</code> 其中origin可以修改成任意字符串</p>
+</li>
+<li><p>向远程提交推送代码</p>
+<p><code>git push -u origin 分支名称</code> 推送我们想要推送的分支到远程仓库</p>
+</li>
+<li><p>公司里面拉代码，克隆远程仓库代码。此时不仅仅会拉下来master分支，会克隆下来所有分支</p>
+<p><code>git clone 远程仓库地址</code>  当我们git clone的时候内部已经自动实现了<code>git remote add origin 远程仓库地址</code>命令</p>
+</li>
+</ol>
+<p><img src="/Users/yirufeng/%E5%AE%9E%E4%B9%A0/%E9%A1%B9%E7%9B%AE/images/img/image-20200612072355165.png" class="lazyload" data-srcset="/Users/yirufeng/%E5%AE%9E%E4%B9%A0/%E9%A1%B9%E7%9B%AE/images/img/image-20200612072355165.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="image-20200612072355165"></p>
+<p><img src="/Users/yirufeng/%E5%AE%9E%E4%B9%A0/%E9%A1%B9%E7%9B%AE/images/img/image-20200612072506729.png" class="lazyload" data-srcset="/Users/yirufeng/%E5%AE%9E%E4%B9%A0/%E9%A1%B9%E7%9B%AE/images/img/image-20200612072506729.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="image-20200612072506729"></p>
+<p><img src="/Users/yirufeng/%E5%AE%9E%E4%B9%A0/%E9%A1%B9%E7%9B%AE/images/img/image-20200612073056906.png" class="lazyload" data-srcset="/Users/yirufeng/%E5%AE%9E%E4%B9%A0/%E9%A1%B9%E7%9B%AE/images/img/image-20200612073056906.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="image-20200612073056906"></p>
+<h1 id="15-奔波于沙河和三里屯之间"><a href="#15-奔波于沙河和三里屯之间" class="headerlink" title="15 奔波于沙河和三里屯之间"></a>15 奔波于沙河和三里屯之间</h1><p>前面我们已经在公司克隆下了代码，但是我们在dev分支开发时基于之前的master，而现在master已经更新了好几次，所以继续在在dev分支开发新功能的时候要确保dev分支是基于最新的master。<strong>也就是我们之前的dev分支功能已经合并到master中了，且dev分支的代码还是基于以前的master，代码比较老，如果新开发一些功能，我们肯定要基于目前的master，因为master是运行的最新稳定版，所以我们要在dev分支<code>git merge master</code></strong> 注意只执行一次哦</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">dev分支下执行：</span><br><span class="line">	git merge master</span><br><span class="line"></span><br><span class="line">公司第一天代码开发完成以后</span><br><span class="line">	git add .</span><br><span class="line">	git commit -m &#39;公司第一天开发的代码&#39;</span><br><span class="line">	git push origin dev</span><br><span class="line">回到家之后</span><br><span class="line">	git branch </span><br><span class="line">	git checkout dev</span><br><span class="line">	更新家里的代码：从远端仓库拉下来进行更新</span><br><span class="line">	git pull origin dev  从远程的dev分支拉代码更新</span><br><span class="line">	继续编写代码</span><br><span class="line">	git add .</span><br><span class="line">	git commit -m &#39;&#39;</span><br><span class="line">	git push origin dev</span><br><span class="line">来到公司</span><br><span class="line">	git branch</span><br><span class="line">	git checkout dev</span><br><span class="line">	git pull origin dev  要确保在dev分支下哦</span><br><span class="line"></span><br><span class="line">	</span><br><span class="line">	</span><br></pre></td></tr></table></figure>
+
+<p><code>git push -u origin master</code> 其中-u指定了以后提交的默认分支，之后我们<code>git push</code>命令提交的时候会按照上次的-u指定的分支提交</p>
+<h1 id="16-约妹子忘推送代码了"><a href="#16-约妹子忘推送代码了" class="headerlink" title="16 约妹子忘推送代码了"></a>16 约妹子忘推送代码了</h1><p>故事情节：被妹子约饭，在公司写代码之后<code>git commit</code> 命令执行完没有<code>git push</code>，回到家<code>git pull origin dev</code>无法更新代码，没办法只好继续在之前的文件下开发，之后<code>git push origin dev</code>到远程，第二天去到公司<code>git pull origin dev</code>代码时出现conflict，此时所有代码都拉取下来了，只是需要我们手动修改冲突的文件(冲突的文件和之前<code>git merge</code>冲突文件一样)即可(类似于之前我们<code>git merge</code>出现的冲突的解决方式)，解决完冲突之后直接<code>git add</code> <code>git commit</code> <code>git push</code>到远程即可。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git pull origin dev 拉取远程仓库代码并合并到本地的dev分支</span><br><span class="line">这一句等同于如下两个命令</span><br><span class="line">git fetch origin dev  将远程代码拉到版本库中</span><br><span class="line">git merge origin&#x2F;dev  将版本库中的远程拉下来的origin&#x2F;dev合并到工作区中</span><br></pre></td></tr></table></figure>
+
+
+
+<p><code>git fetch origin 分支名称</code> 会自动从远程仓库将问价拉取到版本库中，此时为了区分从远程仓库拿下来，git会自动在我们拉取到版本库的文件中的分支名称前面加上一个前缀 <code>origin/</code>。</p>
+<p>因此我们后面讲版本库中的文件同步到工作区的时候使用<code>git merge origin/分支名</code></p>
+<p><img src="/Users/yirufeng/%E5%AE%9E%E4%B9%A0/%E9%A1%B9%E7%9B%AE/images/img/image-20200612075200898.png" class="lazyload" data-srcset="/Users/yirufeng/%E5%AE%9E%E4%B9%A0/%E9%A1%B9%E7%9B%AE/images/img/image-20200612075200898.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="image-20200612075200898"></p>
+<h1 id="17-rebase是面试重点-rebase应用场景一：将之前的多条commit记录合并"><a href="#17-rebase是面试重点-rebase应用场景一：将之前的多条commit记录合并" class="headerlink" title="17 (rebase是面试重点)rebase应用场景一：将之前的多条commit记录合并"></a>17 (rebase是面试重点)rebase应用场景一：将之前的多条commit记录合并</h1><p>工作中应用<code>git rebase</code>可以让我们的提交记录变得很简洁，rebase译为变基的意思。</p>
+<p>应用场景：公司里面老板给了一个大任务，需要一周时间完成，因为我们每天都会有提交记录，所以到最后的时候我们会有很多commit 记录，但是这些都是无用的，因为老板想要最开始的代码以及最后开发完时的一条commit记录，所以我们可以通过rebase将我们多个提交记录整合成一个提交记录</p>
+<p><code>git rebase -i </code>命令进行修改，有两种形式：</p>
+<ol>
+<li><code>git rebase -i  版本号</code> 会合并我们目前所在的版本与版本号之间的版本，两边都包括<img src="/Users/yirufeng/%E5%AE%9E%E4%B9%A0/%E9%A1%B9%E7%9B%AE/images/img/image-20200612083339893.png" class="lazyload" data-srcset="/Users/yirufeng/%E5%AE%9E%E4%B9%A0/%E9%A1%B9%E7%9B%AE/images/img/image-20200612083339893.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="image-20200612083339893"></li>
+<li><code>git rebase -i HEAD~3</code> 从当前记录开始找最近的3条记录合并，包括当前记录<img src="/Users/yirufeng/%E5%AE%9E%E4%B9%A0/%E9%A1%B9%E7%9B%AE/images/img/image-20200612083210486.png" class="lazyload" data-srcset="/Users/yirufeng/%E5%AE%9E%E4%B9%A0/%E9%A1%B9%E7%9B%AE/images/img/image-20200612083210486.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="image-20200612083210486"></li>
+</ol>
+<p>执行命令后进入如下界面：</p>
+<p><img src="/Users/yirufeng/%E5%AE%9E%E4%B9%A0/%E9%A1%B9%E7%9B%AE/images/img/image-20200612083508550.png" class="lazyload" data-srcset="/Users/yirufeng/%E5%AE%9E%E4%B9%A0/%E9%A1%B9%E7%9B%AE/images/img/image-20200612083508550.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="image-20200612083508550"></p>
+<blockquote>
+<p> 此时v4会合并到上一个版本v3 而v3前面我们也是s因此我们将v3再合并到v2中</p>
+</blockquote>
+<p>修改完成之后会进入如下界面：</p>
+<p><img src="/Users/yirufeng/%E5%AE%9E%E4%B9%A0/%E9%A1%B9%E7%9B%AE/images/img/image-20200612083550206.png" class="lazyload" data-srcset="/Users/yirufeng/%E5%AE%9E%E4%B9%A0/%E9%A1%B9%E7%9B%AE/images/img/image-20200612083550206.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="image-20200612083550206"></p>
+<p>因为我们合并了几条提交记录，因此也需要修改几条提交记录合并之后的提交记录。修改为如下内容：<img src="/Users/yirufeng/%E5%AE%9E%E4%B9%A0/%E9%A1%B9%E7%9B%AE/images/img/image-20200612083745687.png" class="lazyload" data-srcset="/Users/yirufeng/%E5%AE%9E%E4%B9%A0/%E9%A1%B9%E7%9B%AE/images/img/image-20200612083745687.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="image-20200612083745687"></p>
+<h1 id="18-rebase是面试重点-rebase应用场景二：将之前我们分支的记录合并到主分支上也就是归成一条分支上的记录"><a href="#18-rebase是面试重点-rebase应用场景二：将之前我们分支的记录合并到主分支上也就是归成一条分支上的记录" class="headerlink" title="18 (rebase是面试重点)rebase应用场景二：将之前我们分支的记录合并到主分支上也就是归成一条分支上的记录"></a>18 (rebase是面试重点)rebase应用场景二：将之前我们分支的记录合并到主分支上也就是归成一条分支上的记录</h1><p><code>git log --graph</code> 以图形化的形式在命令行中展现git的提交记录</p>
+<p><code>git log --graph --pretty=format:&quot;%h %s&quot;</code> 其中%h代表提交记录的hash值，%s代表我们commit的信息</p>
+<p><img src="/Users/yirufeng/%E5%AE%9E%E4%B9%A0/%E9%A1%B9%E7%9B%AE/images/img/image-20200612085816796.png" class="lazyload" data-srcset="/Users/yirufeng/%E5%AE%9E%E4%B9%A0/%E9%A1%B9%E7%9B%AE/images/img/image-20200612085816796.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="image-20200612085816796"></p>
+<ol>
+<li><p>切换到dev</p>
+</li>
+<li><p><code>git rebase master</code></p>
+</li>
+<li><p>切换回master分支，直接<code>git merge dev</code>即可</p>
+</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">首先确保master以及dev都保持一致，之后执行如下几条命令，使得master以及dev分支下有自己的新提交记录，</span><br><span class="line">git checkout master</span><br><span class="line">touch master_1.py</span><br><span class="line">git add master_1.py .</span><br><span class="line">git commit -m &#39;master_1&#39;</span><br><span class="line">git checkout dev</span><br><span class="line">touch dev_1.py</span><br><span class="line">git add dev_1.py</span><br><span class="line">git commit -m &#39;dev_1&#39;</span><br><span class="line">下面开始本课堂的内容</span><br><span class="line">git checkout dev</span><br><span class="line">git rebase master</span><br><span class="line">ls 会发现已经有了 master_1.py文件</span><br><span class="line">git checkout master</span><br><span class="line">git merge dev</span><br><span class="line">git log --graph</span><br></pre></td></tr></table></figure>
+
+
+
+<p>此时提交记录就变成了一条线<img src="/Users/yirufeng/%E5%AE%9E%E4%B9%A0/%E9%A1%B9%E7%9B%AE/images/img/image-20200612091404961.png" class="lazyload" data-srcset="/Users/yirufeng/%E5%AE%9E%E4%B9%A0/%E9%A1%B9%E7%9B%AE/images/img/image-20200612091404961.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="image-20200612091404961">，如果这种情况下我们使用<code>git merge</code>命令将会产生分叉</p>
+<h1 id="19-rebase是面试重点-rebase应用场景三"><a href="#19-rebase是面试重点-rebase应用场景三" class="headerlink" title="19 (rebase是面试重点)rebase应用场景三"></a>19 (rebase是面试重点)rebase应用场景三</h1><p>其实在前面的约妹子忘记push代码到远程的这个场景中，如果我们使用merge命令合并家里写的代码以及公司写的代码就会产生分叉。如何不产生分叉呢？</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">git checkout dev</span><br><span class="line">第一天下午公司代码开发完</span><br><span class="line">git add .</span><br><span class="line">git commit -m &#39;&#39;</span><br><span class="line">约妹子吃饭</span><br><span class="line">回到家</span><br><span class="line">git pull origin dev</span><br><span class="line">继续开发</span><br><span class="line">git add .</span><br><span class="line">git commit -m &#39;&#39;</span><br><span class="line">git push origin dev</span><br><span class="line">第二天到达公司，按照以往的逻辑会执行如下代码：</span><br><span class="line">git pull origin dev</span><br><span class="line">然后接着开发就行，但是我们这里如果使用git pull将会产生分叉，那么不产生分叉如何操作呢？我们到达公司之后，进行如下操作：</span><br><span class="line">git fetch  # </span><br><span class="line">git rebase origin&#x2F;dev</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<p>解决办法：</p>
+<p>第二天到达公司不执行以往的<code>git pull origin dev</code>命令，而是替换为如下命令：</p>
+<ol>
+<li><code>git fetch origin dev</code> 接着版本库中有一个远程的origin/dev分支</li>
+<li><code>git rebase origin/dev</code> 因为我们要把远程拉下来放到版本库中的dev分支回到工作区中</li>
+</ol>
+<p>注意事项：如果git rebase命令之后有冲突此时就会中断rebase，此时不要紧张，我们手动解决冲突，然后(按照提示)重新<code>git add</code>，之后执行<code>git rebase --continue</code>命令即可</p>
+<p><img src="/Users/yirufeng/%E5%AE%9E%E4%B9%A0/%E9%A1%B9%E7%9B%AE/images/img/image-20200612093105811.png" class="lazyload" data-srcset="/Users/yirufeng/%E5%AE%9E%E4%B9%A0/%E9%A1%B9%E7%9B%AE/images/img/image-20200612093105811.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="image-20200612093105811"></p>
+<p>rebase遇到冲突提示如下：<img src="/Users/yirufeng/%E5%AE%9E%E4%B9%A0/%E9%A1%B9%E7%9B%AE/images/img/image-20200612093221919.png" class="lazyload" data-srcset="/Users/yirufeng/%E5%AE%9E%E4%B9%A0/%E9%A1%B9%E7%9B%AE/images/img/image-20200612093221919.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="image-20200612093221919"></p>
+<h1 id="20-使用beyond-compare软件快速解决冲突"><a href="#20-使用beyond-compare软件快速解决冲突" class="headerlink" title="20 使用beyond compare软件快速解决冲突"></a>20 使用beyond compare软件快速解决冲突</h1><p>解决冲突的软件：beyond compare ，mac 和 windows都有</p>
+<p>以后我们git中使用compare解决冲突，需要双方进行连接，创建关系之后以后我们合并文件的时候直接可以使用命令启动compare帮我们解决冲突</p>
+<p><img src="/Users/yirufeng/%E5%AE%9E%E4%B9%A0/%E9%A1%B9%E7%9B%AE/images/img/image-20200612101924823.png" class="lazyload" data-srcset="/Users/yirufeng/%E5%AE%9E%E4%B9%A0/%E9%A1%B9%E7%9B%AE/images/img/image-20200612101924823.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="image-20200612101924823"></p>
+<p><img src="/Users/yirufeng/%E5%AE%9E%E4%B9%A0/%E9%A1%B9%E7%9B%AE/images/img/image-20200612102133785.png" class="lazyload" data-srcset="/Users/yirufeng/%E5%AE%9E%E4%B9%A0/%E9%A1%B9%E7%9B%AE/images/img/image-20200612102133785.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="image-20200612102133785"></p>
+<p>查看安装路径：<img src="/Users/yirufeng/%E5%AE%9E%E4%B9%A0/%E9%A1%B9%E7%9B%AE/images/img/image-20200612101952330.png" class="lazyload" data-srcset="/Users/yirufeng/%E5%AE%9E%E4%B9%A0/%E9%A1%B9%E7%9B%AE/images/img/image-20200612101952330.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="image-20200612101952330">之后点击安装命令行工具，返回如下结果<img src="/Users/yirufeng/%E5%AE%9E%E4%B9%A0/%E9%A1%B9%E7%9B%AE/images/img/image-20200612102029625.png" class="lazyload" data-srcset="/Users/yirufeng/%E5%AE%9E%E4%B9%A0/%E9%A1%B9%E7%9B%AE/images/img/image-20200612102029625.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="image-20200612102029625"></p>
+<p><code>git config --local</code>  –local指的是当前配置只在当前项目中有效</p>
+<p><img src="/Users/yirufeng/%E5%AE%9E%E4%B9%A0/%E9%A1%B9%E7%9B%AE/images/img/image-20200612102744749.png" class="lazyload" data-srcset="/Users/yirufeng/%E5%AE%9E%E4%B9%A0/%E9%A1%B9%E7%9B%AE/images/img/image-20200612102744749.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="image-20200612102744749"></p>
+<h1 id="21-命令总结"><a href="#21-命令总结" class="headerlink" title="21 命令总结"></a>21 命令总结</h1><p><img src="/Users/yirufeng/%E5%AE%9E%E4%B9%A0/%E9%A1%B9%E7%9B%AE/images/img/image-20200612103703736.png" class="lazyload" data-srcset="/Users/yirufeng/%E5%AE%9E%E4%B9%A0/%E9%A1%B9%E7%9B%AE/images/img/image-20200612103703736.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="image-20200612103703736"></p>
+<h1 id="22-多人协同开发之gitflow工作流思路"><a href="#22-多人协同开发之gitflow工作流思路" class="headerlink" title="22 多人协同开发之gitflow工作流思路"></a>22 多人协同开发之gitflow工作流思路</h1><p>假设又招2个人，并且东北热目前只有有一个上线的版本(v1)。</p>
+<p>面试题：公司如何做多人协同开发？</p>
+<p>每个人有一个分支，在自己的分支下写代码，是从dev分支下拆除下来的。</p>
+<p>当我们每个人自己的功能完成之后想要合并的时候需要老大进行review，只有通过之后才可以合并进去。在小公司里面，代码review通过之后会合并到Master里面，但是大公司比较谨慎，往往会将代码review通过的代码合并到release分支，做测试工作，测试通过之后才上线，如果测试不通过需要修改Bug。</p>
+<p><img src="/Users/yirufeng/%E5%AE%9E%E4%B9%A0/%E9%A1%B9%E7%9B%AE/images/img/image-20200612144441814.png" class="lazyload" data-srcset="/Users/yirufeng/%E5%AE%9E%E4%B9%A0/%E9%A1%B9%E7%9B%AE/images/img/image-20200612144441814.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="image-20200612144441814"></p>
+<p>当我们分配到一个新功能的时候大多情况下以功能命名分支比较多见，当分支开发完成合并上线之后就可以删除了</p>
+<p>下图是一个完整的gitflow工作流：</p>
+<p><img src="/Users/yirufeng/%E5%AE%9E%E4%B9%A0/%E9%A1%B9%E7%9B%AE/images/img/image-20200612144955658.png" class="lazyload" data-srcset="/Users/yirufeng/%E5%AE%9E%E4%B9%A0/%E9%A1%B9%E7%9B%AE/images/img/image-20200612144955658.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="image-20200612144955658"></p>
+<p>不正规的团队会忽略release以及code review</p>
+<p><img src="/Users/yirufeng/%E5%AE%9E%E4%B9%A0/%E9%A1%B9%E7%9B%AE/images/img/image-20200612145256655.png" class="lazyload" data-srcset="/Users/yirufeng/%E5%AE%9E%E4%B9%A0/%E9%A1%B9%E7%9B%AE/images/img/image-20200612145256655.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="image-20200612145256655"></p>
+<h1 id="23-多人协同开发之创建初始项目和版本"><a href="#23-多人协同开发之创建初始项目和版本" class="headerlink" title="23 多人协同开发之创建初始项目和版本"></a>23 多人协同开发之创建初始项目和版本</h1><ul>
+<li>创建初始项目并同步到远程仓库：</li>
+</ul>
+<p>如果想要多人协同开发，需要在github的项目上邀请别人，项目的settings-&gt;collaborators-&gt;写上用户的昵称   <strong>这种方式只适合于个人不适合于公司</strong></p>
+<p>(<strong>适合于公司</strong>)公司中会新建一个组织，然后在组织中创建项目。</p>
+<ul>
+<li>创建版本：</li>
+</ul>
+<p>这里我们新建一个项目并且初始化一个最基本的版本，<strong>在公司中我们会基于tag做版本管理</strong> 不要使用hash值做版本管理</p>
+<p>还可以创建带有说明的标签，用<code>-a</code>指定标签名，<code>-m</code>指定说明文字：<a target="_blank" rel="noopener" href="https://www.liaoxuefeng.com/wiki/896043488029600/902335212905824">参考</a></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git tag -a v1 -m &quot;第一版&quot;   本地生成版本</span><br><span class="line">git log</span><br><span class="line"></span><br><span class="line">git push origin --tags  推送版本到github</span><br></pre></td></tr></table></figure>
+
+<p><img src="/Users/yirufeng/%E5%AE%9E%E4%B9%A0/%E9%A1%B9%E7%9B%AE/images/img/image-20200612151048580.png" class="lazyload" data-srcset="/Users/yirufeng/%E5%AE%9E%E4%B9%A0/%E9%A1%B9%E7%9B%AE/images/img/image-20200612151048580.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="image-20200612151048580"></p>
+<h1 id="24-多人协同开发之邀请成员"><a href="#24-多人协同开发之邀请成员" class="headerlink" title="24 多人协同开发之邀请成员"></a>24 多人协同开发之邀请成员</h1><p>首先在邀请成员之前我们首先要建立一个dev分支，因为其他成员来了都是在dev分支下进行开发</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git branch</span><br><span class="line">git checkout -b dev</span><br><span class="line">git branch</span><br><span class="line">git push origin dev</span><br></pre></td></tr></table></figure>
+
+
+
+<p>此时小弟开始做事，但是首先小弟要注册github账号并且拉小弟进入。github与gitlab都是一样的。</p>
+<h1 id="25-多人协同开发之邀请小弟开发"><a href="#25-多人协同开发之邀请小弟开发" class="headerlink" title="25 多人协同开发之邀请小弟开发"></a>25 多人协同开发之邀请小弟开发</h1><p>默认情况下成员拥有所有项目的只读权限，只有负责对应项目的人才有写的权限。</p>
+<p>对于组织可以设置权限，同时对于项目我们也可以设置权限</p>
+<p>当我们进入公司之后，需要clone代码到本地，然后切换到dev分支，之后在dev分支下新建我们自己的分支</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git clone ...</span><br><span class="line">git checkout dev</span><br><span class="line">git checkout -b 你自己的分支名称</span><br></pre></td></tr></table></figure>
+
+<p>注意：新建分支默认是基于当前分支新建</p>
+<h1 id="26-多人协同开发之代码review"><a href="#26-多人协同开发之代码review" class="headerlink" title="26 多人协同开发之代码review"></a>26 多人协同开发之代码review</h1><p>面试题：你们公司做不做review？谁来做呢？如何做呢？</p>
+<p>做，一般是小组长来做，通过github上的pull request（也叫merge request）来做</p>
+<p>首先要进行配置：</p>
+<p><img src="/Users/yirufeng/%E5%AE%9E%E4%B9%A0/%E9%A1%B9%E7%9B%AE/images/img/image-20200612164754654.png" class="lazyload" data-srcset="/Users/yirufeng/%E5%AE%9E%E4%B9%A0/%E9%A1%B9%E7%9B%AE/images/img/image-20200612164754654.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="image-20200612164754654"></p>
+<p><img src="/Users/yirufeng/%E5%AE%9E%E4%B9%A0/%E9%A1%B9%E7%9B%AE/images/img/image-20200612164725770.png" class="lazyload" data-srcset="/Users/yirufeng/%E5%AE%9E%E4%B9%A0/%E9%A1%B9%E7%9B%AE/images/img/image-20200612164725770.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="image-20200612164725770"></p>
+<p>如何通知老大code review呢？发起一个Pull request</p>
+<p><img src="/Users/yirufeng/%E5%AE%9E%E4%B9%A0/%E9%A1%B9%E7%9B%AE/images/img/image-20200612173511345.png" class="lazyload" data-srcset="/Users/yirufeng/%E5%AE%9E%E4%B9%A0/%E9%A1%B9%E7%9B%AE/images/img/image-20200612173511345.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="image-20200612173511345"></p>
+<p>老大如何做code review呢？</p>
+<p>方式1：网站上直接code review<img src="/Users/yirufeng/%E5%AE%9E%E4%B9%A0/%E9%A1%B9%E7%9B%AE/images/img/image-20200612173846495.png" class="lazyload" data-srcset="/Users/yirufeng/%E5%AE%9E%E4%B9%A0/%E9%A1%B9%E7%9B%AE/images/img/image-20200612173846495.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="image-20200612173846495"><img src="/Users/yirufeng/%E5%AE%9E%E4%B9%A0/%E9%A1%B9%E7%9B%AE/images/img/image-20200612173921826.png" class="lazyload" data-srcset="/Users/yirufeng/%E5%AE%9E%E4%B9%A0/%E9%A1%B9%E7%9B%AE/images/img/image-20200612173921826.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="image-20200612173921826"><img src="/Users/yirufeng/%E5%AE%9E%E4%B9%A0/%E9%A1%B9%E7%9B%AE/images/img/image-20200612174202238.png" class="lazyload" data-srcset="/Users/yirufeng/%E5%AE%9E%E4%B9%A0/%E9%A1%B9%E7%9B%AE/images/img/image-20200612174202238.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="image-20200612174045374"><img src="/Users/yirufeng/%E5%AE%9E%E4%B9%A0/%E9%A1%B9%E7%9B%AE/images/img/image-20200612174414804.png" class="lazyload" data-srcset="/Users/yirufeng/%E5%AE%9E%E4%B9%A0/%E9%A1%B9%E7%9B%AE/images/img/image-20200612174414804.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="image-20200612174414804"></p>
+<p>方式2：命令行拉取代码到本地进行review</p>
+<h1 id="27-多人协同开发之测试上线"><a href="#27-多人协同开发之测试上线" class="headerlink" title="27 多人协同开发之测试上线"></a>27 多人协同开发之测试上线</h1><p>做完了代码review，leader或者测试团队首先会在dev分支下创建一个release分支</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">git branch</span><br><span class="line">git checkout dev</span><br><span class="line">git checkout -b release</span><br><span class="line">git push origin release</span><br><span class="line">进行测试，期间不允许修改dev中的代码</span><br><span class="line">没有问题则合并到master中或者pull request到master中都可以，取决于leader</span><br><span class="line">之后合并到master以及dev中(因为可能修改Bug)</span><br><span class="line">此时可以删除release分支，是否删除取决于测试以及leader</span><br><span class="line">然后本地切换到master分支</span><br><span class="line">从远程拉取代码 git pull origin master</span><br><span class="line">有时需要加上标签，git tag -a v2 -m &#39;第二版 增加斗地主功能&#39;</span><br><span class="line">git push --tags</span><br></pre></td></tr></table></figure>
+
+
+
+<p>注意：release没问题的时候合并到master采用pull request 以及 merge都可以，取决于leader，但是当我们自己开发功能的分支合并到dev中必须pull request</p>
+<h1 id="28-给开源项目贡献代码"><a href="#28-给开源项目贡献代码" class="headerlink" title="28 给开源项目贡献代码"></a>28 给开源项目贡献代码</h1><p>面试题：想要找个牛逼的框架贡献代码如何做？？</p>
+<ol>
+<li>fork源代码：将别人源代码拷贝到自己仓库</li>
+<li>自己仓库修改代码</li>
+<li>给源代码作者提交修复bug的申请，申请pull request</li>
+</ol>
+<h1 id="29-配置文件存放3个位置"><a href="#29-配置文件存放3个位置" class="headerlink" title="29 配置文件存放3个位置"></a>29 配置文件存放3个位置</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">git config --local user.name &#39;&#39;</span><br><span class="line">git config --local user.email &#39;&#39;</span><br><span class="line"></span><br><span class="line">git config --system user.name &#39;&#39;</span><br><span class="line">git config --system user.email &#39;&#39;</span><br><span class="line"></span><br><span class="line">git config --global user.name &#39;&#39;</span><br><span class="line">git config --global user.email &#39;&#39;</span><br></pre></td></tr></table></figure>
+
+
+
+<p>第一个配置文件(<strong>项目配置文件</strong>，对应<code>--local</code>, 表示只在当前项目生效)：本地项目的 <code>.git</code>目录下的<code>config</code></p>
+<p>第二个配置文件(<strong>全局配置文件</strong>，对应<code>--global</code>)：存放在<code>~/.gitconfig</code></p>
+<p>优先级：首先在本项目的<code>.git/config</code>中查找，没有的话就去<code>~/.gitconfig</code></p>
+<p>第三个配置文件：(系统配置文件，对应<code>--system</code>)：存放在 <code>/etc/.gitconfig</code>。<strong>需要有root权限</strong></p>
+<p><img src="/Users/yirufeng/%E5%AE%9E%E4%B9%A0/%E9%A1%B9%E7%9B%AE/images/img/image-20200613072231064.png" class="lazyload" data-srcset="/Users/yirufeng/%E5%AE%9E%E4%B9%A0/%E9%A1%B9%E7%9B%AE/images/img/image-20200613072231064.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="image-20200613072231064"></p>
+<h1 id="30-git-免密登录"><a href="#30-git-免密登录" class="headerlink" title="30 git 免密登录"></a>30 git 免密登录</h1><p><img src="/Users/yirufeng/%E5%AE%9E%E4%B9%A0/%E9%A1%B9%E7%9B%AE/images/img/image-20200613072622395.png" class="lazyload" data-srcset="/Users/yirufeng/%E5%AE%9E%E4%B9%A0/%E9%A1%B9%E7%9B%AE/images/img/image-20200613072622395.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="image-20200613072622395"></p>
+<p><img src="/Users/yirufeng/%E5%AE%9E%E4%B9%A0/%E9%A1%B9%E7%9B%AE/images/img/image-20200613073235173.png" class="lazyload" data-srcset="/Users/yirufeng/%E5%AE%9E%E4%B9%A0/%E9%A1%B9%E7%9B%AE/images/img/image-20200613073235173.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="image-20200613073235173"></p>
+<h1 id="31-gitignore忽略文件"><a href="#31-gitignore忽略文件" class="headerlink" title="31 gitignore忽略文件"></a>31 gitignore忽略文件</h1><p>github上官方提供了一个仓库用来存储各个语言的gitignore文件 <a target="_blank" rel="noopener" href="https://www.github.com/github/ignore">官方</a></p>
+<p><img src="/Users/yirufeng/%E5%AE%9E%E4%B9%A0/%E9%A1%B9%E7%9B%AE/images/img/image-20200613074020619.png" class="lazyload" data-srcset="/Users/yirufeng/%E5%AE%9E%E4%B9%A0/%E9%A1%B9%E7%9B%AE/images/img/image-20200613074020619.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="image-20200613074020619"><strong>一定要严格注意一些敏感数据文件我们需要加入到gitignore中</strong></p>
+<h1 id="32-github做任务管理"><a href="#32-github做任务管理" class="headerlink" title="32 github做任务管理"></a>32 github做任务管理</h1><p><img src="/Users/yirufeng/%E5%AE%9E%E4%B9%A0/%E9%A1%B9%E7%9B%AE/images/img/image-20200612142549275.png" class="lazyload" data-srcset="/Users/yirufeng/%E5%AE%9E%E4%B9%A0/%E9%A1%B9%E7%9B%AE/images/img/image-20200612142549275.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="image-20200612142549275"></p>
+<p>Issue：任务管理系统，也可以将他人提出的bug安排给员工</p>
+<p>Wiki：对项目的介绍文档以及使用安装等</p>
+
+  
+  
+    
+    <div class='footer'>
+      
+      
+        
+  <div class="related_posts">
+    <section class='header'>
+      <i class="fas fa-bookmark fa-fw" aria-hidden="true"></i><span>相关文章</span>
+    </section>
+    <section class='body'>
+      <div class="vlts-rps"><a class="item" href="/2020/05/28/Mac下Pycharm的快捷键大全/" title="Mac下Pycharm的快捷键大全" rel="bookmark "><img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/046.jpg" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/046.jpg" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" /><span class="title">Mac下Pycharm的快捷键大全</span></a><a class="item" href="/2021/03/30/centos7安装docker/" title="centos7安装docker" rel="bookmark "><img src="https://cdn.jsdelivr.net/gh/sivanWu0222/ImageHosting@master/uPic/pODGrE.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/sivanWu0222/ImageHosting@master/uPic/pODGrE.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" /><span class="title">centos7安装docker</span><span class="excerpt">系统要求：docker支持64位Centos7，并且要求内核版本(查看Linux系统内核版本：uname -r)不低于3....</span></a><a class="item" href="/2020/06/04/vscode-快速搭建Python以及Django-Flask开发环境/" title="vscode 快速搭建Python以及Django,Flask开发环境" rel="bookmark "><img src="https://gitee.com/yirufeng/images/raw/master/img/image-20200604092852093.png" class="lazyload" data-srcset="https://gitee.com/yirufeng/images/raw/master/img/image-20200604092852093.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" /><span class="title">vscode 快速搭建Python以及Django,Flask开发环境</span></a><a class="item" href="/2021/03/26/基于Centos7-搭建-gitlab/" title="基于Centos7 搭建 gitlab" rel="bookmark "><img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/046.jpg" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/046.jpg" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" /><span class="title">基于Centos7 搭建 gitlab</span><span class="excerpt">环境centos7腾讯云服务器一台
+步骤 前提 
+              
+              更新软件包：y...</span></a></div></section></div>
+      
+      
+        <div class='copyright'>
+          <blockquote>
+            
+              
+                <p>博客内容遵循 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</p>
+
+              
+            
+              
+                <p>本文永久链接是：<a href=http://www.sivan.tech/2020/06/10/%E8%80%81%E7%94%B7%E5%AD%A9git%E5%AE%9E%E6%88%98%E7%AC%94%E8%AE%B0/>http://www.sivan.tech/2020/06/10/%E8%80%81%E7%94%B7%E5%AD%A9git%E5%AE%9E%E6%88%98%E7%AC%94%E8%AE%B0/</a></p>
+              
+            
+          </blockquote>
+        </div>
+      
+      
+    </div>
+  
+  
+    
+
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2021-05-30T02:42:45+00:00">
+  <a class='notlink'>
+    <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：May 30, 2021</p>
+  </a>
+</div>
+
+        
+      
+        
+          
+  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Tools/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>Tools</p></a></div>
+
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
+    
+      
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://www.sivan.tech/2020/06/10/%E8%80%81%E7%94%B7%E5%AD%A9git%E5%AE%9E%E6%88%98%E7%AC%94%E8%AE%B0/&title=老男孩git实战视频笔记 - 逸如风的个人博客&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://www.sivan.tech/2020/06/10/%E8%80%81%E7%94%B7%E5%AD%A9git%E5%AE%9E%E6%88%98%E7%AC%94%E8%AE%B0/&title=老男孩git实战视频笔记 - 逸如风的个人博客&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://service.weibo.com/share/share.php?url=http://www.sivan.tech/2020/06/10/%E8%80%81%E7%94%B7%E5%AD%A9git%E5%AE%9E%E6%88%98%E7%AC%94%E8%AE%B0/&title=老男孩git实战视频笔记 - 逸如风的个人博客&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=">
+          
+        </a>
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+
+
+        
+      
+    </div>
+  </div>
+
+
+  
+  
+
+  
+    <div class="prev-next">
+      
+        <a class='prev' href='/2020/09/02/%E5%B9%B6%E5%8F%91%EF%BC%8C%E5%B9%B6%E8%A1%8C%EF%BC%8C%E5%BC%82%E6%AD%A5%EF%BC%8C%E5%90%8C%E6%AD%A5%EF%BC%8C%E9%95%BF%E8%BF%9E%E6%8E%A5%EF%BC%8C%E7%9F%AD%E8%BF%9E%E6%8E%A5%EF%BC%8C%E9%98%BB%E5%A1%9E%EF%BC%8C%E9%9D%9E%E9%98%BB%E5%A1%9E/'>
+          <p class='title'><i class="fas fa-chevron-left" aria-hidden="true"></i>并发，并行，异步，同步，长连接，短连接，阻塞，非阻塞</p>
+          <p class='content'>同步和异步区别同步和异步最大的区别就是被调用方的执行方式和返回时机。同步指的是被调用方做完事情之后再返回，异步指的是被调用方先返回，然后再做事情，做完之后再想办法通知调用方。
+阻塞和非阻塞阻塞请...</p>
+        </a>
+      
+      
+        <a class='next' href='/2020/06/08/Python-%E4%B8%AD%E7%9A%84while%E5%BE%AA%E7%8E%AF/'>
+          <p class='title'>Python 中的while循环<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>while
+python除了正常的while 循环，还可以在while循环后带上一个else分支，那么执行流程是怎么样的呢？
+
+话不多说，上来三段代码：
+
+# while 循环如果被打断，则不执...</p>
+        </a>
+      
+    </div>
+  
+</article>
+
+
+  
+
+  <article class="post white-box reveal shadow" id="comments">
+    <p ct><i class='fas fa-comments'></i> 评论</p>
+    
+    <div id="valine_container" class="valine_thread">
+  <i class="fas fa-cog fa-spin fa-fw fa-2x"></i>
+</div>
+
+  </article>
+
+
+
+
+
+
+</div>
+<aside class='l_side'>
+  
+  
+    
+    
+
+<section class="widget blogger blur desktop mobile">
+  <div class='content'>
+    
+      
+        <a class='avatar flat-box rectangle' href='/about/'>
+          <img no-lazy src='https://cdn.jsdelivr.net/gh/sivanWu0222/ImageHosting@master/uPic/IMG_0990_gaitubao_3852x2738.jpg'/>
+        </a>
+      
+    
+    
+      <div class='text'>
+        
+          <h2>逸如风</h2>
+        
+        
+          <p>忠于自己，披星戴月奔向理想和你!</p>
+
+        
+        
+      </div>
+    
+    
+      <div class="social-wrapper">
+        
+          
+            <a href="/atom.xml"
+              class="social fas fa-rss flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+              
+            </a>
+          
+        
+          
+            <a href="/yirufeng@foxmail.com"
+              class="social fas fa-envelope flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+              
+            </a>
+          
+        
+          
+            <a href="https://github.com/sivanWu0222/"
+              class="social fab fa-github flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+              
+            </a>
+          
+        
+      </div>
+    
+  </div>
+</section>
+
+  
+
+  
+    
+    
+
+<section class="widget blur desktop">
+  
+  <header>
+    
+      <i class="fas fa-award fa-fw" aria-hidden="true"></i><span class='name'>站点信息</span>
+    
+  </header>
+
+
+  <div class='content'>
+    <div class="webinfo">
+      
+        <div class="webinfo-item">
+          <div>文章数目：</div>
+          <div>91 篇</div>
+        </div>
+      
+
+      
+        <div class="webinfo-item">
+          <div>已运行时间：</div>
+          <div id="webinfo-runtime-count" publish_date="03/24/2020 21:34:09"></div>
+        </div>
+        <script>
+          var BirthDay = new Date(new Date('2016/01/01'));
+          var today = new Date();
+          var timeold = (today.getTime() - BirthDay.getTime());
+          var daysold = Math.floor(timeold / (24 * 60 * 60 * 1000));
+          document.getElementById('webinfo-runtime-count').innerHTML = daysold + ' 天';
+        </script>
+      
+
+
+      
+        <div class="webinfo-item">
+          <div>本站总字数：</div>
+          <div>99.1k 字</div>
+        </div>
+      
+
+      
+        <div class="webinfo-item">
+          <div>本站访客数：</div>
+          
+          <div><span id="busuanzi_value_site_uv"><i class="fas fa-fan fa-spin fa-fw" aria-hidden="true"></i></span> 人</div>
+          
+        </div>
+      
+
+      
+        <div class="webinfo-item">
+          <div>本站总访问量：</div>
+          
+          <div><span id="busuanzi_value_site_pv"><i class="fas fa-fan fa-spin fa-fw" aria-hidden="true"></i></span> 次</div>
+          
+        </div>
+      
+
+      
+        <div class="webinfo-item">
+          <div>最后活动时间：</div>
+          
+            <div id="last-update" style="display: none;">Sun May 30 2021 02:43:09 GMT+0000 (Coordinated Universal Time)</div>
+            <div id="last-update-show">2021-05-30 日</div>
+          
+        </div>
+        
+        <script>
+          function timeago(dateTimeStamp) {
+              var minute = 1000 * 60; //把分，时，天，周，半个月，一个月用毫秒表示
+              var hour = minute * 60;
+              var day = hour * 24;
+              var week = day * 7;
+              var month = day * 30;
+              var now = new Date().getTime(); //获取当前时间毫秒
+              var diffValue = now - dateTimeStamp; //时间差
+              if (diffValue < 0) {
+                  return;
+              }
+              var minC = diffValue / minute; //计算时间差的分，时，天，周，月
+              var hourC = diffValue / hour;
+              var dayC = diffValue / day;
+              var weekC = diffValue / week;
+              var monthC = diffValue / month;
+              if (monthC >= 1 && monthC <= 3) {
+                  result = " " + parseInt(monthC) + " 月前"
+              } else if (weekC >= 1 && weekC <= 3) {
+                  result = " " + parseInt(weekC) + " 周前"
+              } else if (dayC >= 1 && dayC <= 6) {
+                  result = " " + parseInt(dayC) + " 天前"
+              } else if (hourC >= 1 && hourC <= 23) {
+                  result = " " + parseInt(hourC) + " 小时前"
+              } else if (minC >= 1 && minC <= 59) {
+                  result = " " + parseInt(minC) + " 分钟前"
+              } else if (diffValue >= 0 && diffValue <= minute) {
+                  result = "刚刚"
+              } else {
+                  var datetime = new Date();
+                  datetime.setTime(dateTimeStamp);
+                  var Nyear = datetime.getFullYear();
+                  var Nmonth = datetime.getMonth() + 1 < 10 ? "0" + (datetime.getMonth() + 1) : datetime.getMonth() + 1;
+                  var Ndate = datetime.getDate() < 10 ? "0" + datetime.getDate() : datetime.getDate();
+                  var Nhour = datetime.getHours() < 10 ? "0" + datetime.getHours() : datetime.getHours();
+                  var Nminute = datetime.getMinutes() < 10 ? "0" + datetime.getMinutes() : datetime.getMinutes();
+                  var Nsecond = datetime.getSeconds() < 10 ? "0" + datetime.getSeconds() : datetime.getSeconds();
+                  result = Nyear + "-" + Nmonth + "-" + Ndate
+              }
+              return result;
+          }
+          var lastUpDate = document.getElementById('last-update').innerHTML;
+          try {
+            document.getElementById('last-update-show').innerHTML = timeago(new Date(lastUpDate));
+          } catch (error) {
+            document.getElementById('last-update-show').innerHTML = '2021-05-30 日';
+          }
+        </script>
+        
+      
+    </div>
+  </div>
+</section>
+
+  
+
+  
+    
+    
+  
+
+  <section class="widget tagcloud blur desktop mobile">
+    
+  <header>
+    
+      <a href='/tags/'><i class="fas fa-tags fa-fw" aria-hidden="true"></i><span class='name'>热门标签</span></a>
+    
+  </header>
+
+
+    <div class='content'>
+      <a href="/tags/AVL%E6%A0%91/" style="font-size: 14px; color: #999">AVL树</a> <a href="/tags/Algorithms/" style="font-size: 14px; color: #999">Algorithms</a> <a href="/tags/B-%E6%A0%91/" style="font-size: 14px; color: #999">B+树</a> <a href="/tags/BFPRT/" style="font-size: 14px; color: #999">BFPRT</a> <a href="/tags/B%E6%A0%91/" style="font-size: 14px; color: #999">B树</a> <a href="/tags/CORS/" style="font-size: 14px; color: #999">CORS</a> <a href="/tags/Centos/" style="font-size: 14px; color: #999">Centos</a> <a href="/tags/DP/" style="font-size: 15.11px; color: #919191">DP</a> <a href="/tags/Golang/" style="font-size: 16.22px; color: #8a8a8a">Golang</a> <a href="/tags/IO/" style="font-size: 14px; color: #999">IO</a> <a href="/tags/Idea/" style="font-size: 14px; color: #999">Idea</a> <a href="/tags/LeetCode/" style="font-size: 20.67px; color: #6c6c6c">LeetCode</a> <a href="/tags/Linux/" style="font-size: 15.11px; color: #919191">Linux</a> <a href="/tags/Maven/" style="font-size: 14px; color: #999">Maven</a> <a href="/tags/Mysql/" style="font-size: 14px; color: #999">Mysql</a> <a href="/tags/OS/" style="font-size: 17.33px; color: #828282">OS</a> <a href="/tags/Pycharm/" style="font-size: 14px; color: #999">Pycharm</a> <a href="/tags/Tools/" style="font-size: 18.44px; color: #7b7b7b">Tools</a> <a href="/tags/Ubuntu/" style="font-size: 14px; color: #999">Ubuntu</a> <a href="/tags/defer/" style="font-size: 14px; color: #999">defer</a> <a href="/tags/demo/" style="font-size: 14px; color: #999">demo</a> <a href="/tags/docker/" style="font-size: 16.22px; color: #8a8a8a">docker</a> <a href="/tags/dp/" style="font-size: 14px; color: #999">dp</a> <a href="/tags/error/" style="font-size: 14px; color: #999">error</a> <a href="/tags/flag/" style="font-size: 14px; color: #999">flag</a> <a href="/tags/gitlab/" style="font-size: 14px; color: #999">gitlab</a> <a href="/tags/go/" style="font-size: 21.78px; color: #646464">go</a> <a href="/tags/go%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" style="font-size: 15.11px; color: #919191">go的基本数据结构</a> <a href="/tags/hexo/" style="font-size: 14px; color: #999">hexo</a> <a href="/tags/iota/" style="font-size: 14px; color: #999">iota</a> <a href="/tags/jwt/" style="font-size: 14px; color: #999">jwt</a> <a href="/tags/jwt-gos/" style="font-size: 14px; color: #999">jwt-gos</a> <a href="/tags/linux/" style="font-size: 14px; color: #999">linux</a> <a href="/tags/maven/" style="font-size: 15.11px; color: #919191">maven</a> <a href="/tags/memcached/" style="font-size: 14px; color: #999">memcached</a> <a href="/tags/mysql/" style="font-size: 15.11px; color: #919191">mysql</a> <a href="/tags/nginx/" style="font-size: 15.11px; color: #919191">nginx</a> <a href="/tags/orm/" style="font-size: 14px; color: #999">orm</a> <a href="/tags/panic/" style="font-size: 14px; color: #999">panic</a> <a href="/tags/parallel-desktop/" style="font-size: 14px; color: #999">parallel desktop</a> <a href="/tags/pip/" style="font-size: 15.11px; color: #919191">pip</a> <a href="/tags/python/" style="font-size: 14px; color: #999">python</a> <a href="/tags/recover/" style="font-size: 14px; color: #999">recover</a> <a href="/tags/redis/" style="font-size: 16.22px; color: #8a8a8a">redis</a> <a href="/tags/tools/" style="font-size: 16.22px; color: #8a8a8a">tools</a> <a href="/tags/topK/" style="font-size: 14px; color: #999">topK</a> <a href="/tags/vs-code/" style="font-size: 14px; color: #999">vs code</a> <a href="/tags/%E4%B8%AD%E9%97%B4%E4%BB%B6/" style="font-size: 14px; color: #999">中间件</a> <a href="/tags/%E4%B8%BB%E4%BB%8E%E5%A4%8D%E5%88%B6/" style="font-size: 14px; color: #999">主从复制</a> <a href="/tags/%E4%BA%8C%E5%88%86/" style="font-size: 15.11px; color: #919191">二分</a> <a href="/tags/%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91/" style="font-size: 14px; color: #999">二叉搜索树</a> <a href="/tags/%E4%BA%8C%E5%8F%89%E6%A0%91/" style="font-size: 14px; color: #999">二叉树</a> <a href="/tags/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/" style="font-size: 14px; color: #999">云服务器</a> <a href="/tags/%E4%BD%8D%E8%BF%90%E7%AE%97/" style="font-size: 15.11px; color: #919191">位运算</a> <a href="/tags/%E5%85%A5%E8%81%8C/" style="font-size: 14px; color: #999">入职</a> <a href="/tags/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/" style="font-size: 15.11px; color: #919191">冒泡排序</a> <a href="/tags/%E5%88%B7%E9%A2%98/" style="font-size: 14px; color: #999">刷题</a> <a href="/tags/%E5%89%8D%E7%BC%80%E6%A0%91/" style="font-size: 14px; color: #999">前缀树</a> <a href="/tags/%E5%A0%86/" style="font-size: 14px; color: #999">堆</a> <a href="/tags/%E5%A0%86%E6%8E%92%E5%BA%8F/" style="font-size: 15.11px; color: #919191">堆排序</a> <a href="/tags/%E5%A4%9A%E8%B7%AF%E5%A4%8D%E7%94%A8/" style="font-size: 14px; color: #999">多路复用</a> <a href="/tags/%E5%A4%A7%E7%89%9B/" style="font-size: 14px; color: #999">大牛</a> <a href="/tags/%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/" style="font-size: 14px; color: #999">学习路线</a> <a href="/tags/%E5%B0%8F%E5%92%8C%E9%97%AE%E9%A2%98/" style="font-size: 14px; color: #999">小和问题</a> <a href="/tags/%E5%B2%97%E4%BD%8D/" style="font-size: 14px; color: #999">岗位</a> <a href="/tags/%E5%B7%A5%E5%85%B7/" style="font-size: 16.22px; color: #8a8a8a">工具</a> <a href="/tags/%E5%B8%83%E9%9A%86%E8%BF%87%E6%BB%A4%E5%99%A8/" style="font-size: 14px; color: #999">布隆过滤器</a> <a href="/tags/%E5%BA%8F%E5%88%97%E5%8C%96/" style="font-size: 14px; color: #999">序列化</a> <a href="/tags/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85/" style="font-size: 14px; color: #999">开发环境安装</a> <a href="/tags/%E5%BD%92%E5%B9%B6%E6%8E%92%E5%BA%8F/" style="font-size: 17.33px; color: #828282">归并排序</a> <a href="/tags/%E5%BE%AE%E6%9C%8D%E5%8A%A1/" style="font-size: 14px; color: #999">微服务</a> <a href="/tags/%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F/" style="font-size: 15.11px; color: #919191">快速排序</a> <a href="/tags/%E6%89%BE%E5%89%8D%E5%87%A0%E5%A4%A7%E6%88%96%E5%89%8D%E5%87%A0%E5%B0%8F/" style="font-size: 14px; color: #999">找前几大或前几小</a> <a href="/tags/%E6%89%BE%E7%AC%AC%E5%87%A0%E5%A4%A7%E6%88%96%E7%AC%AC%E5%87%A0%E5%B0%8F/" style="font-size: 14px; color: #999">找第几大或第几小</a> <a href="/tags/%E6%8E%92%E5%BA%8F/" style="font-size: 19.56px; color: #737373">排序</a> <a href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" style="font-size: 15.11px; color: #919191">数据结构</a> <a href="/tags/%E6%96%87%E4%BB%B6/" style="font-size: 14px; color: #999">文件</a> <a href="/tags/%E6%97%85%E8%A1%8C/" style="font-size: 14px; color: #999">旅行</a> <a href="/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/" style="font-size: 14px; color: #999">服务器</a> <a href="/tags/%E6%9D%82%E8%AE%B0/" style="font-size: 14px; color: #999">杂记</a> <a href="/tags/%E6%9E%81%E5%AE%A2%E6%97%B6%E9%97%B4/" style="font-size: 14px; color: #999">极客时间</a> <a href="/tags/%E6%9E%B6%E6%9E%84/" style="font-size: 15.11px; color: #919191">架构</a> <a href="/tags/%E6%A0%88/" style="font-size: 14px; color: #999">栈</a> <a href="/tags/%E6%A0%91/" style="font-size: 16.22px; color: #8a8a8a">树</a> <a href="/tags/%E6%A0%91%E5%BD%A2DP/" style="font-size: 15.11px; color: #919191">树形DP</a> <a href="/tags/%E6%A1%86%E6%9E%B6/" style="font-size: 14px; color: #999">框架</a> <a href="/tags/%E6%A1%B6%E6%8E%92%E5%BA%8F/" style="font-size: 14px; color: #999">桶排序</a> <a href="/tags/%E7%88%AC%E8%99%AB/" style="font-size: 14px; color: #999">爬虫</a> <a href="/tags/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/" style="font-size: 14px; color: #999">环境搭建</a> <a href="/tags/%E7%9B%B4%E6%8E%A5%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F/" style="font-size: 15.11px; color: #919191">直接插入排序</a> <a href="/tags/%E7%9F%A9%E9%98%B5/" style="font-size: 14px; color: #999">矩阵</a> <a href="/tags/%E7%AE%97%E6%B3%95/" style="font-size: 24px; color: #555">算法</a> <a href="/tags/%E7%BB%9F%E8%AE%A1%E9%80%86%E5%BA%8F%E5%AF%B9/" style="font-size: 14px; color: #999">统计逆序对</a> <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" style="font-size: 17.33px; color: #828282">计算机网络</a> <a href="/tags/%E8%B0%83%E8%AF%95/" style="font-size: 14px; color: #999">调试</a> <a href="/tags/%E8%B7%A8%E5%9F%9F%E9%97%AE%E9%A2%98/" style="font-size: 14px; color: #999">跨域问题</a> <a href="/tags/%E9%80%83%E9%80%B8%E5%88%86%E6%9E%90/" style="font-size: 14px; color: #999">逃逸分析</a> <a href="/tags/%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F/" style="font-size: 15.11px; color: #919191">选择排序</a> <a href="/tags/%E9%83%A8%E7%BD%B2/" style="font-size: 14px; color: #999">部署</a> <a href="/tags/%E9%94%99%E8%AF%AF/" style="font-size: 14px; color: #999">错误</a> <a href="/tags/%E9%98%85%E8%AF%BB%E6%B8%85%E5%8D%95/" style="font-size: 14px; color: #999">阅读清单</a> <a href="/tags/%E9%98%9F%E5%88%97/" style="font-size: 14px; color: #999">队列</a> <a href="/tags/%E9%9D%A2%E8%AF%95/" style="font-size: 22.89px; color: #5d5d5d">面试</a>
+    </div>
+  </section>
+
+
+  
+
+  
+    
+    
+  
+
+  <section class="widget category blur desktop">
+    
+  <header>
+    
+      <a href='/categories/'><i class="fas fa-folder-open fa-fw" aria-hidden="true"></i><span class='name'>文章分类</span></a>
+    
+  </header>
+
+
+    <div class='content'>
+      <ul class="entry navigation">
+        
+          <li><a class="flat-box"
+            title="/categories/CI-CD/" href="/categories/CI-CD/"
+            id="categoriesCI-CD"
+            ><div class='name'>CI/CD</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box"
+            title="/categories/Golang/" href="/categories/Golang/"
+            id="categoriesGolang"
+            ><div class='name'>Golang</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box"
+            title="/categories/LeetCode/" href="/categories/LeetCode/"
+            id="categoriesLeetCode"
+            ><div class='name'>LeetCode</div><div class='badge'>(9)</div></a></li>
+        
+          <li><a class="flat-box child"
+            title="/categories/LeetCode/dp/" href="/categories/LeetCode/dp/"
+            id="categoriesLeetCodedp"
+            ><div class='name'>dp</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box child"
+            title="/categories/LeetCode/%E4%BD%8D%E8%BF%90%E7%AE%97/" href="/categories/LeetCode/%E4%BD%8D%E8%BF%90%E7%AE%97/"
+            id="categoriesLeetCodeE4BD8DE8BF90E7AE97"
+            ><div class='name'>位运算</div><div class='badge'>(2)</div></a></li>
+        
+          <li><a class="flat-box child"
+            title="/categories/LeetCode/%E5%9B%9E%E6%BA%AF/" href="/categories/LeetCode/%E5%9B%9E%E6%BA%AF/"
+            id="categoriesLeetCodeE59B9EE6BAAF"
+            ><div class='name'>回溯</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box child"
+            title="/categories/LeetCode/%E7%AE%97%E6%B3%95/" href="/categories/LeetCode/%E7%AE%97%E6%B3%95/"
+            id="categoriesLeetCodeE7AE97E6B395"
+            ><div class='name'>算法</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box"
+            title="/categories/Linux/" href="/categories/Linux/"
+            id="categoriesLinux"
+            ><div class='name'>Linux</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box child"
+            title="/categories/Linux/%E7%BD%91%E7%BB%9C/" href="/categories/Linux/%E7%BD%91%E7%BB%9C/"
+            id="categoriesLinuxE7BD91E7BB9C"
+            ><div class='name'>网络</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box"
+            title="/categories/OS/" href="/categories/OS/"
+            id="categoriesOS"
+            ><div class='name'>OS</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box"
+            title="/categories/Tools/" href="/categories/Tools/"
+            id="categoriesTools"
+            ><div class='name'>Tools</div><div class='badge'>(2)</div></a></li>
+        
+          <li><a class="flat-box"
+            title="/categories/demo/" href="/categories/demo/"
+            id="categoriesdemo"
+            ><div class='name'>demo</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box"
+            title="/categories/docker/" href="/categories/docker/"
+            id="categoriesdocker"
+            ><div class='name'>docker</div><div class='badge'>(2)</div></a></li>
+        
+          <li><a class="flat-box"
+            title="/categories/go/" href="/categories/go/"
+            id="categoriesgo"
+            ><div class='name'>go</div><div class='badge'>(11)</div></a></li>
+        
+          <li><a class="flat-box child"
+            title="/categories/go/json/" href="/categories/go/json/"
+            id="categoriesgojson"
+            ><div class='name'>json</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box child"
+            title="/categories/go/%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" href="/categories/go/%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"
+            id="categoriesgoE59FBAE69CACE695B0E68DAEE7BB93E69E84"
+            ><div class='name'>基本数据结构</div><div class='badge'>(2)</div></a></li>
+        
+          <li><a class="flat-box child"
+            title="/categories/go/%E7%88%AC%E8%99%AB/" href="/categories/go/%E7%88%AC%E8%99%AB/"
+            id="categoriesgoE788ACE899AB"
+            ><div class='name'>爬虫</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box child"
+            title="/categories/go/%E9%80%83%E9%80%B8%E5%88%86%E6%9E%90/" href="/categories/go/%E9%80%83%E9%80%B8%E5%88%86%E6%9E%90/"
+            id="categoriesgoE98083E980B8E58886E69E90"
+            ><div class='name'>逃逸分析</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box child"
+            title="/categories/go/%E9%94%99%E8%AF%AF/" href="/categories/go/%E9%94%99%E8%AF%AF/"
+            id="categoriesgoE99499E8AFAF"
+            ><div class='name'>错误</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box"
+            title="/categories/golang/" href="/categories/golang/"
+            id="categoriesgolang"
+            ><div class='name'>golang</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box"
+            title="/categories/hexo/" href="/categories/hexo/"
+            id="categorieshexo"
+            ><div class='name'>hexo</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box"
+            title="/categories/jwt/" href="/categories/jwt/"
+            id="categoriesjwt"
+            ><div class='name'>jwt</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box child"
+            title="/categories/jwt/go/" href="/categories/jwt/go/"
+            id="categoriesjwtgo"
+            ><div class='name'>go</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box"
+            title="/categories/linux/" href="/categories/linux/"
+            id="categorieslinux"
+            ><div class='name'>linux</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box"
+            title="/categories/maven/" href="/categories/maven/"
+            id="categoriesmaven"
+            ><div class='name'>maven</div><div class='badge'>(3)</div></a></li>
+        
+          <li><a class="flat-box"
+            title="/categories/mysql/" href="/categories/mysql/"
+            id="categoriesmysql"
+            ><div class='name'>mysql</div><div class='badge'>(2)</div></a></li>
+        
+          <li><a class="flat-box"
+            title="/categories/nginx/" href="/categories/nginx/"
+            id="categoriesnginx"
+            ><div class='name'>nginx</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box"
+            title="/categories/python/" href="/categories/python/"
+            id="categoriespython"
+            ><div class='name'>python</div><div class='badge'>(3)</div></a></li>
+        
+          <li><a class="flat-box child"
+            title="/categories/python/pip/" href="/categories/python/pip/"
+            id="categoriespythonpip"
+            ><div class='name'>pip</div><div class='badge'>(2)</div></a></li>
+        
+          <li><a class="flat-box"
+            title="/categories/redis/" href="/categories/redis/"
+            id="categoriesredis"
+            ><div class='name'>redis</div><div class='badge'>(2)</div></a></li>
+        
+          <li><a class="flat-box"
+            title="/categories/tools/" href="/categories/tools/"
+            id="categoriestools"
+            ><div class='name'>tools</div><div class='badge'>(2)</div></a></li>
+        
+          <li><a class="flat-box"
+            title="/categories/%E4%B8%AD%E9%97%B4%E4%BB%B6/" href="/categories/%E4%B8%AD%E9%97%B4%E4%BB%B6/"
+            id="categoriesE4B8ADE997B4E4BBB6"
+            ><div class='name'>中间件</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box"
+            title="/categories/%E5%85%A5%E8%81%8C/" href="/categories/%E5%85%A5%E8%81%8C/"
+            id="categoriesE585A5E8818C"
+            ><div class='name'>入职</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box"
+            title="/categories/%E5%B2%97%E4%BD%8D/" href="/categories/%E5%B2%97%E4%BD%8D/"
+            id="categoriesE5B297E4BD8D"
+            ><div class='name'>岗位</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box"
+            title="/categories/%E5%B7%A5%E5%85%B7/" href="/categories/%E5%B7%A5%E5%85%B7/"
+            id="categoriesE5B7A5E585B7"
+            ><div class='name'>工具</div><div class='badge'>(2)</div></a></li>
+        
+          <li><a class="flat-box child"
+            title="/categories/%E5%B7%A5%E5%85%B7/git/" href="/categories/%E5%B7%A5%E5%85%B7/git/"
+            id="categoriesE5B7A5E585B7git"
+            ><div class='name'>git</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box"
+            title="/categories/%E5%B7%A5%E5%85%B7%E7%AF%87/" href="/categories/%E5%B7%A5%E5%85%B7%E7%AF%87/"
+            id="categoriesE5B7A5E585B7E7AF87"
+            ><div class='name'>工具篇</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box"
+            title="/categories/%E5%BE%AE%E6%9C%8D%E5%8A%A1/" href="/categories/%E5%BE%AE%E6%9C%8D%E5%8A%A1/"
+            id="categoriesE5BEAEE69C8DE58AA1"
+            ><div class='name'>微服务</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box child"
+            title="/categories/%E5%BE%AE%E6%9C%8D%E5%8A%A1/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/" href="/categories/%E5%BE%AE%E6%9C%8D%E5%8A%A1/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"
+            id="categoriesE5BEAEE69C8DE58AA1E78EAFE5A283E690ADE5BBBA"
+            ><div class='name'>环境搭建</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box"
+            title="/categories/%E6%97%85%E8%A1%8C/" href="/categories/%E6%97%85%E8%A1%8C/"
+            id="categoriesE69785E8A18C"
+            ><div class='name'>旅行</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box"
+            title="/categories/%E6%9E%B6%E6%9E%84/" href="/categories/%E6%9E%B6%E6%9E%84/"
+            id="categoriesE69EB6E69E84"
+            ><div class='name'>架构</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box child"
+            title="/categories/%E6%9E%B6%E6%9E%84/%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/" href="/categories/%E6%9E%B6%E6%9E%84/%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/"
+            id="categoriesE69EB6E69E84E5ADA6E4B9A0E8B7AFE7BABF"
+            ><div class='name'>学习路线</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box"
+            title="/categories/%E6%B1%87%E6%80%BB/" href="/categories/%E6%B1%87%E6%80%BB/"
+            id="categoriesE6B187E680BB"
+            ><div class='name'>汇总</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box"
+            title="/categories/%E7%AE%97%E6%B3%95/" href="/categories/%E7%AE%97%E6%B3%95/"
+            id="categoriesE7AE97E6B395"
+            ><div class='name'>算法</div><div class='badge'>(21)</div></a></li>
+        
+          <li><a class="flat-box child"
+            title="/categories/%E7%AE%97%E6%B3%95/BFPRT/" href="/categories/%E7%AE%97%E6%B3%95/BFPRT/"
+            id="categoriesE7AE97E6B395BFPRT"
+            ><div class='name'>BFPRT</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box child"
+            title="/categories/%E7%AE%97%E6%B3%95/%E4%BA%8C%E5%88%86/" href="/categories/%E7%AE%97%E6%B3%95/%E4%BA%8C%E5%88%86/"
+            id="categoriesE7AE97E6B395E4BA8CE58886"
+            ><div class='name'>二分</div><div class='badge'>(2)</div></a></li>
+        
+          <li><a class="flat-box child"
+            title="/categories/%E7%AE%97%E6%B3%95/%E6%8E%92%E5%BA%8F/" href="/categories/%E7%AE%97%E6%B3%95/%E6%8E%92%E5%BA%8F/"
+            id="categoriesE7AE97E6B395E68E92E5BA8F"
+            ><div class='name'>排序</div><div class='badge'>(8)</div></a></li>
+        
+          <li><a class="flat-box child"
+            title="/categories/%E7%AE%97%E6%B3%95/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" href="/categories/%E7%AE%97%E6%B3%95/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"
+            id="categoriesE7AE97E6B395E695B0E68DAEE7BB93E69E84"
+            ><div class='name'>数据结构</div><div class='badge'>(3)</div></a></li>
+        
+          <li><a class="flat-box child"
+            title="/categories/%E7%AE%97%E6%B3%95/%E6%A0%91/" href="/categories/%E7%AE%97%E6%B3%95/%E6%A0%91/"
+            id="categoriesE7AE97E6B395E6A091"
+            ><div class='name'>树</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box child"
+            title="/categories/%E7%AE%97%E6%B3%95/%E9%9D%A2%E8%AF%95/" href="/categories/%E7%AE%97%E6%B3%95/%E9%9D%A2%E8%AF%95/"
+            id="categoriesE7AE97E6B395E99DA2E8AF95"
+            ><div class='name'>面试</div><div class='badge'>(4)</div></a></li>
+        
+          <li><a class="flat-box child"
+            title="/categories/%E7%AE%97%E6%B3%95/%E9%9D%A2%E8%AF%95/%E4%BA%8C%E5%8F%89%E6%A0%91/" href="/categories/%E7%AE%97%E6%B3%95/%E9%9D%A2%E8%AF%95/%E4%BA%8C%E5%8F%89%E6%A0%91/"
+            id="categoriesE7AE97E6B395E99DA2E8AF95E4BA8CE58F89E6A091"
+            ><div class='name'>二叉树</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box"
+            title="/categories/%E9%9D%A2%E8%AF%95/" href="/categories/%E9%9D%A2%E8%AF%95/"
+            id="categoriesE99DA2E8AF95"
+            ><div class='name'>面试</div><div class='badge'>(10)</div></a></li>
+        
+          <li><a class="flat-box child"
+            title="/categories/%E9%9D%A2%E8%AF%95/OS/" href="/categories/%E9%9D%A2%E8%AF%95/OS/"
+            id="categoriesE99DA2E8AF95OS"
+            ><div class='name'>OS</div><div class='badge'>(2)</div></a></li>
+        
+          <li><a class="flat-box child"
+            title="/categories/%E9%9D%A2%E8%AF%95/%E7%AE%97%E6%B3%95/" href="/categories/%E9%9D%A2%E8%AF%95/%E7%AE%97%E6%B3%95/"
+            id="categoriesE99DA2E8AF95E7AE97E6B395"
+            ><div class='name'>算法</div><div class='badge'>(3)</div></a></li>
+        
+          <li><a class="flat-box child"
+            title="/categories/%E9%9D%A2%E8%AF%95/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" href="/categories/%E9%9D%A2%E8%AF%95/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"
+            id="categoriesE99DA2E8AF95E8AEA1E7AE97E69CBAE7BD91E7BB9C"
+            ><div class='name'>计算机网络</div><div class='badge'>(4)</div></a></li>
+        
+      </ul>
+    </div>
+  </section>
+
+
+  
+
+
+</aside>
+
+
+
+      </div>
+      
+  
+  <footer class="footer clearfix">
+    <br><br>
+    
+      
+        
+          <div><p><span id="lc-sv">本站总访问量为 <span id='number'><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 次</span> <span id="lc-uv">访客数为 <span id='number'><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 人</span></p>
+</div>
+        
+      
+    
+      
+        <div class='copyright'>
+        <p><a href="/">Copyright © 2016-2021 yirufeng</a></p>
+
+        </div>
+      
+    
+  </footer>
+
+
+      <a class="s-top fas fa-arrow-up fa-fw" href='javascript:void(0)'></a>
+    </div>
+  </div>
+  <div>
+    <!-- required -->
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5/dist/jquery.min.js"></script>
+
+<script>
+  function pjax_fancybox() {
+    $(".md .gallery").find("img").each(function () { //渲染 fancybox
+      var element = document.createElement("a"); // a 标签
+      $(element).attr("class", "fancybox");
+      $(element).attr("pjax-fancybox", "");  // 过滤 pjax
+      $(element).attr("href", $(this).attr("src"));
+      if ($(this).attr("data-original")) {
+        $(element).attr("href", $(this).attr("data-original"));
+      }
+      $(element).attr("data-fancybox", "images");
+      var caption = "";   // 描述信息
+      if ($(this).attr('alt')) {  // 判断当前页面是否存在描述信息
+        $(element).attr('data-caption', $(this).attr('alt'));
+        caption = $(this).attr('alt');
+      }
+      var div = document.createElement("div");
+      $(div).addClass("fancybox");
+      $(this).wrap(div); // 最外层套 div ，其实主要作用还是 class 样式
+      var span = document.createElement("span");
+      $(span).addClass("image-caption");
+      $(span).text(caption); // 加描述
+      $(this).after(span);  // 再套一层描述
+      $(this).wrap(element);  // 最后套 a 标签
+    })
+    $(".md .gallery").find("img").fancybox({
+      selector: '[data-fancybox="images"]',
+      hash: false,
+      loop: false,
+      closeClick: true,
+      helpers: {
+        overlay: {closeClick: true}
+      },
+      buttons: [
+        "zoom",
+        "close"
+      ]
+    });
+  };
+  function SCload_fancybox() {
+    if ($(".md .gallery").find("img").length == 0) return;
+    loadCSS("https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css", document.getElementById("loadcss"));
+    setTimeout(function() {
+      loadScript('https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js', pjax_fancybox)
+    }, 1);
+  };
+  $(function () {
+    SCload_fancybox();
+  });
+</script>
+
+
+<!-- internal -->
+
+  
+  
+  
+    
+<script src="https://cdn.jsdelivr.net/npm/jquery-backstretch@2.1.18/jquery.backstretch.min.js"></script>
+
+    <script type="text/javascript">
+      $(function(){
+        var imgs=["https://cdn.jsdelivr.net/gh/sivanWu0222/ImageHosting@master/uPic/JWiZ_bxne7M.jpg", "https://cdn.jsdelivr.net/gh/sivanWu0222/ImageHosting@master/uPic/h24WdfmRni4.jpg", "https://cdn.jsdelivr.net/gh/sivanWu0222/ImageHosting@master/uPic/8OaDRFBBzjY.jpg", "https://cdn.jsdelivr.net/gh/sivanWu0222/ImageHosting@master/uPic/psYs8v_MGn8.jpg", "https://cdn.jsdelivr.net/gh/sivanWu0222/ImageHosting@master/uPic/(null).jpg", "https://cdn.jsdelivr.net/gh/sivanWu0222/ImageHosting@master/uPic/Ar5FGfHXwMU.jpg", "https://cdn.jsdelivr.net/gh/sivanWu0222/ImageHosting@master/uPic/-XbckezAe-o.jpg"];
+        if ('true' == 'true') {
+          function shuffle(arr){
+            /*From countercurrent-time*/
+            var n = arr.length;
+            while(n--) {
+              var index = Math.floor(Math.random() * n);
+              var temp = arr[index];
+              arr[index] = arr[n];
+              arr[n] = temp;
+            }
+          }
+          shuffle(imgs);
+        }
+        if ('.cover-backstretch') {
+          $('.cover-backstretch').backstretch(
+            imgs,
+          {
+            duration: "10000",
+            fade: "1500"
+          });
+        } else {
+          $.backstretch(
+            imgs,
+          {
+            duration: "10000",
+            fade: "1500"
+          });
+        }
+      });
+    </script>
+  
+
+
+
+  
+  
+
+  <div id="rightmenu-wrapper">
+    <ul class="list-v rightmenu" id="rightmenu-content">
+      <li class='option'>
+        <a class='vlts-menu opt fix-cursor-default' id='menu-copy-text' onclick="document.execCommand('copy')"><i class='fa fa-copy fa-fw'></i>Copy Text</a>
+        <hr id='hr-text'>
+        <a class='vlts-menu opt fix-cursor-default' id='menu-copy-href'><i class='fa fa-link fa-fw'></i>Copy Link</a>
+        <a class='vlts-menu opt fix-cursor-default' id='menu-open-href'><i class='fa fa-external-link-square-alt fa-fw'></i>Open Link in New Tab</a>
+        <hr id='hr-href'>
+        <a class='vlts-menu opt fix-cursor-default' id='menu-copy-src'><i class='fa fa-image fa-fw'></i>Copy Image Link</a>
+        <hr id='hr-src'>
+      </li>
+      
+        <li class='navigation'>
+          <a class='nav icon-only fix-cursor-default' onclick='history.back()'><i class='fa fa-arrow-left fa-fw'></i></a>
+          <a class='nav icon-only fix-cursor-default' onclick='history.forward()'><i class='fa fa-arrow-right fa-fw'></i></a>
+          <a class='nav icon-only fix-cursor-default' onclick='window.location.reload()'><i class='fa fa-redo fa-fw'></i></a>
+          <a class='nav icon-only fix-cursor-default' href='/'><i class='fa fa-home fa-fw'></i></a>
+        </li>
+      
+      <hr>
+      
+        
+      
+        
+          
+    <li>
+      <a class='vlts-menu fix-cursor-default' href=https://volantis.js.org/faqs/
+        
+        
+        
+        
+          id="https:volantisjsorgfaqs"
+        >
+        <i class='fa fa-question fa-fw'></i> 常见问题
+      </a>
+    </li>
+  
+        
+      
+        
+          
+    <li>
+      <a class='vlts-menu fix-cursor-default' href=https://volantis.js.org/examples/
+        
+        
+        
+        
+          id="https:volantisjsorgexamples"
+        >
+        <i class='fa fa-rss fa-fw'></i> 示例博客
+      </a>
+    </li>
+  
+        
+      
+        
+          
+    <li>
+      <a class='vlts-menu fix-cursor-default' href=https://volantis.js.org/contributors/
+        
+        
+        
+        
+          id="https:volantisjsorgcontributors"
+        >
+        <i class='fa fa-fan fa-spin fa-fw'></i> 加入社区
+      </a>
+    </li>
+  
+        
+      
+        
+          <hr>
+        
+      
+        
+          
+    <li>
+      <a class='vlts-menu fix-cursor-default' href=https://github.com/sivanWu0222/sivanWu0222.github.io
+        
+        
+        
+        
+          id="https:githubcomsivanWu0222sivanWu0222githubio"
+        >
+        <i class='fa fa-code-branch fa-fw'></i> 本站源码
+      </a>
+    </li>
+  
+        
+      
+        
+          
+    <li>
+      <a class='vlts-menu fix-cursor-default' href=https://github.com/volantis-x/hexo-theme-volantis/
+        
+        
+        
+        
+          id="https:githubcomvolantis-xhexo-theme-volantis"
+        >
+        <i class='fa fa-code-branch fa-fw'></i> 主题源码
+      </a>
+    </li>
+  
+        
+      
+        
+          <hr>
+        
+      
+        
+          
+    <li>
+      <a class='vlts-menu fix-cursor-default' 
+        
+        
+        
+          onclick="document.execCommand('print')"
+        
+        >
+        <i class='fa fa-print fa-fw'></i> 打印页面
+      </a>
+    </li>
+  
+        
+      
+        
+          <hr>
+        
+      
+        
+          <li class='music name'>
+            <p class='nav music-title fix-cursor-default'></p>
+          </li>
+          <li class='music ctrl'>
+            <a class='nav icon-only backward fix-cursor-default' onclick='aplayerBackward()'><i class='fa fa-step-backward fa-fw'></i></a>
+            <a class='nav icon-only toggle fix-cursor-default' onclick='aplayerToggle()'><i class='fa fa-play fa-fw'></i></a>
+            <a class='nav icon-only forward fix-cursor-default' onclick='aplayerForward()'><i class='fa fa-step-forward fa-fw'></i></a>
+          </li>
+          <li class='music volume'>
+            <a class='nav volume'>
+              <div class="aplayer-volume-bar-wrap">
+                <div class="aplayer-volume-bar fix-cursor-pointer">
+                  <div class="aplayer-volume"></div>
+                  <i class='left fa fa-volume-off fa-fw'></i>
+                  <i class='right fa fa-volume-up fa-fw'></i>
+                </div>
+              </div>
+            </a>
+          </li>
+        
+      
+    </ul>
+  </div>
+
+  <script>
+    window.document.oncontextmenu = function (event) {
+      if (event.ctrlKey) return true;
+      if (/Android|webOS|BlackBerry/i.test(navigator.userAgent)) return true;
+      return popMenu(event);
+    };
+    document.addEventListener("click", function (event) {
+      var mymenu = document.getElementById('rightmenu-wrapper');
+      mymenu.style.display = "none";
+    });
+    function popMenu(event) {
+      var mymenu = document.getElementById('rightmenu-wrapper');
+      var menuContent = document.getElementById('rightmenu-content');
+      var screenWidth = document.documentElement.clientWidth || document.body.clientWidth;
+      var screenHeight = document.documentElement.clientHeight || document.body.clientHeight;
+      mymenu.style.left = event.clientX + "px"; // 获取鼠标位置
+      mymenu.style.top = event.clientY + "px";
+      mymenu.style.display = 'block';
+      if (event.clientX * 2 > screenWidth) {
+        menuContent.classList.add('left');
+      } else {
+        menuContent.classList.remove('left');
+      }
+      if (event.clientY * 2 > screenHeight) {
+        menuContent.classList.add('top');
+      } else {
+        menuContent.classList.remove('top');
+      }
+
+      let hrText = document.getElementById('hr-text');
+      let hrSrc = document.getElementById('hr-src');
+      let hrHref = document.getElementById('hr-href');
+
+      // 选中图片
+      let copySrc = document.getElementById('menu-copy-src');
+      if (copySrc != undefined) {
+        if (event.target.currentSrc) {
+          copySrc.style.display = 'block';
+          copySrc.addEventListener("click", function (e) {
+            copyString(event.target.currentSrc);
+          },{once: true});
+          hrSrc.style.display = 'block';
+        } else {
+          copySrc.style.display = 'none';
+          hrSrc.style.display = 'none';
+        }
+      }
+
+      // 选中按钮
+      // 判断是不是按钮
+      let href = '';
+      if (event.path) {
+        for (i = 0; i < event.path.length; i++) {
+          if (event.path[i].href != undefined && event.path[i].href.length > 0) {
+            href = event.path[i].href;
+          }
+        }
+      }
+
+      let copyText = document.getElementById('menu-copy-text');
+      copyText.style.display = 'none';
+      hrText.style.display = 'none';
+      if (href.length == 0) {
+        // 选中文本
+        if (window.getSelection().toString()) {
+          if ('true' == 'true') {
+            copyText.style.display = 'block';
+            hrText.style.display = 'block';
+          }
+        }
+      }
+
+      // 在新标签页打开
+      let openHref = document.getElementById('menu-open-href');
+      if (openHref != undefined) {
+        if (href.length > 0) {
+          openHref.style.display = 'block';
+          openHref.addEventListener("click", function (e) {
+            window.open(href);
+          },{once: true});
+          hrHref.style.display = 'block';
+        } else {
+          openHref.style.display = 'none';
+          hrHref.style.display = 'none';
+        }
+      }
+      // 复制链接
+      let copyHref = document.getElementById('menu-copy-href');
+      if (copyHref != undefined) {
+        if (href.length > 0) {
+          copyHref.style.display = 'block';
+          copyHref.addEventListener("click", function (e) {
+            copyString(href);
+          },{once: true});
+        } else {
+          copyHref.style.display = 'none';
+        }
+      }
+
+      // 有音乐播放器
+      if ('true' == true && ('home,help,examples,contributors,hr,source_docs,source_theme,hr,print,hr,music'||[]).includes('music')) {
+        // 如果有aplayer，初始化一下
+      	try {
+      		checkAPlayer();
+          updateTitle();
+      	} catch (error) {
+      		console.log(error);
+      	}
+      }
+
+      return false; // 该行代码确保系统自带的右键菜单不会被调出
+    }
+    function hideMenu() {
+      document.getElementById('rightmenu-wrapper').style.display = 'none';
+    }
+    function copyString(str) {
+      const input = document.createElement('input');
+      input.setAttribute('readonly', 'readonly');
+      document.body.appendChild(input);
+      input.setAttribute('value', str);
+      input.select();
+      document.execCommand('copy');
+      document.body.removeChild(input);
+    }
+    document.execCommand('click');
+  </script>
+
+
+
+
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.1.0/dist/lazyload.min.js"></script>
+<script>
+  // https://www.npmjs.com/package/vanilla-lazyload
+  // Set the options globally
+  // to make LazyLoad self-initialize
+  window.lazyLoadOptions = {
+    elements_selector: ".lazyload",
+    threshold: 0
+  };
+  // Listen to the initialization event
+  // and get the instance of LazyLoad
+  window.addEventListener(
+    "LazyLoad::Initialized",
+    function (event) {
+      window.lazyLoadInstance = event.detail.instance;
+    },
+    false
+  );
+  document.addEventListener('DOMContentLoaded', function () {
+    lazyLoadInstance.update();
+  });
+  document.addEventListener('pjax:complete', function () {
+    lazyLoadInstance.update();
+  });
+</script>
+
+
+
+
+  
+  
+    <script>
+      window.FPConfig = {
+        delay: 0,
+        ignoreKeywords: [],
+        maxRPS: 5,
+        hoverDelay: 25
+      };
+    </script>
+    <script defer src="https://cdn.jsdelivr.net/gh/gijo-varghese/flying-pages@2.1.2/flying-pages.min.js"></script>
+  
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+<script>
+    var clipboard = new ClipboardJS('.btn-copy', {
+        target: function (trigger) {
+            return trigger.nextElementSibling
+        }
+    });
+    function wait(callback, seconds) {
+        var timelag = null;
+        timelag = window.setTimeout(callback, seconds)
+    }
+    function pjax_initCopyCode() {
+		if($(".highlight .code pre").length+$(".article pre code").length==0)return;
+        var copyHtml = '';
+        copyHtml += '<button class="btn-copy" data-clipboard-snippet="">';
+        copyHtml += '<i class="fas fa-copy"></i><span>COPY</span>';
+        copyHtml += '</button>';
+        $(".highlight .code pre").before(copyHtml);
+        $(".article pre code").before(copyHtml);
+        clipboard.off('success').on('success', function (e) {
+            let $btn = $(e.trigger);
+            $btn.addClass('copied');
+            let $icon = $($btn.find('i'));
+            $icon.removeClass('fa-copy');
+            $icon.addClass('fa-check-circle');
+            let $span = $($btn.find('span'));
+            $span[0].innerText = 'COPIED';
+            wait(function () {
+                $icon.removeClass('fa-check-circle');
+                $icon.addClass('fa-copy');
+                $span[0].innerText = 'COPY'
+            }, 2000)
+        });
+        clipboard.off('error').on('error', function (e) {
+            e.clearSelection();
+            let $btn = $(e.trigger);
+            $btn.addClass('copy-failed');
+            let $icon = $($btn.find('i'));
+            $icon.removeClass('fa-copy');
+            $icon.addClass('fa-times-circle');
+            let $span = $($btn.find('span'));
+            $span[0].innerText = 'COPY FAILED';
+            wait(function () {
+                $icon.removeClass('fa-times-circle');
+                $icon.addClass('fa-copy');
+                $span[0].innerText = 'COPY'
+            }, 2000)
+        })
+    }
+    $(function () {
+        pjax_initCopyCode()
+    });
+</script>
+
+
+
+
+   <script src="https://cdn.jsdelivr.net/npm/scrollreveal@4.0.6/dist/scrollreveal.min.js"></script>
+<script type="text/javascript">
+  function pjax_scrollrebeal() {
+    ScrollReveal().reveal('.l_main .reveal', {
+      distance: '32px',
+      duration: '800',
+      interval: '20',
+      scale: '1',
+      easing: 'ease-out'
+    });
+  }
+  $(function () {
+    pjax_scrollrebeal();
+  });
+</script>
+
+
+
+
+  <script>
+  let APlayerController = new Object();
+  APlayerController.id = '3175833810';  // 设定全局音乐播放ID
+  APlayerController.volume = '0.7';
+</script>
+
+  
+<script src="https://cdn.jsdelivr.net/npm/aplayer@1.10/dist/APlayer.min.js"></script>
+
+
+  
+<script src="https://cdn.jsdelivr.net/npm/meting@2.0/dist/Meting.min.js"></script>
+
+
+
+
+  
+<script src="/js/aplayer.js"></script>
+
+
+
+
+
+
+  
+  
+<script src="/js/valine.js"></script>
+
+
+<script>
+  var GUEST_INFO = ['nick', 'mail', 'link'];
+  var meta = 'nick,mail,link'.split(',').filter(function (item) {
+    return GUEST_INFO.indexOf(item) > -1
+  });
+  var REQUIRED_FIELDS = ['nick', 'mail', 'link'];
+  var requiredFields = 'nick,mail'.split(',').filter(function (item) {
+    return REQUIRED_FIELDS.indexOf(item) > -1
+  });
+
+  function emoji(path, idx, ext) {
+    return path + "/" + path + "-" + idx + "." + ext;
+  }
+
+  var emojiMaps = {};
+  for (var i = 1; i <= 54; i++) {
+    emojiMaps['tieba-' + i] = emoji('tieba', i, 'png');
+  }
+  for (var i = 1; i <= 101; i++) {
+    emojiMaps['qq-' + i] = emoji('qq', i, 'gif');
+  }
+  for (var i = 1; i <= 116; i++) {
+    emojiMaps['aru-' + i] = emoji('aru', i, 'gif');
+  }
+  for (var i = 1; i <= 125; i++) {
+    emojiMaps['twemoji-' + i] = emoji('twemoji', i, 'png');
+  }
+  for (var i = 1; i <= 4; i++) {
+    emojiMaps['weibo-' + i] = emoji('weibo', i, 'png');
+  }
+
+  function pjax_valine() {
+    if(!document.querySelectorAll("#valine_container")[0])return;
+
+    let pagePlaceholder = $.trim($('#pjax-comment-placeholder').text()) || "快来评论吧~";
+
+    let path = $.trim($('#pjax-comment-path').text());
+    if (path.length == 0) {
+      let defaultPath = '';
+      path = defaultPath || decodeURI(window.location.pathname);
+    }
+
+    var valine = new Valine();
+    valine.init({
+      el: '#valine_container',
+      meta: meta,
+      placeholder: pagePlaceholder,
+      path: path,
+      appId: "",
+      appKey: "",
+      pageSize: '10',
+      avatar: 'robohash',
+      lang: 'zh-cn',
+      visitor: 'true',
+      highlight: 'true',
+      mathJax: 'false',
+      enableQQ: 'true',
+      requiredFields: requiredFields,
+      emojiCDN: 'https://cdn.jsdelivr.net/gh/volantis-x/cdn-emoji/valine/',
+      emojiMaps: emojiMaps
+    })
+  }
+
+  $(function () {
+    pjax_valine();
+  });
+</script>
+
+
+
+
+  
+<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5/lib/darkmode-js.min.js" aysc></script>
+
+<script type="text/javascript">
+function getClientHeight(){
+  var clientHeight=0;
+  if(document.body.clientHeight&&document.documentElement.clientHeight){
+  var clientHeight = (document.body.clientHeight<document.documentElement.clientHeight)?document.body.clientHeight:document.documentElement.clientHeight;
+  }else{
+  var clientHeight = (document.body.clientHeight>document.documentElement.clientHeight)?document.body.clientHeight:document.documentElement.clientHeight;
+  }
+  return clientHeight;
+}
+function supportCss3(style) {
+  var prefix = ['webkit', 'Moz', 'ms', 'o'],
+  i,
+  humpString = [],
+  htmlStyle = document.documentElement.style,
+  _toHumb = function (string) {
+  return string.replace(/-(\w)/g, function ($0, $1) {
+  return $1.toUpperCase();
+  });
+  };
+  for (i in prefix)
+  humpString.push(_toHumb(prefix[i] + '-' + style));
+  humpString.push(_toHumb(style));
+  for (i in humpString)
+  if (humpString[i] in htmlStyle) return true;
+  return false;
+};
+//配置信息
+var options = {
+  bottom: '32px',
+  right: 'unset',
+  left: '16px',
+  time: '0s',
+  mixColor: '#f4f4f4',
+  backgroundColor: '#f4f4f4',
+  buttonColorDark: '#333',
+  buttonColorLight: '#ddd',
+  saveInCookies: true,
+  label: '',
+  autoMatchOsTheme: true
+};
+// 卡片兼容处理 mix-blend-mode 与 effect: [blur] 冲突
+
+function pjax_darkmodejs(){
+  
+  if(!supportCss3('mix-blend-mode'))return;
+  var checkExist2 = setInterval(function() {
+     if (typeof jQuery == 'undefined'){return;}
+     clearInterval(checkExist2);
+     var TopFlag=getClientHeight();
+    $(window).scroll(function(){
+      var top = $(document).scrollTop();
+      if(top > TopFlag) {
+        $(".darkmode-layer").css("mix-blend-mode","normal");
+        $(".darkmode-layer").css("background-color","#222");
+      }else{
+        $(".darkmode-layer").css("mix-blend-mode","difference");
+        $(".darkmode-layer").css("background-color","");
+      }
+    })
+  }, 100);
+  
+}
+// mix-blend-mode support?
+if(supportCss3('mix-blend-mode')){
+  window.darkmode = new Darkmode(options);
+  
+  window.darkmode.showWidget();
+  
+  pjax_darkmodejs();
+}
+////////////////Development///////////////////////
+//////////////darkmode模式切换////////////////////
+//window.darkmode.toggle();                     //
+//////////////darkmode模式判断////////////////////
+//console.log(window.darkmode.isActivated())    //
+//////////////////////////////////////////////////
+</script>
+
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-busuanzi@2.3/js/busuanzi.pure.mini.js" data-pjax></script>
+
+
+  
+<script src="/js/app.js"></script>
+
+
+
+
+  
+    
+<script src="/js/search.js"></script>
+
+  
+
+
+<!-- optional -->
+
+  <script>
+const SearchServiceimagePath="https://cdn.jsdelivr.net/gh/volantis-x/cdn-volantis@master/img/";
+const ROOT =  ("/" || "/").endsWith('/') ? ("/" || "/") : ("//" || "/" );
+(function ($) {
+  
+    customSearch = new HexoSearch({
+      imagePath: SearchServiceimagePath
+    });
+  
+})(jQuery);
+
+</script>
+
+
+
+
+
+  
+<script src="https://cdn.jsdelivr.net/npm/node-waves@0.7.6/dist/waves.min.js"></script>
+
+  <script type="text/javascript">
+    $(function () {
+      Waves.attach('.flat-btn', ['waves-button']);
+      Waves.attach('.float-btn', ['waves-button', 'waves-float']);
+      Waves.attach('.float-btn-light', ['waves-button', 'waves-float', 'waves-light']);
+      Waves.attach('.flat-box', ['waves-block']);
+      Waves.attach('.float-box', ['waves-block', 'waves-float']);
+      Waves.attach('.waves-image');
+      Waves.init();
+    });
+  </script>
+
+
+
+
+
+  
+    
+<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/highlight.min.js"></script>
+
+    <script>hljs.initHighlightingOnLoad();</script>
+  
+
+
+
+
+<!-- more -->
+
+
+    
+      
+
+
+<script src="https://cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.min.js"></script>
+
+<!-- 样式位于：source/css/_third-party/pjaxanimate.styl -->
+
+<div class="pjax-animate">
+  
+    <script src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js"></script>
+    <div id="loading-bar-wrapper"><script>NProgress.configure({parent:"#loading-bar-wrapper",trickleSpeed: 100})</script></div>
+    <script>
+      window.ShowLoading = function() {
+        NProgress.start();
+      };
+      window.HideLoading = function() {
+        NProgress.done();
+      }
+    </script>
+  
+</div>
+
+<script>
+    var pjax;
+    document.addEventListener('DOMContentLoaded', function () {
+      pjax = new Pjax({
+        elements: 'a[href]:not([href^="#"]):not([href="javascript:void(0)"]):not([pjax-fancybox])',
+        selectors: [
+          "title",
+          "#pjax-container",
+          "#pjax-header-nav-list"
+        ],
+        cacheBust: false,   // url 地址追加时间戳，用以避免浏览器缓存
+        timeout: 5000
+      });
+    });
+
+    document.addEventListener('pjax:send', function (e) {
+      window.stop(); // 相当于点击了浏览器的停止按钮
+
+      try {
+        var currentUrl = window.location.pathname;
+        var targetUrl = e.triggerElement.href;
+        var banUrl = [""];
+        if (banUrl[0] != "") {
+          banUrl.forEach(item => {
+            if(currentUrl.indexOf(item) != -1 || targetUrl.indexOf(item) != -1) {
+              window.location.href = targetUrl;
+            }
+          });
+        }
+      } catch (error) {}
+
+      window.subData = null; // 移除标题（用于一二级导航栏切换处）
+      if (typeof $.fancybox != "undefined") {
+        $.fancybox.close();    // 关闭弹窗
+      }
+      $('.l_header .switcher .s-search').removeClass('active'); // 关闭移动端激活的搜索框
+      $('.l_header').removeClass('z_search-open'); // 关闭移动端激活的搜索框
+      $('.wrapper').removeClass('sub'); // 跳转页面时关闭二级导航
+
+      // 解绑事件 避免重复监听
+      $('.s-top').unbind('click');
+      $('.menu a').unbind('click');
+      $(window).unbind('resize');
+      $(window).unbind('scroll');
+      $(document).unbind('scroll');
+      $(document).unbind('click');
+      $('body').unbind('click');
+      window.ShowLoading();
+    });
+
+    document.addEventListener('pjax:complete', function () {
+      // 关于百度统计对 SPA 页面的处理：
+      // 方案一：百度统计>管理>单页应用设置中，打开开启按钮即可对SPA进行统计。 https://tongji.baidu.com/web/help/article?id=324
+      // 方案二：取消注释下列代码。 https://tongji.baidu.com/web/help/article?id=235
+      // 
+
+      // 关于谷歌统计对 SPA 页面的处理：
+      // 当应用以动态方式加载内容并更新地址栏中的网址时，也应该更新通过 gtag.js 存储的网页网址。
+      // https://developers.google.cn/analytics/devguides/collection/gtagjs/single-page-applications?hl=zh-cn
+      
+
+      $('.nav-main').find('.list-v').not('.menu-phone').removeAttr("style",""); // 移除小尾巴的移除
+      $('.menu-phone.list-v').removeAttr("style",""); // 移除小尾巴的移除
+      $('script[data-pjax], .pjax-reload script').each(function () {
+        $(this).parent().append($(this).remove());
+      });
+      try{
+          if (typeof $.fancybox == "undefined") {
+            SCload_fancybox();
+          } else {
+            pjax_fancybox();
+          }
+        
+          
+          if ('.cover-backstretch') {
+            $('.cover-backstretch').backstretch("resize");
+            if($('.cover-wrapper').is(':hidden')){
+              $('.cover-backstretch').backstretch("pause");
+            }else{
+              $('.cover-backstretch').backstretch("next");
+            }
+          } else {
+            $.backstretch("resize");
+            if($('.cover-wrapper').is(':hidden')){
+              $.backstretch("pause");
+            }else{
+              $.backstretch("next");
+            }
+          }
+        
+        
+        document.querySelectorAll('pre code').forEach((block) => {
+          hljs.highlightBlock(block);
+        });
+        
+        
+          pjax_scrollrebeal();
+        
+        
+        
+          pjax_initCopyCode();
+        
+        
+          pjax_valine();
+        
+        
+        
+        
+        
+          pjax_darkmodejs();
+        
+      } catch (e) {
+        console.log(e);
+      }
+      window.HideLoading();
+    });
+
+    document.addEventListener('pjax:error', function (e) {
+      window.HideLoading();
+      window.location.href = e.triggerElement.href;
+    });
+</script>
+
+    
+  </div>
+</body>
+</html>

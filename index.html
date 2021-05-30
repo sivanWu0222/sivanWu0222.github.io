@@ -1,0 +1,2865 @@
+<!DOCTYPE html>
+<html>
+<head hexo-theme='https://github.com/volantis-x/hexo-theme-volantis/tree/5.0.0.alpha.0'>
+  <meta charset="utf-8">
+  <!-- SEO相关 -->
+  
+    
+      
+        <meta name="robots" content="index,follow">
+      
+    
+  
+  <!-- 渲染优化 -->
+  <meta name="renderer" content="webkit">
+  <meta name="force-rendering" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="HandheldFriendly" content="True" >
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta http-equiv='x-dns-prefetch-control' content='on' />
+
+  <!-- 页面元数据 -->
+  
+  <title>逸如风的个人博客</title>
+  
+
+  
+
+  <!-- feed -->
+  
+
+  <!-- import meta -->
+  
+
+  <!-- link -->
+  <link rel='dns-prefetch' href='https://cdn.jsdelivr.net'>
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.14/css/all.min.css">
+
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/l-lin/font-awesome-animation/dist/font-awesome-animation.min.css">
+
+  
+
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-waves@0.7.6/dist/waves.min.css">
+
+  
+
+  
+
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10/dist/APlayer.min.css">
+  
+
+  
+
+  <!-- import link -->
+  
+
+  
+    
+      
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.18.1/styles/solarized-light.css">
+
+    
+  
+  
+    
+<link rel="stylesheet" href="/css/style.css">
+
+  
+  
+  
+  <!-- 脚本懒加载函数 -->
+  <script>
+  function loadScript(src, cb) {
+    var HEAD = document.getElementsByTagName('head')[0] || document.documentElement;
+    var script = document.createElement('script');
+    script.setAttribute('type','text/javascript');
+    if (cb) script.onload = cb;
+    script.setAttribute('src', src);
+    HEAD.appendChild(script);
+  }
+  //https://github.com/filamentgroup/loadCSS
+  !function(c){"use strict";var e=function(e,t,n,r){var o,i=c.document,a=i.createElement("link");if(t)o=t;else{var d=(i.body||i.getElementsByTagName("head")[0]).childNodes;o=d[d.length-1]}var f=i.styleSheets;if(r)for(var l in r)r.hasOwnProperty(l)&&a.setAttribute(l,r[l]);a.rel="stylesheet",a.href=e,a.media="only x",function e(t){if(i.body)return t();setTimeout(function(){e(t)})}(function(){o.parentNode.insertBefore(a,t?o:o.nextSibling)});var s=function(e){for(var t=a.href,n=f.length;n--;)if(f[n].href===t)return e();setTimeout(function(){s(e)})};function u(){a.addEventListener&&a.removeEventListener("load",u),a.media=n||"all"}return a.addEventListener&&a.addEventListener("load",u),(a.onloadcssdefined=s)(u),a};"undefined"!=typeof exports?exports.loadCSS=e:c.loadCSS=e}("undefined"!=typeof global?global:this);
+  </script>
+  <script id="loadcss"></script>
+</head>
+
+<body>
+  <header class="l_header always shadow blur "  >
+  <div class='container'>
+  <div class='wrapper'>
+    <div class='nav-sub'>
+      <p class="title"></p>
+      <ul class='switcher nav-list-h m-phone' id="pjax-header-nav-list">
+        <li><a class="s-comment fas fa-comments fa-fw" target="_self" href='javascript:void(0)'></a></li>
+        
+          <li><a class="s-toc fas fa-list fa-fw" target="_self" href='javascript:void(0)'></a></li>
+        
+      </ul>
+    </div>
+		<div class="nav-main">
+      
+        
+        <a class="title flat-box" target="_self" href='/'>
+          
+            <img no-lazy class='logo' src='https://cdn.jsdelivr.net/gh/sivanWu0222/ImageHosting@master/uPic/diugai.com-16005176665088_gaitubao_293x115.png'/>
+          
+          
+          
+        </a>
+      
+
+			<div class='menu navigation'>
+				<ul class='nav-list-h m-pc'>
+          
+          
+          
+            
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover" href=/
+                  
+                  
+                  
+                    id="home"
+                  >
+                  <i class='fas fa-blog fa-fw'></i>博客
+                </a>
+                
+              </li>
+            
+          
+          
+            
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover" href=/categories/
+                  
+                  
+                  
+                    id="categories"
+                  >
+                  <i class='fas fa-folder-open fa-fw'></i>分类
+                </a>
+                
+              </li>
+            
+          
+          
+            
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover" href=/tags/
+                  
+                  
+                  
+                    id="tags"
+                  >
+                  <i class='fas fa-tags fa-fw'></i>标签
+                </a>
+                
+              </li>
+            
+          
+          
+            
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover" href=/archives/
+                  
+                  
+                  
+                    id="archives"
+                  >
+                  <i class='fas fa-archive fa-fw'></i>归档
+                </a>
+                
+              </li>
+            
+          
+          
+            
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover" href=/friends/
+                  
+                  
+                  
+                    id="friends"
+                  >
+                  <i class='fas fa-link fa-fw'></i>友链
+                </a>
+                
+              </li>
+            
+          
+          
+            
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover" href=/about/
+                  
+                  
+                  
+                    id="about"
+                  >
+                  <i class='fas fa-info-circle fa-fw'></i>关于
+                </a>
+                
+              </li>
+            
+          
+          
+            
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover" 
+                  
+                  
+                  >
+                  <i class='fas fa-share fa-fw'></i>分享
+                </a>
+                
+                  <ul class="list-v">
+                    
+                      
+            
+              <li class='header'>
+                <i class='fas fa-fire fa-fw'></i>热门文章
+              </li>
+            
+          
+                    
+                      
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover" href=http://www.sivan.tech/2020/09/12/%E9%9D%A2%E8%AF%95%E9%97%AE%E9%A2%98%E4%B9%8BTop%20K%E7%B3%BB%E5%88%97/
+                  
+                  
+                  
+                    id="http:wwwsivantech20200912E99DA2E8AF95E997AEE9A298E4B98BTop20KE7B3BBE58897"
+                  >
+                  面试问题之TopK系列
+                </a>
+                
+              </li>
+            
+          
+                    
+                  </ul>
+                
+              </li>
+            
+          
+          
+				</ul>
+			</div>
+
+      <div class="m_search">
+        <form name="searchform" class="form u-search-form">
+          <i class="icon fas fa-search fa-fw"></i>
+          <input type="text" class="input u-search-input" placeholder="Search..." />
+        </form>
+      </div>
+
+			<ul class='switcher nav-list-h m-phone'>
+				
+					<li><a class="s-search fas fa-search fa-fw" target="_self" href='javascript:void(0)'></a></li>
+				
+				<li>
+          <a class="s-menu fas fa-bars fa-fw" target="_self" href='javascript:void(0)'></a>
+          <ul class="menu-phone list-v navigation white-box">
+            
+              
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover" href=/
+                  
+                  
+                  
+                    id="home"
+                  >
+                  <i class='fas fa-blog fa-fw'></i>博客
+                </a>
+                
+              </li>
+            
+          
+            
+              
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover" href=/categories/
+                  
+                  
+                  
+                    id="categories"
+                  >
+                  <i class='fas fa-folder-open fa-fw'></i>分类
+                </a>
+                
+              </li>
+            
+          
+            
+              
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover" href=/tags/
+                  
+                  
+                  
+                    id="tags"
+                  >
+                  <i class='fas fa-tags fa-fw'></i>标签
+                </a>
+                
+              </li>
+            
+          
+            
+              
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover" href=/archives/
+                  
+                  
+                  
+                    id="archives"
+                  >
+                  <i class='fas fa-archive fa-fw'></i>归档
+                </a>
+                
+              </li>
+            
+          
+            
+              
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover" href=/friends/
+                  
+                  
+                  
+                    id="friends"
+                  >
+                  <i class='fas fa-link fa-fw'></i>友链
+                </a>
+                
+              </li>
+            
+          
+            
+              
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover" href=/about/
+                  
+                  
+                  
+                    id="about"
+                  >
+                  <i class='fas fa-info-circle fa-fw'></i>关于
+                </a>
+                
+              </li>
+            
+          
+            
+              
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover" 
+                  
+                  
+                  >
+                  <i class='fas fa-share fa-fw'></i>分享
+                </a>
+                
+                  <ul class="list-v">
+                    
+                      
+            
+              <li class='header'>
+                <i class='fas fa-fire fa-fw'></i>热门文章
+              </li>
+            
+          
+                    
+                      
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover" href=http://www.sivan.tech/2020/09/12/%E9%9D%A2%E8%AF%95%E9%97%AE%E9%A2%98%E4%B9%8BTop%20K%E7%B3%BB%E5%88%97/
+                  
+                  
+                  
+                    id="http:wwwsivantech20200912E99DA2E8AF95E997AEE9A298E4B98BTop20KE7B3BBE58897"
+                  >
+                  面试问题之TopK系列
+                </a>
+                
+              </li>
+            
+          
+                    
+                  </ul>
+                
+              </li>
+            
+          
+            
+          </ul>
+        </li>
+			</ul>
+		</div>
+	</div>
+  </div>
+</header>
+
+  <div class="l_body">
+    <div class="l_cover">
+  
+    
+    
+        <div class='cover-wrapper  featured' style="display: none;">
+          
+            <div class='cover-backstretch'></div>
+          
+          <div class='cover-body'>
+  <div class='top'>
+    
+      <img no-lazy class='logo' src='https://cdn.jsdelivr.net/gh/sivanWu0222/ImageHosting@master/uPic/diugai.com-16005176665088_gaitubao_293x115.png'/>
+    
+    
+    
+  </div>
+  <div class='bottom'>
+    <div class='menu navigation'>
+      <div class='list-h'>
+        
+          
+            <a href="/"
+              
+              
+              id="home">
+              <i class='fas fa-blog fa-fw'></i><p>博客</p>
+            </a>
+          
+            <a target="_blank" rel="noopener" href="https://github.com/sivanWu0222"
+              
+              
+              id="https:githubcomsivanWu0222">
+              <i class='fab fa-github fa-fw'></i><p>Github</p>
+            </a>
+          
+            <a href="http://www.sivan.tech/AlgoBook/"
+              
+              
+              id="http:wwwsivantechAlgoBook">
+              <i class='fas fa-book fa-fw'></i><p>算法</p>
+            </a>
+          
+            <a href="/projects/"
+              
+              
+              id="projects">
+              <i class='fas fa-tags fa-fw'></i><p>项目</p>
+            </a>
+          
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+          <div class="scroll-down" style="display: none;"><i class="fa fa-chevron-down scroll-down-effects"></i></div>
+        </div>
+    
+  
+  </div>
+  
+    <div class='safearea'>
+      <div class='body-wrapper' id="pjax-container">
+        
+          <!--此文件用来存放一些不方便取值的变量--> 
+<!--思路大概是将值藏到重加载的区域内--> 
+ 
+ 
+ 
+<div id="pjax-data" style="display: none"> 
+  <div id="pjax-ispage">false</div> 
+  <div id="pjax-pageTitle"></div> 
+  <div id="pjax-enable-cover">true</div> 
+  <div id="pjax-comment-path"></div> 
+  <div id="pjax-comment-placeholder"></div> 
+</div> 
+ 
+ 
+<script> 
+  // 处理封面 此时 jquery 还没加载 
+  if ("full" == "none") { // 移除封面 
+    document.getElementsByClassName('cover-wrapper')[0].style.display = "none"; 
+    document.getElementsByClassName('l_header', 'cover-wrapper')[0].classList.add("show"); 
+  } else { 
+    if ("full" == "half") { // 半屏 
+      document.getElementsByClassName('cover-wrapper')[0].setAttribute('id', 'half'); 
+      document.getElementsByClassName('scroll-down')[0].style.display = "none"; 
+    } else if ("full" == "full") { // 全屏 
+      document.getElementsByClassName('cover-wrapper')[0].setAttribute('id', 'full'); 
+      document.getElementsByClassName('scroll-down')[0].style.display = ""; 
+    } 
+    document.getElementsByClassName('cover-wrapper')[0].style.display = ""; 
+    document.getElementsByClassName('l_header', 'cover-wrapper')[0].classList.remove("show"); 
+  } 
+</script> 
+ 
+
+        
+        
+
+<div class='l_main'>
+  
+  <section class="post-list">
+    
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+        
+          
+            
+              <div class='post-wrapper'>
+                <div class="post post-v3 white-box reveal shadow">
+  
+  
+    <div class='pin'>
+      <img src='https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f4cc.svg'/>
+    </div>
+  
+  
+  
+    
+    <h2 class="article-title" pin>
+      <a href="/2099/09/15/demo/">
+        Demo
+      </a>
+    </h2>
+  
+  <div class='md'>
+    
+      
+        文章头部frot-matter编写参考
+所有样式来源于：https://volantis.js.org/v5/tag-plugins/
+text带 下划线 的文本；带 着重号 的文本；带 波浪线 的文本；带 删除线 的文本
+键盘样式的文本：⌘ + D
+密码样式的文本：这里没有验证码
+span各种颜色的标签，包括：红色、黄色、绿色、青色、蓝色、灰色。
+超大号文字：
+Volantis A Won...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+          
+          <a class='avatar' href='/'><img src='https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/qrcode/github@volantis.png'></a>
+        
+        <time>2099-09-15</time>
+        
+          <span class="dot"></span>
+          <a class="category-link" href="/categories/demo/">demo</a>
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/2099/09/15/demo/'>
+            Read More
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+              </div>
+            
+          
+        
+          
+            
+              <div class='post-wrapper'>
+                <div class="post post-v3 white-box reveal shadow">
+  
+  
+    <div class='pin'>
+      <img src='https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f4cc.svg'/>
+    </div>
+  
+  
+  
+    
+    <h2 class="article-title" pin>
+      <a href="/2099/06/06/LeetCode%E7%B3%BB%E5%88%97-%E5%88%B7%E9%A2%98%E8%AE%B0/">
+        (LeetCode系列)刷题记
+      </a>
+    </h2>
+  
+  <div class='md'>
+    
+      <ol>
+<li><a href="http://www.sivan.tech/GitBook/">在线阅读</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/sivanWu0222/GitBook">查看对应源码</a></li>
+</ol>
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+          
+          <a class='avatar' href='/'><img src='https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/qrcode/github@volantis.png'></a>
+        
+        <time>2099-06-06</time>
+        
+          <span class="dot"></span>
+          <a class="category-link" href="/categories/LeetCode/">LeetCode</a>
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/2099/06/06/LeetCode%E7%B3%BB%E5%88%97-%E5%88%B7%E9%A2%98%E8%AE%B0/'>
+            Read More
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+              </div>
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            
+              <div class='post-wrapper'>
+                <div class="post post-v3 white-box reveal shadow">
+  
+  
+    <div class='pin'>
+      <img src='https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f4cc.svg'/>
+    </div>
+  
+  
+  
+    
+    <h2 class="article-title" pin>
+      <a href="/2021/04/07/%E9%A5%B6%E5%A4%A7%E6%96%87%E7%AB%A0%E6%B1%87%E6%80%BB/">
+        饶大文章汇总
+      </a>
+    </h2>
+  
+  <div class='md'>
+    
+      <h2 id="饶大文章汇总"><a href="#饶大文章汇总" class="headerlink" title="饶大文章汇总"></a>饶大文章汇总</h2><h3 id="Go语言"><a href="#Go语言" class="headerlink" title="Go语言"></a>Go语言</h3><details ><summary> <p>深度解密系列</p> </summary>
+              <div class='content'>
+              <ul><li><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/MTZ0C9zYsNrb8wyIm2D8BA">深度解密Go语言之Slice</a></li><li><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/mXOU8TElP8bbqaybRKN8eA">深度解密Go语言之sync.map</a></li><li><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/90Evbi5F5sA1IM5Ya5Tp8w">深度解密Go语言之channel</a></li><li><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/GpVy1eB5Cz_t-dhVC6BJNw">深度解密Go语言之context</a></li><li><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/OO-kwB4Fp_FnCaNXwGJoEw">深度解密Go语言之unsafe</a></li><li><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/2CDpE5wfoiNXm1agMAq4wA">深度解密Go语言之map</a></li><li><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/Hke0mSCEa4ga_GS_LUp78A">深度解密Go语言之反射</a></li><li><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/EbxkBokYBajkCR-MazL0ZA">深度解密Go语言之关于 interface 的 10 个问题</a></li><li><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/rpCf5vm9xYFXjmR98vanfQ">深度解密Go语言之scheduler</a></li><li><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/QiqoZeew3348OzU0tJ8XxA">深度解密Go语言之pprof</a></li><li><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/O8EY0M4_Rt_0BLCcM8OwFw">深度解密Go语言之sync.pool</a></li></ul>
+              </div>
+            </details>
+
+<details ><summary> <p>Go语言其他</p> </summary>
+              <div class='content'>
+              <ul><li><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/JOjUWp15JbEu54VJHY8i_A">三足鼎立 —— GPM 到底是什么？（一）</a></li><li><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/3xXU_O8-ZiA1Tk1nCnkODA">开天辟地 —— Go scheduler 初始化（二）</a></li><li><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/ipeLbEnKJ9BkOVtJv6ft0w">粉墨登场 —— main goroutine 的诞生（三）</a></li><li><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/sGR_VF13Czd9VuvHb-96iA">偷天换日 —— g0 栈和用户栈如何完成切换？（四）</a></li><li><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/pRCWOKlI48soY0deOWoSEw">新官上任 —— Go sheduler 开始调度循环（五）</a></li><li><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/kwKqrT4BoeheM9MvSh-rLw">千难万险 —— goroutine 从生到死（六）</a></li><li><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/QFmh0wq50H9-4ZrtEknpCQ">生生世世 —— schedule 的轮回（七）</a></li><li><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/6sNtrdlKtwfJIvBA8UPnKg">锲而不舍 —— M 是怎样找工作的？（八）</a></li><li><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/msJaDVyC-9ZbOef_wNac3A">忠于职守 —— sysmon 线程到底做了什么？（九）</a></li><li><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/Npbxth4AJxwO2g4bBx9lnA">意犹未尽 —— GPM 的状态流转（十）</a></li><li><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/cE_q1LWapFFGYlphZJP-Cw">Golang error 的突围</a></li><li><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/o2oMMh0PF5ZSoYD0XOBY2Q">Go GC 20 问</a></li><li><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/rgMT3fHMM4n9wSxCupDZyg">defer 链如何被遍历执行</a></li><li><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/jYVbA3kIp85J06BB1vT_iA">defer 的前世今生</a></li><li><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/Ie8niOb_0C9z2kACNvWCtg">聊聊 g0</a></li><li><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/nib0OD-LvNG57JAs4vB9RA">Go 协作与抢占</a></li><li><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/ENKV234bolS8UWd73JtRnQ">Go Modules 的智障版本选择</a></li><li><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/PFAQOa1rYAl4YcSmGmEnQQ">惊！空 struct 地址竟然不相等</a></li><li><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/7gaSxmA1aqfxfbGpMeZK-A">fasthttp 快在哪里</a></li><li><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/A5GXxb9J6IT-jA3eQOzyCw">深度阅读之《Concurrency in Go》(内含饶大微信和内推)</a></li><li><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/1tmexuy59NS8FGYU0LRRqQ">在 Go 语言中 Patch 非导出函数</a></li><li><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/fr-5v-jU4rCGqMCYSpDjfg">极端情况下收缩 Go 进程的线程数</a></li><li><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/jAUfqu-5nbs8hcua_F7ueQ">Go channel 的妙用</a></li><li><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/iXIf87-jjNrczai_bJXeGQ">[译]提案：在Go语言中增加对持久化内存的支持</a></li><li><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/g5AZxFOS9kwnAPmb3e3OUQ">那些年曹大写过的博客</a></li><li><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/OtkBEOxAWkwEu01PYbWY2w">Go http client 连接池不复用的问题</a></li><li><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/db--Gd4mUf2bs1hGwo5M_A">Go pprof 快速分析 CPU 高负载问题</a></li><li><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/9FFp0-cj4raPhdUUpSy4Og">Go 语言应用之 template</a></li><li><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/Rewl0DKnq6CY53m5D3G2qw">Go 程序是怎样跑起来的</a></li><li><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/r9yC78exkDbXs7Et2pC5PA">曹大谈内存重排</a></li><li><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/Hm8egXrdFr5c4-v--VFOtg">图解Go语言内存分配</a></li><li><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/ashgWyb-w4fT47xX60yNFA">Golang之变量去哪儿</a></li><li><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/txj7jQNki_8zIArb9kSHeg">Golang之轻松化解defer的温柔陷阱</a></li></ul>
+              </div>
+            </details>
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+          
+          <a class='avatar' href='/'><img src='https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/qrcode/github@volantis.png'></a>
+        
+        <time>2021-04-07</time>
+        
+          <span class="dot"></span>
+          <a class="category-link" href="/categories/%E6%B1%87%E6%80%BB/">汇总</a>
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/2021/04/07/%E9%A5%B6%E5%A4%A7%E6%96%87%E7%AB%A0%E6%B1%87%E6%80%BB/'>
+            Read More
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+              </div>
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+    
+    
+      
+        
+      
+        
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow">
+  
+  
+  
+  
+    
+    <h2 class="article-title" >
+      <a href="/2021/05/12/go%E5%BE%AE%E6%9C%8D%E5%8A%A1%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/">
+        go微服务环境搭建
+      </a>
+    </h2>
+  
+  <div class='md'>
+    
+      <blockquote>
+<p>本环境基于Macos搭建，运行的go版本是1.14.11，由于原先使用的1.15.5依赖包对应版本不存在或冲突修改后无法解决，所以只能修改go版本</p>
+</blockquote>
+<h1 id="沈逸老师go-micro搭建环境"><a href="#沈逸老师go-micro搭建环境" class="headerlink" title="沈逸老师go-micro搭建环境"></a>沈逸老师go-micro搭建环境</h1><h2 id="搭建成功使用命令"><a href="#搭建成功使用命令" class="headerlink" title="搭建成功使用命令:"></a>搭建成功使用命令:</h2><ol>
+<li><code>go get github.com/micro/go-micro/v2</code></li>
+<li><code>go get github.com/micro/go-plugins/registry/consul/v2</code></li>
+</ol>
+<p>参考：<a target="_blank" rel="noopener" href="https://segmentfault.com/a/1190000023529475">https://segmentfault.com/a/1190000023529475</a></p>
+<h2 id="搭建过程中遇到的问题："><a href="#搭建过程中遇到的问题：" class="headerlink" title="搭建过程中遇到的问题："></a>搭建过程中遇到的问题：</h2><figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"># github.com/coreos/etcd/clientv3/balancer/resolver/endpoint</span><br><span class="line">../../../../../<span class="keyword">go</span>/pkg/mod/github.com/coreos/etcd@v3<span class="number">.3</span><span class="number">.25</span>+incompatible/clientv3/balancer/resolver/endpoint/endpoint.<span class="keyword">go</span>:<span class="number">114</span>:<span class="number">78</span>: undefined: resolver.BuildOption</span><br><span class="line">../../../../../<span class="keyword">go</span>/pkg/mod/github.com/coreos/etcd@v3<span class="number">.3</span><span class="number">.25</span>+incompatible/clientv3/balancer/resolver/endpoint/endpoint.<span class="keyword">go</span>:<span class="number">182</span>:<span class="number">31</span>: undefined: resolver.ResolveNowOption</span><br><span class="line"># github.com/coreos/etcd/clientv3/balancer/picker</span><br><span class="line">../../../../../<span class="keyword">go</span>/pkg/mod/github.com/coreos/etcd@v3<span class="number">.3</span><span class="number">.25</span>+incompatible/clientv3/balancer/picker/err.<span class="keyword">go</span>:<span class="number">37</span>:<span class="number">44</span>: undefined: balancer.PickOptions</span><br><span class="line">../../../../../<span class="keyword">go</span>/pkg/mod/github.com/coreos/etcd@v3<span class="number">.3</span><span class="number">.25</span>+incompatible/clientv3/balancer/picker/roundrobin_balanced.<span class="keyword">go</span>:<span class="number">55</span>:<span class="number">54</span>: undefined: balancer.PickOptions</span><br><span class="line"># github.com/micro/<span class="keyword">go</span>-micro/transport/quic</span><br><span class="line">../../../../../<span class="keyword">go</span>/pkg/mod/github.com/micro/<span class="keyword">go</span>-micro@v1<span class="number">.18</span><span class="number">.0</span>/transport/quic/quic.<span class="keyword">go</span>:<span class="number">54</span>:<span class="number">12</span>: q.s.Close undefined (<span class="keyword">type</span> quic.Session has no field or method Close)</span><br><span class="line">../../../../../<span class="keyword">go</span>/pkg/mod/github.com/micro/<span class="keyword">go</span>-micro@v1<span class="number">.18</span><span class="number">.0</span>/transport/quic/quic.<span class="keyword">go</span>:<span class="number">121</span>:<span class="number">3</span>: unknown field <span class="string">&#x27;IdleTimeout&#x27;</span> in <span class="keyword">struct</span> literal of <span class="keyword">type</span> quic.Config</span><br></pre></td></tr></table></figure>
+
+<p>解决办法：go.mod文件夹中加上下面两句话</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">replace google.golang.org&#x2F;grpc &#x3D;&gt; google.golang.org&#x2F;grpc v1.26.0</span><br><span class="line">replace github.com&#x2F;lucas-clemente&#x2F;quic-go &#x3D;&gt; github.com&#x2F;lucas-clemente&#x2F;quic-go v0.14.1</span><br></pre></td></tr></table></figure>
+<p>参考：</p>
+<ol>
+<li><a target="_blank" rel="noopener" href="https://github.com/etcd-io/etcd/issues/12124#issuecomment-674368288">https://github.com/etcd-io/etcd/issues/12124#issuecomment-674368288</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/etcd-io/etcd/issues/11931">https://github.com/etcd-io/etcd/issues/11931</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.codenong.com/cs109250534/">https://www.codenong.com/cs109250534/</a></li>
+<li>推荐：<a target="_blank" rel="noopener" href="https://studygolang.com/articles/32791">https://studygolang.com/articles/32791</a></li>
+</ol>
+<p>遇到的问题2：<code>panic: qtls.ConnectionState not compatible with tls.ConnectionState</code></p>
+<p>最后以上的问题都采用一种策略，删除原有go版本并且下载go1.14.11版本得到了解决，之后执行命令<code>go get -u github.com/micro/go-micro</code><br>就是go的版本不要使用go1.15</p>
+<h1 id="租房网搭建环境："><a href="#租房网搭建环境：" class="headerlink" title="租房网搭建环境："></a>租房网搭建环境：</h1><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>如果网速很慢，经常io timeout，可以执行如下两条命令：</p>
+</blockquote>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">go env -w GO111MODULE=on</span><br><span class="line">go env -w GOPROXY=https://goproxy.cn,direct</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="安装protoc"><a href="#安装protoc" class="headerlink" title="安装protoc"></a>安装protoc</h2><ol>
+<li><a target="_blank" rel="noopener" href="https://github.com/protocolbuffers/protobuf/releases">下载可执行文件</a></li>
+<li>下载完成后，解压到<code>~/Library</code>，并修改文件夹名字为proto，并进入终端配置系统环境变量：<code>export PATH=$PATH:$GOPATH/bin:$HOME/Library/protoc/bin</code></li>
+<li>采用命令<code>protoc --verison</code>进行验证。配置成功，会有类似输出：<code>libprotoc 3.11.2</code></li>
+</ol>
+<h2 id="安装protoc-gen-go"><a href="#安装protoc-gen-go" class="headerlink" title="安装protoc-gen-go"></a>安装protoc-gen-go</h2><ol>
+<li><code>go get -u github.com/golang/protobuf/protoc-gen-go</code></li>
+<li>进入到目录：<code>cd $GOPATH/src/github.com/golang/protobuf/protoc-gen-go</code></li>
+<li>执行<code>go build</code>，生成可执行文件<code>protoc-gen-go</code></li>
+<li>将我们的可执行文件复制到<code>$GOPATH/bin</code>下：<code>cp protoc-gen-go $GOPATH/bin </code></li>
+</ol>
+<h2 id="安装protoc-gen-micro"><a href="#安装protoc-gen-micro" class="headerlink" title="安装protoc-gen-micro"></a>安装protoc-gen-micro</h2><blockquote>
+<p>如果实在get不下来我们可以直接clone代码下来，然后<code>go build</code></p>
+</blockquote>
+<ol>
+<li><code>go get github.com/micro/protoc-gen-micro</code></li>
+<li>进入到<code>$GOPATH/src/github.com/micro/protoc-gen-micro</code>目录下，进行<code>go build</code>，生成可执行文件<code>protoc-gen-micro</code></li>
+<li>将我们的可执行文件复制到<code>$GOPATH/bin</code>下：<code>cp protoc-gen-micro $GOPATH/bin </code></li>
+</ol>
+<p>测试：在goland中新建一个项目，并且编写一个proto文件夹，编写demo.proto文件并填入如下内容</p>
+<figure class="highlight protobuf"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line">syntax = <span class="string">&quot;proto3&quot;</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">package</span> myproto;</span><br><span class="line"></span><br><span class="line"><span class="keyword">option</span> go_package = <span class="string">&quot;./&quot;</span>;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">//客户端发送给服务端的</span></span><br><span class="line"><span class="class"><span class="keyword">message</span> <span class="title">HelloRequest</span> </span>&#123;</span><br><span class="line">  <span class="built_in">string</span> name = <span class="number">1</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//服务端返回给客户端的</span></span><br><span class="line"><span class="class"><span class="keyword">message</span> <span class="title">HelloResponse</span> </span>&#123;</span><br><span class="line">  <span class="built_in">string</span> msg = <span class="number">1</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">//客户端向服务端发送的请求</span></span><br><span class="line"><span class="class"><span class="keyword">message</span> <span class="title">NameRequest</span> </span>&#123;</span><br><span class="line">  <span class="built_in">string</span> name = <span class="number">1</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//服务端返回给客户端的响应</span></span><br><span class="line"><span class="class"><span class="keyword">message</span> <span class="title">NameResponse</span> </span>&#123;</span><br><span class="line">  <span class="built_in">string</span> msg = <span class="number">1</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">//定义服务</span></span><br><span class="line"><span class="class"><span class="keyword">service</span> <span class="title">HelloService</span> </span>&#123;</span><br><span class="line">  <span class="comment">//函数的传入和传出就是我们自己要定义的消息类型</span></span><br><span class="line">  <span class="comment">//一个打招呼的函数</span></span><br><span class="line">  <span class="function"><span class="keyword">rpc</span> SayHello (HelloRequest) <span class="keyword">returns</span> (HelloResponse) </span>&#123;&#125;</span><br><span class="line">  <span class="comment">//一个说名字的函数</span></span><br><span class="line">  <span class="function"><span class="keyword">rpc</span> SayName (NameRequest) <span class="keyword">returns</span> (NameResponse) </span>&#123;&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>进入到proto文件所在的目录，执行<code>protoc --proto_path=$GOPATH/src:. --micro_out=. --go_out=. *.proto</code><br>当前目录下生成两个文件：demo.pb.go和demo.pb.micro.go</p>
+<h2 id="安装go-micro"><a href="#安装go-micro" class="headerlink" title="安装go-micro"></a>安装go-micro</h2><p>执行命令：<code>go get github.com/micro/go-micro/v2@latest</code></p>
+<h2 id="安装micro"><a href="#安装micro" class="headerlink" title="安装micro"></a>安装micro</h2><h3 id="方式一："><a href="#方式一：" class="headerlink" title="方式一："></a>方式一：</h3><p>执行命令：<code>go get github.com/micro/micro/v2@latest</code></p>
+<p>通过该方法安装的micro默认使用的服务发现组件是mdns，没有集成Consul、Etcd等第三方的组件。我们后面需要使用Consul，所以此时需要自己手动编译安装。</p>
+<h3 id="方式二："><a href="#方式二：" class="headerlink" title="方式二："></a>方式二：</h3><ol>
+<li><code>git clone https://github.com/micro/micro.git</code></li>
+<li>进入到clone后的文件夹，新建plugins.go文件，键入如下内容：<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> main</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> (</span><br><span class="line">  _ <span class="string">&quot;github.com/micro/go-plugins/registry/consul/v2&quot;</span></span><br><span class="line">)</span><br></pre></td></tr></table></figure></li>
+<li>最后，重新编译安装：<code>go install</code></li>
+<li>完成后，执行如下命令检查micro是否安装成功：<code>micro --version</code>。如果有类似输出说明安装成功：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">micro version 2.0.0</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<h3 id="方法三：直接下载二进制文件"><a href="#方法三：直接下载二进制文件" class="headerlink" title="方法三：直接下载二进制文件"></a>方法三：直接下载二进制文件</h3><ol>
+<li>点击<a target="_blank" rel="noopener" href="https://github.com/micro/micro/releases/tag/v2.0.0">下载地址</a>进行下载</li>
+<li>将我们的<code>micro</code>可执行程序移动到<code>/usr/local/bin/</code></li>
+</ol>
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+          
+          <a class='avatar' href='/'><img src='https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/qrcode/github@volantis.png'></a>
+        
+        <time>2021-05-12</time>
+        
+          <span class="dot"></span>
+          <a class="category-link" href="/categories/%E5%BE%AE%E6%9C%8D%E5%8A%A1/">微服务</a><span class="sep"></span><a class="category-link" href="/categories/%E5%BE%AE%E6%9C%8D%E5%8A%A1/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/">环境搭建</a>
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/2021/05/12/go%E5%BE%AE%E6%9C%8D%E5%8A%A1%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/'>
+            Read More
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow">
+  
+  
+  
+  
+    
+    <h2 class="article-title" >
+      <a href="/2021/05/10/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E9%A1%B9%E7%9B%AE%E5%AE%9E%E6%88%98/">
+        微服务项目实战
+      </a>
+    </h2>
+  
+  <div class='md'>
+    
+      
+        微服务基础 微服务，微服务架构，微服务框架 
+              
+              微服务：应该使用这种方法而设计的一个应用，也就是设计出来的一个应用微服务架构：一种设计方法微服务框架（比如我们后面用到的micro）：将复杂的系统使用组件化的方式进行拆分，并且使用轻量级通讯方式进行整合的一种设计方法。微服务是通过这种架构设计方法拆分出来的一个独立的组件化的小应用。注意：这...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+          
+          <a class='avatar' href='/'><img src='https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/qrcode/github@volantis.png'></a>
+        
+        <time>2021-05-10</time>
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/2021/05/10/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E9%A1%B9%E7%9B%AE%E5%AE%9E%E6%88%98/'>
+            Read More
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow">
+  
+  
+  
+  
+    
+    <h2 class="article-title" >
+      <a href="/2021/04/13/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%E6%80%BB%E7%BB%93/">
+        排序算法总结
+      </a>
+    </h2>
+  
+  <div class='md'>
+    
+      <h2 id="基础排序算法"><a href="#基础排序算法" class="headerlink" title="基础排序算法"></a>基础排序算法</h2><div class="tabs" id="tab-id"><ul class="nav-tabs"><li class="tab active"><a href="#tab-id-1">选择排序</a></li><li class="tab"><a href="#tab-id-2">冒泡排序</a></li><li class="tab"><a href="#tab-id-3">直接插入排序</a></li></ul><div class="tab-content"><div class="tab-pane active" id="tab-id-1"><details green><summary> <p>点击查看代码</p> </summary>
+              <div class='content'>
+              <figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> basic_sort</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * @Author: yirufeng</span></span><br><span class="line"><span class="comment"> * @Date: 2021/4/13 8:28 下午</span></span><br><span class="line"><span class="comment"> * @Desc: 选择排序</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">时间复杂度：假设数组中有n个数字</span></span><br><span class="line"><span class="comment">	大循环需要遍历n-2趟，然后每一个大循环中，</span></span><br><span class="line"><span class="comment">							我们都需要从开始的数字一直到最后选出最小的数字(时间复杂度：O(n))，然后填充到当期那还没有排好序的起始位置</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">最后总的时间复杂度：O(n^2)，</span></span><br><span class="line"><span class="comment">空间复杂度：O(1)。</span></span><br><span class="line"><span class="comment">稳定的排序算法（因为两个相等的数字前面那个一定是排序的时候第一个会被放置到前面的）</span></span><br><span class="line"><span class="comment"> **/</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">SelectedSort</span><span class="params">(nums []<span class="keyword">int</span>)</span></span> &#123;</span><br><span class="line">	selectedSort(nums)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">selectedSort</span><span class="params">(nums []<span class="keyword">int</span>)</span></span> &#123;</span><br><span class="line">	<span class="keyword">var</span> min <span class="keyword">int</span></span><br><span class="line">	<span class="keyword">for</span> i := <span class="number">0</span>; i &lt; <span class="built_in">len</span>(nums)<span class="number">-1</span>; i++ &#123;</span><br><span class="line">		<span class="comment">//每次从nums[i]开始起</span></span><br><span class="line">		min = i</span><br><span class="line">		<span class="comment">//依次与后面比对来选择最小的</span></span><br><span class="line">		<span class="keyword">for</span> j := i + <span class="number">1</span>; j &lt; <span class="built_in">len</span>(nums); j++ &#123;</span><br><span class="line">			<span class="keyword">if</span> nums[min] &gt; nums[j] &#123;</span><br><span class="line">				min = j</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="comment">//交换nums[min]与nums[i]</span></span><br><span class="line">		nums[i], nums[min] = nums[min], nums[i]</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+              </div>
+            </details>
+
+<div class="note "><p><strong>选择排序</strong></p><p>选择排序总结：</p><ol><li>时间复杂度：O(n^2)</li><li>空间复杂度：O(1)。</li><li>不稳定的排序算法（比如A 80 B 80 C 70 这三个卷子从小到大排序，最后将会变成CBA，但是稳定的应该是CAB）</li></ol></div></div><div class="tab-pane" id="tab-id-2"><p>三个版本的冒泡排序：</p>
+<ol>
+<li>最基本的</li>
+<li>如果某次冒泡的时候没有交换元素，那么说明这一趟以及后面的元素都是有序的，之后后面我们就不再需要进行冒泡，可以直接退出</li>
+<li>在第二种改进的基础上再使用一个变量，表示我们最后交换的位置，下次遍历到这个位置就可以了</li>
+</ol>
+<details green><summary> <p>点击查看代码</p> </summary>
+              <div class='content'>
+              <figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> basic_sort</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * @Author: yirufeng</span></span><br><span class="line"><span class="comment"> * @Date: 2021/4/13 8:28 下午</span></span><br><span class="line"><span class="comment"> * @Desc:</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">有好几个版本：</span></span><br><span class="line"><span class="comment">1. 最基本的</span></span><br><span class="line"><span class="comment">2. 如果某次冒泡的时候没有交换元素，那么说明这一趟以及后面的元素都是有序的，之后后面我们就不再需要进行冒泡，可以直接退出</span></span><br><span class="line"><span class="comment">3. 在第二种改进的基础上再使用一个变量，表示我们最后交换的位置，下次遍历到这个位置就可以了</span></span><br><span class="line"><span class="comment"> **/</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">BubbleSort</span><span class="params">(nums []<span class="keyword">int</span>)</span></span> &#123;</span><br><span class="line">	bubbleSortV2(nums)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//最基本的</span></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">bubbleSortV1</span><span class="params">(nums []<span class="keyword">int</span>)</span></span> &#123;</span><br><span class="line">	<span class="keyword">for</span> i := <span class="number">1</span>; i &lt; <span class="built_in">len</span>(nums); i++ &#123; <span class="comment">//冒泡的次数</span></span><br><span class="line">		<span class="keyword">for</span> j := <span class="number">0</span>; j &lt; <span class="built_in">len</span>(nums)-i; j++ &#123;</span><br><span class="line">			<span class="comment">//如果前面比后面大就交换</span></span><br><span class="line">			<span class="keyword">if</span> nums[j] &gt; nums[j+<span class="number">1</span>] &#123;</span><br><span class="line">				nums[j], nums[j+<span class="number">1</span>] = nums[j+<span class="number">1</span>], nums[j]</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//如果某次冒泡的时候没有交换元素，那么说明这一趟以及后面的元素都是有序的，之后后面我们就不再需要进行冒泡，可以直接退出</span></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">bubbleSortV2</span><span class="params">(nums []<span class="keyword">int</span>)</span></span> &#123;</span><br><span class="line">	<span class="comment">//表示某一趟是否有元素交换</span></span><br><span class="line">	flag := <span class="literal">true</span></span><br><span class="line">	<span class="keyword">for</span> i := <span class="number">1</span>; i &lt; <span class="built_in">len</span>(nums); i++ &#123; <span class="comment">//冒泡的次数</span></span><br><span class="line">		flag = <span class="literal">true</span></span><br><span class="line">		<span class="keyword">for</span> j := <span class="number">0</span>; j &lt; <span class="built_in">len</span>(nums)-i; j++ &#123;</span><br><span class="line"></span><br><span class="line">			<span class="comment">//如果前面比后面大就交换</span></span><br><span class="line">			<span class="keyword">if</span> nums[j] &gt; nums[j+<span class="number">1</span>] &#123;</span><br><span class="line">				flag, nums[j], nums[j+<span class="number">1</span>] = <span class="literal">false</span>, nums[j+<span class="number">1</span>], nums[j]</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="comment">//如果没有元素交换，说明已经有序，直接退出即可</span></span><br><span class="line">		<span class="keyword">if</span> flag &#123;</span><br><span class="line">			<span class="keyword">break</span></span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//在第二种改进的基础上再使用一个变量，表示我们最后交换的位置，下次遍历到这个位置就可以了</span></span><br><span class="line"><span class="comment">//使用一个变量记录最后发生交换的位置，说明该位置之后都是有序的</span></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">bubbleSortV3</span><span class="params">(nums []<span class="keyword">int</span>)</span></span> &#123;</span><br><span class="line">	<span class="comment">//表示某一趟是否有元素交换</span></span><br><span class="line">	flag := <span class="literal">true</span></span><br><span class="line">	<span class="comment">//表示最后发生交换的位置</span></span><br><span class="line">	<span class="comment">//注意点1:这里必须再额外使用临时变量，因为如果只是用一个变量lastSwapPos的话，</span></span><br><span class="line">	<span class="comment">//lastSwapPos的值会一直改变，因此如果一旦变小，我们的for循环就会推出</span></span><br><span class="line">	lastSwapPos := <span class="built_in">len</span>(nums) - <span class="number">1</span>     <span class="comment">//注意点2：初始值赋值是len(nums) - 1</span></span><br><span class="line">	<span class="keyword">for</span> i := <span class="number">1</span>; i &lt; <span class="built_in">len</span>(nums); i++ &#123; <span class="comment">//冒泡的次数</span></span><br><span class="line">		lastSwapPosTemp := <span class="built_in">len</span>(nums) - i <span class="comment">//注意点3：初始值赋值是len(nums) - i</span></span><br><span class="line">		flag = <span class="literal">true</span></span><br><span class="line">		<span class="comment">//下次遍历的时候遍历到我们上次最后发生交换的位置就可以了</span></span><br><span class="line">		<span class="keyword">for</span> j := <span class="number">0</span>; j &lt; lastSwapPos; j++ &#123;</span><br><span class="line">			<span class="comment">//如果前面比后面大就交换</span></span><br><span class="line">			<span class="keyword">if</span> nums[j] &gt; nums[j+<span class="number">1</span>] &#123;</span><br><span class="line">				flag, nums[j], nums[j+<span class="number">1</span>], lastSwapPosTemp = <span class="literal">false</span>, nums[j+<span class="number">1</span>], nums[j], j <span class="comment">//注意点4：这里lastSwapPosTemp应该赋值j，因为j与j+1比较过了，所以就认为j之后是已经有序的了</span></span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="comment">//如果没有元素交换，说明已经有序，直接退出即可</span></span><br><span class="line">		<span class="keyword">if</span> flag &#123;</span><br><span class="line">			<span class="keyword">break</span></span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		lastSwapPos = lastSwapPosTemp</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+              </div>
+            </details>
+
+<div class="note "><p><strong>冒泡排序</strong></p><p>冒泡排序总结：</p><ol><li>时间复杂度：O(n^2)，最好是O(n)</li><li>空间复杂度：O(1)。</li><li>稳定</li></ol></div></div><div class="tab-pane" id="tab-id-3"><details green><summary> <p>点击查看代码</p> </summary>
+              <div class='content'>
+              <figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> basic_sort</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * @Author: yirufeng</span></span><br><span class="line"><span class="comment"> * @Date: 2021/4/13 8:28 下午</span></span><br><span class="line"><span class="comment"> * @Desc:</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">时间复杂度：O(n^2)</span></span><br><span class="line"><span class="comment">空间复杂度：O(1)</span></span><br><span class="line"><span class="comment">稳定的：因为是到前面找到一个小于等于自己的后面那个位置</span></span><br><span class="line"><span class="comment"> **/</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">InsertSort</span><span class="params">(nums []<span class="keyword">int</span>)</span></span> &#123;</span><br><span class="line">	insertSort(nums)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">insertSort</span><span class="params">(nums []<span class="keyword">int</span>)</span></span> &#123;</span><br><span class="line">	<span class="keyword">var</span> j <span class="keyword">int</span></span><br><span class="line">	<span class="comment">//第一个元素已经有序，只需要插入后面的元素即可</span></span><br><span class="line">	<span class="keyword">for</span> i := <span class="number">1</span>; i &lt; <span class="built_in">len</span>(nums); i++ &#123;</span><br><span class="line">		<span class="comment">//当前要插入的元素目前位于i位置</span></span><br><span class="line">		cur := nums[i]</span><br><span class="line">		<span class="comment">//从后往前找，直到前面元素小于当前元素就停，并且遍历的过程中不断将前面的元素移动到后面</span></span><br><span class="line">		<span class="keyword">for</span> j = i - <span class="number">1</span>; j &gt;= <span class="number">0</span> &amp;&amp; nums[j] &gt; cur; j-- &#123;</span><br><span class="line">			nums[j+<span class="number">1</span>] = nums[j]</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="comment">//此时j指向的元素就是前面那个小于或者等于当前元素的位置</span></span><br><span class="line">		<span class="comment">//但是我们应该在j+1位置插入</span></span><br><span class="line">		nums[j+<span class="number">1</span>] = cur</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+              </div>
+            </details>
+
+<div class="note "><p><strong>直接插入排序总结</strong></p><p>直接插入排序总结：</p><ol><li>时间复杂度：O(n^2)，</li><li>空间复杂度：O(1)。</li><li>稳定的：因为是到前面找到一个小于等于自己的后面那个位置</li></ol></div></div></div></div>
+
+
+
+
+<h2 id="进阶排序算法"><a href="#进阶排序算法" class="headerlink" title="进阶排序算法"></a>进阶排序算法</h2><div class="tabs" id="tab-id"><ul class="nav-tabs"><li class="tab active"><a href="#tab-id-1">归并排序</a></li><li class="tab"><a href="#tab-id-2">从小到大的堆排序</a></li><li class="tab"><a href="#tab-id-3">从大到小的堆排序</a></li><li class="tab"><a href="#tab-id-4">快速排序</a></li><li class="tab"><a href="#tab-id-5">希尔排序</a></li></ul><div class="tab-content"><div class="tab-pane active" id="tab-id-1"><details green><summary> <p>点击查看代码</p> </summary>
+              <div class='content'>
+              <figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> advanced_sort</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> (</span><br><span class="line">	<span class="string">&quot;algos/模板/排序/util&quot;</span></span><br><span class="line">	<span class="string">&quot;fmt&quot;</span></span><br><span class="line">	<span class="string">&quot;sort&quot;</span></span><br><span class="line">)</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * @Author: yirufeng</span></span><br><span class="line"><span class="comment"> * @Date: 2021/4/14 3:31 下午</span></span><br><span class="line"><span class="comment"> * @Desc: 归并排序</span></span><br><span class="line"><span class="comment"> **/</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">MergeSort</span><span class="params">(nums []<span class="keyword">int</span>)</span></span> &#123;</span><br><span class="line">	mergeSort(nums, <span class="number">0</span>, <span class="built_in">len</span>(nums)<span class="number">-1</span>)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">mergeSort</span><span class="params">(nums []<span class="keyword">int</span>, l, r <span class="keyword">int</span>)</span></span> &#123;</span><br><span class="line">	<span class="keyword">if</span> l == r &#123;</span><br><span class="line">		<span class="keyword">return</span></span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="comment">//找到中间点，一分为二</span></span><br><span class="line">	mid := l + (r-l)&gt;&gt;<span class="number">1</span></span><br><span class="line">	<span class="comment">//划分成左右两个有序的空间</span></span><br><span class="line">	mergeSort(nums, l, mid)</span><br><span class="line">	mergeSort(nums, mid+<span class="number">1</span>, r)</span><br><span class="line">	<span class="comment">//将左右两部分以mid为划分轴进行合并</span></span><br><span class="line">	merge(nums, l, mid, r)</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//合并nums[l:mid+1] 与 nums[mid+1:r+1]两部分内容</span></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">merge</span><span class="params">(nums []<span class="keyword">int</span>, l, mid, r <span class="keyword">int</span>)</span></span> &#123;</span><br><span class="line">	i, j := l, mid+<span class="number">1</span></span><br><span class="line">	cur := <span class="number">0</span></span><br><span class="line">	<span class="comment">//注意点1：这里必须借助一个数组，否则我们前面可能还没有被排序的结果会被我们后半部分的内容覆盖掉，导致前面就没有内容</span></span><br><span class="line">	help := <span class="built_in">make</span>([]<span class="keyword">int</span>, r-l+<span class="number">1</span>)</span><br><span class="line">	<span class="keyword">for</span> i &lt;= mid &amp;&amp; j &lt;= r &#123;</span><br><span class="line">		<span class="keyword">if</span> nums[i] &lt; nums[j] &#123;</span><br><span class="line">			help[cur], cur, i = nums[i], cur+<span class="number">1</span>, i+<span class="number">1</span></span><br><span class="line">		&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">			help[cur], cur, j = nums[j], cur+<span class="number">1</span>, j+<span class="number">1</span></span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">for</span> i &lt;= mid &#123;</span><br><span class="line">		help[cur], cur, i = nums[i], cur+<span class="number">1</span>, i+<span class="number">1</span></span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">for</span> j &lt;= r &#123;</span><br><span class="line">		help[cur], cur, j = nums[j], cur+<span class="number">1</span>, j+<span class="number">1</span></span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="comment">//最后记得我们的help数组中的内容要放回到我们的原来的数组中</span></span><br><span class="line">	<span class="keyword">for</span> i := <span class="number">0</span>; i &lt; <span class="built_in">len</span>(help); i++ &#123;</span><br><span class="line">		nums[l+i] = help[i]</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">main</span><span class="params">()</span></span> &#123;</span><br><span class="line">	nums := util.GenerateRandomNums(<span class="number">0</span>, <span class="number">100</span>, <span class="number">30</span>)</span><br><span class="line">	fmt.Println(nums)</span><br><span class="line">	temp := <span class="built_in">make</span>([]<span class="keyword">int</span>, <span class="number">30</span>)</span><br><span class="line">	<span class="built_in">copy</span>(temp, nums)</span><br><span class="line">	sort.Ints(temp)</span><br><span class="line">	MergeSort(nums)</span><br><span class="line">	fmt.Println(temp)</span><br><span class="line">	fmt.Println(nums)</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+              </div>
+            </details>
+
+<div class="note "><p><strong>归并排序</strong></p><ol><li>时间复杂度：O(nlogN) 最好最坏都是O(NlogN)</li><li>空间复杂度：O(n)。需要一个辅助空间</li><li>是否稳定：稳定的（因为一旦两个数相等我们就不比较，并且每次都是前半部分与后半部分进行比较，所以前面同样的内容与后面同样的内容的相对位置不会改变）</li></ol></div></div><div class="tab-pane" id="tab-id-2"><details green><summary> <p>点击查看代码</p> </summary>
+              <div class='content'>
+              <figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> main</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> (</span><br><span class="line">	<span class="string">&quot;algos/模板/排序/util&quot;</span></span><br><span class="line">	<span class="string">&quot;fmt&quot;</span></span><br><span class="line">	<span class="string">&quot;log&quot;</span></span><br><span class="line">	<span class="string">&quot;sort&quot;</span></span><br><span class="line">)</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * @Author: yirufeng</span></span><br><span class="line"><span class="comment"> * @Date: 2021/4/14 3:29 下午</span></span><br><span class="line"><span class="comment"> * @Desc: 从小到大的堆排序(需要建立一个大顶堆)</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">从小到大排序需要建立一个大顶堆，因为我们建立好大顶堆之后，每次从堆头开始排除元素，然后都会将堆头放到目前数组的最后位置，最后位置会不断缩小，</span></span><br><span class="line"><span class="comment">因此我们最后的位置就是一个不断往前移动的过程，从而就是说我们得到的整个数组是从小到大的</span></span><br><span class="line"><span class="comment"> **/</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">HeapSort</span><span class="params">(nums []<span class="keyword">int</span>)</span></span> &#123;</span><br><span class="line">	heapSort(nums)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">heapSort</span><span class="params">(nums []<span class="keyword">int</span>)</span></span> &#123;</span><br><span class="line">	<span class="keyword">if</span> nums == <span class="literal">nil</span> || <span class="built_in">len</span>(nums) &lt; <span class="number">2</span> &#123;</span><br><span class="line">		<span class="keyword">return</span></span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">for</span> i := <span class="number">0</span>; i &lt; <span class="built_in">len</span>(nums); i++ &#123;</span><br><span class="line">		heapPush(nums, i)</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	log.Println(<span class="string">&quot;建堆完成---------------&gt;&quot;</span>, nums)</span><br><span class="line">	heapSize := <span class="built_in">len</span>(nums)</span><br><span class="line"></span><br><span class="line">	<span class="comment">//之后不断吐出元素</span></span><br><span class="line">	<span class="keyword">for</span> heapSize &gt; <span class="number">0</span> &#123;</span><br><span class="line">		nums[<span class="number">0</span>], nums[heapSize<span class="number">-1</span>] = nums[heapSize<span class="number">-1</span>], nums[<span class="number">0</span>]</span><br><span class="line">		heapSize--</span><br><span class="line">		heapify(nums, heapSize)</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//表示当前要加入的是nums中的索引为index的元素</span></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">heapPush</span><span class="params">(nums []<span class="keyword">int</span>, index <span class="keyword">int</span>)</span></span> &#123;</span><br><span class="line">	<span class="keyword">for</span> (index<span class="number">-1</span>)&gt;&gt;<span class="number">1</span> &gt;= <span class="number">0</span> &amp;&amp; nums[index] &gt; nums[(index<span class="number">-1</span>)&gt;&gt;<span class="number">1</span>] &#123;</span><br><span class="line">		nums[index], nums[(index<span class="number">-1</span>)&gt;&gt;<span class="number">1</span>], index = nums[(index<span class="number">-1</span>)&gt;&gt;<span class="number">1</span>], nums[index], (index<span class="number">-1</span>)&gt;&gt;<span class="number">1</span></span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//length 表示堆的元素个数</span></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">heapify</span><span class="params">(nums []<span class="keyword">int</span>, length <span class="keyword">int</span>)</span></span> &#123;</span><br><span class="line">	index := <span class="number">0</span></span><br><span class="line">	<span class="comment">// (index &lt;&lt; 1 + 1) &lt; length 说明是有左子树的</span></span><br><span class="line">	<span class="keyword">for</span> (index&lt;&lt;<span class="number">1</span> + <span class="number">1</span>) &lt; length &#123; <span class="comment">//思路：每次找到左右孩子中更大的与父进行交换</span></span><br><span class="line">		left := index&lt;&lt;<span class="number">1</span> + <span class="number">1</span></span><br><span class="line">		<span class="comment">//如果有右子树并且右子树比左子树大</span></span><br><span class="line">		<span class="keyword">if</span> left+<span class="number">1</span> &lt; length &amp;&amp; nums[left+<span class="number">1</span>] &gt; nums[left] &#123;</span><br><span class="line">			left++</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="comment">//如果当前节点比左右孩子中大的大，就不交换</span></span><br><span class="line">		<span class="keyword">if</span> nums[left] &lt;= nums[index] &#123;</span><br><span class="line">			<span class="keyword">break</span></span><br><span class="line">		&#125;</span><br><span class="line">		<span class="comment">//如果当前节点比左右孩子中大的小，交换当前节点与左右孩子中较大的</span></span><br><span class="line">		<span class="comment">//同时让index变为left</span></span><br><span class="line">		nums[left], nums[index], index = nums[index], nums[left], left</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">main</span><span class="params">()</span></span> &#123;</span><br><span class="line">	nums := util.GenerateRandomNums(<span class="number">0</span>, <span class="number">100</span>, <span class="number">50</span>)</span><br><span class="line">	temp := <span class="built_in">make</span>([]<span class="keyword">int</span>, <span class="number">50</span>)</span><br><span class="line">	<span class="built_in">copy</span>(temp, nums)</span><br><span class="line">	sort.Ints(temp)</span><br><span class="line">	fmt.Println(temp)</span><br><span class="line">	HeapSort(nums)</span><br><span class="line">	fmt.Println(nums)</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+              </div>
+            </details></div><div class="tab-pane" id="tab-id-3"><details green><summary> <p>点击查看代码</p> </summary>
+              <div class='content'>
+              <figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> main</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> (</span><br><span class="line">	<span class="string">&quot;algos/模板/排序/util&quot;</span></span><br><span class="line">	<span class="string">&quot;fmt&quot;</span></span><br><span class="line">	<span class="string">&quot;sort&quot;</span></span><br><span class="line">)</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * @Author: yirufeng</span></span><br><span class="line"><span class="comment"> * @Date: 2021/4/15 2:20 下午</span></span><br><span class="line"><span class="comment"> * @Desc: 从大到小的排序，需要建立一个小顶堆</span></span><br><span class="line"><span class="comment"> **/</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">HeapSort</span><span class="params">(nums []<span class="keyword">int</span>)</span></span> &#123;</span><br><span class="line">	heapSort(nums)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">heapSort</span><span class="params">(nums []<span class="keyword">int</span>)</span></span> &#123;</span><br><span class="line"></span><br><span class="line">	<span class="comment">//如果nums为空或者元素个数小于两个，可以直接退出</span></span><br><span class="line">	<span class="keyword">if</span> nums == <span class="literal">nil</span> || <span class="built_in">len</span>(nums) &lt; <span class="number">2</span> &#123;</span><br><span class="line">		<span class="keyword">return</span></span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="comment">//此时我们需要不断将元素加入我们的堆中</span></span><br><span class="line">	<span class="keyword">for</span> i := <span class="number">1</span>; i &lt; <span class="built_in">len</span>(nums); i++ &#123;</span><br><span class="line">		heapInsert(nums, i)</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="comment">//获取堆的大小</span></span><br><span class="line">	heapSize := <span class="built_in">len</span>(nums)</span><br><span class="line"></span><br><span class="line">	<span class="comment">//此时我们不断将堆里面的元素弹出放到应该放置的位置</span></span><br><span class="line">	<span class="keyword">for</span> heapSize &gt; <span class="number">0</span> &#123;</span><br><span class="line">		<span class="comment">//将堆的最后一个元素与堆顶交换</span></span><br><span class="line">		nums[<span class="number">0</span>], nums[heapSize<span class="number">-1</span>] = nums[heapSize<span class="number">-1</span>], nums[<span class="number">0</span>]</span><br><span class="line">		<span class="comment">//堆的元素个数减去1</span></span><br><span class="line">		heapSize--</span><br><span class="line">		<span class="comment">//开始从堆顶从上往下开始调整堆</span></span><br><span class="line">		heapAdjustFromTopToBottom(nums, heapSize<span class="number">-1</span>) <span class="comment">// 从下到上的堆调整</span></span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//第二个参数表示插入的元素位于nums的位置</span></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">heapInsert</span><span class="params">(nums []<span class="keyword">int</span>, index <span class="keyword">int</span>)</span></span> &#123;</span><br><span class="line">	<span class="comment">//不断比较当前插入的位置的元素与父节点的大小，如果比父节点小就交换</span></span><br><span class="line">	<span class="keyword">for</span> (index<span class="number">-1</span>)&gt;&gt;<span class="number">1</span> &gt;= <span class="number">0</span> &amp;&amp; nums[(index<span class="number">-1</span>)&gt;&gt;<span class="number">1</span>] &gt; nums[index] &#123;</span><br><span class="line">		nums[index], nums[(index<span class="number">-1</span>)&gt;&gt;<span class="number">1</span>], index = nums[(index<span class="number">-1</span>)&gt;&gt;<span class="number">1</span>], nums[index], (index<span class="number">-1</span>)&gt;&gt;<span class="number">1</span></span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//第二个参数表示当前堆的元素个数</span></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">heapAdjustFromTopToBottom</span><span class="params">(nums []<span class="keyword">int</span>, length <span class="keyword">int</span>)</span></span> &#123;</span><br><span class="line">	index := <span class="number">0</span></span><br><span class="line">	<span class="keyword">for</span> index&lt;&lt;<span class="number">1</span>+<span class="number">1</span> &lt; length &#123;</span><br><span class="line">		left := index&lt;&lt;<span class="number">1</span> + <span class="number">1</span></span><br><span class="line"></span><br><span class="line">		<span class="comment">//如果有右孩子并且右比左小</span></span><br><span class="line">		<span class="keyword">if</span> left+<span class="number">1</span> &lt; length &amp;&amp; nums[left+<span class="number">1</span>] &lt; nums[left] &#123;</span><br><span class="line">			left++</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		<span class="comment">//当前节点小于等于两个孩子较小的</span></span><br><span class="line">		<span class="keyword">if</span> nums[index] &lt;= nums[left] &#123;</span><br><span class="line">			<span class="keyword">break</span></span><br><span class="line">		&#125;</span><br><span class="line">		nums[index], nums[left], index = nums[left], nums[index], left</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">main</span><span class="params">()</span></span> &#123;</span><br><span class="line">	nums := util.GenerateRandomNums(<span class="number">0</span>, <span class="number">100</span>, <span class="number">50</span>)</span><br><span class="line">	temp := <span class="built_in">make</span>([]<span class="keyword">int</span>, <span class="number">50</span>)</span><br><span class="line">	<span class="built_in">copy</span>(temp, nums)</span><br><span class="line">	sort.Ints(temp)</span><br><span class="line">	fmt.Println(temp)</span><br><span class="line">	HeapSort(nums)</span><br><span class="line">	fmt.Println(nums)</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+              </div>
+            </details></div><div class="tab-pane" id="tab-id-4"><details green><summary> <p>点击查看代码</p> </summary>
+              <div class='content'>
+              <figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> main</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> (</span><br><span class="line">	<span class="string">&quot;algos/模板/排序/util&quot;</span></span><br><span class="line">	<span class="string">&quot;fmt&quot;</span></span><br><span class="line">	<span class="string">&quot;math/rand&quot;</span></span><br><span class="line">	<span class="string">&quot;sort&quot;</span></span><br><span class="line">)</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * @Author: yirufeng</span></span><br><span class="line"><span class="comment"> * @Date: 2021/4/14 3:31 下午</span></span><br><span class="line"><span class="comment"> * @Desc: 从小到大的快速排序</span></span><br><span class="line"><span class="comment"> **/</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">QuickSort</span><span class="params">(nums []<span class="keyword">int</span>)</span></span> &#123;</span><br><span class="line">	quickSort(nums, <span class="number">0</span>, <span class="built_in">len</span>(nums)<span class="number">-1</span>)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//表示对[l,r]的元素进行快排</span></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">quickSort</span><span class="params">(nums []<span class="keyword">int</span>, l, r <span class="keyword">int</span>)</span></span> &#123;</span><br><span class="line">	<span class="keyword">if</span> l &lt; r &#123;</span><br><span class="line">		<span class="comment">//在[l,r]区间内生成一个随机数作为划分</span></span><br><span class="line">		index := rand.Intn(r-l+<span class="number">1</span>) + l</span><br><span class="line">		<span class="comment">//每次都把我们随机选择的元素交换到最后</span></span><br><span class="line">		nums[index], nums[r] = nums[r], nums[index]</span><br><span class="line">		<span class="comment">//进行划分，得到两个相等的区间</span></span><br><span class="line">		less, more := partition(nums, l, r)</span><br><span class="line">		<span class="comment">//继续对小于和大于的两个区间进行快速排序</span></span><br><span class="line">		quickSort(nums, l, less<span class="number">-1</span>)</span><br><span class="line">		quickSort(nums, more+<span class="number">1</span>, r)</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//返回两个结果是等于我们随机数的区间的左端点和右端点</span></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">partition</span><span class="params">(nums []<span class="keyword">int</span>, l, r <span class="keyword">int</span>)</span> <span class="params">(<span class="keyword">int</span>, <span class="keyword">int</span>)</span></span> &#123; <span class="comment">//使用nums[r]作为一个划分</span></span><br><span class="line">	less, more := l<span class="number">-1</span>, r</span><br><span class="line">	num := nums[r]</span><br><span class="line">	cur := l</span><br><span class="line">	<span class="keyword">for</span> cur &lt; more &#123;</span><br><span class="line">		<span class="keyword">if</span> nums[cur] &lt; num &#123;</span><br><span class="line">			nums[less+<span class="number">1</span>], nums[cur], less, cur = nums[cur], nums[less+<span class="number">1</span>], less+<span class="number">1</span>, cur+<span class="number">1</span></span><br><span class="line">		&#125; <span class="keyword">else</span> <span class="keyword">if</span> nums[cur] &gt; num &#123;</span><br><span class="line">			nums[more<span class="number">-1</span>], nums[cur], more = nums[less+<span class="number">1</span>], nums[more<span class="number">-1</span>], more<span class="number">-1</span></span><br><span class="line">		&#125; <span class="keyword">else</span> <span class="keyword">if</span> nums[cur] == num &#123;</span><br><span class="line">			more++</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	nums[more], nums[r] = nums[r], nums[more]</span><br><span class="line">	<span class="comment">//每次随机择一个划分点</span></span><br><span class="line">	<span class="keyword">return</span> less + <span class="number">1</span>, more - <span class="number">1</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">main</span><span class="params">()</span></span> &#123;</span><br><span class="line">	nums := util.GenerateRandomNums(<span class="number">0</span>, <span class="number">100</span>, <span class="number">10</span>)</span><br><span class="line">	fmt.Println(nums)</span><br><span class="line">	temp := <span class="built_in">make</span>([]<span class="keyword">int</span>, <span class="number">10</span>)</span><br><span class="line">	<span class="built_in">copy</span>(temp, nums)</span><br><span class="line">	sort.Ints(temp)</span><br><span class="line">	fmt.Println(temp)</span><br><span class="line">	QuickSort(nums)</span><br><span class="line">	fmt.Println(nums)</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+              </div>
+            </details>
+
+
+<div class="note "><p><strong>快速排序</strong></p><p>思路：采用荷兰国旗的问题进行划分，每次可以划分为3个区间，分别是小于，等于以及大于的区间。</p><ol><li>时间复杂度：O(nlogN)  最好是O(nlogN) 最坏是O(n^2)</li><li>空间复杂度：O(n)。</li><li>是否稳定：不稳定</li></ol></div></div><div class="tab-pane" id="tab-id-5"><p>！！！</p></div></div></div>
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+          
+          <a class='avatar' href='/'><img src='https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/qrcode/github@volantis.png'></a>
+        
+        <time>2021-04-13</time>
+        
+          <span class="dot"></span>
+          <a class="category-link" href="/categories/%E7%AE%97%E6%B3%95/">算法</a><span class="sep"></span><a class="category-link" href="/categories/%E7%AE%97%E6%B3%95/%E6%8E%92%E5%BA%8F/">排序</a>
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/2021/04/13/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%E6%80%BB%E7%BB%93/'>
+            Read More
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
+      
+        
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow">
+  
+  
+  
+  
+    
+    <h2 class="article-title" >
+      <a href="/2021/04/06/mysql%E4%B8%AD%E7%9A%84%E7%B4%A2%E5%BC%95%E5%B8%B8%E8%A7%81%E9%9D%A2%E8%AF%95%E9%A2%98/">
+        mysql中的索引
+      </a>
+    </h2>
+  
+  <div class='md'>
+    
+      
+         查看代码测试 
+              
+              索引参考参考了解索引（索引概念）索引是一种特殊的文件(InnoDB数据表上的索引是表空间的一个组成部分)，它们包含着对数据表里所有记录的引用指针。索引是一种数据结构。数据库索引，是数据库管理系统中一个排序的数据结构，以协助快速查询、更新数据库表中数据。索引的实现通常使用B数及其变种B+数。更通俗的说，索引就相当于目录...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+          
+          <a class='avatar' href='/'><img src='https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/qrcode/github@volantis.png'></a>
+        
+        <time>2021-04-06</time>
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/2021/04/06/mysql%E4%B8%AD%E7%9A%84%E7%B4%A2%E5%BC%95%E5%B8%B8%E8%A7%81%E9%9D%A2%E8%AF%95%E9%A2%98/'>
+            Read More
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow">
+  
+  
+  
+  
+    
+    <h2 class="article-title" >
+      <a href="/2021/04/04/parallel%E5%AE%89%E8%A3%85%E7%9A%84%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%99%BB%E5%BD%95root/">
+        parallel安装的虚拟机登录root
+      </a>
+    </h2>
+  
+  <div class='md'>
+    
+      <div class="note info"><p>打开terminal</p></div>
+
+<ol>
+<li>执行<code>sudo passwd</code></li>
+<li>出现<code>Password:</code>，键入自己当前用户的密码</li>
+<li>出现<code>Enter new UNIX password：</code>这个是root的密码</li>
+<li>出现<code>Retype new UNIX password：</code>重复root的密码</li>
+</ol>
+<p><strong>之后就可以使用su命令以及刚才设置的root用户密码切换到root用户</strong></p>
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+          
+          <a class='avatar' href='/'><img src='https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/qrcode/github@volantis.png'></a>
+        
+        <time>2021-04-04</time>
+        
+          <span class="dot"></span>
+          <a class="category-link" href="/categories/tools/">tools</a>
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/2021/04/04/parallel%E5%AE%89%E8%A3%85%E7%9A%84%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%99%BB%E5%BD%95root/'>
+            Read More
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow">
+  
+  
+  
+  
+    
+    <h2 class="article-title" >
+      <a href="/2021/04/02/%E7%BD%91%E6%98%93%E5%BE%AE%E8%AF%BE%E5%A0%82%E4%B9%8B%E4%B8%AD%E9%97%B4%E4%BB%B6%E5%AD%A6%E4%B9%A0/">
+        网易微课堂之中间件学习
+      </a>
+    </h2>
+  
+  <div class='md'>
+    
+      
+        分布式消息中间件 查看内容 
+              
+              总览分布式消息中间件设计篇amqamq入门amq支持的消息协议讲解ActiveMQ高可用集群方案持久化原理及事务机制rabbitmqrabbitmq入门以及内部消息分发机制课程目录AMQP协议RabbitMQ简介RabbitMQ基本概念RabbitMQ安装运行RabbitMQ基本配置RabbitMQ管理界...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+          
+          <a class='avatar' href='/'><img src='https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/qrcode/github@volantis.png'></a>
+        
+        <time>2021-04-02</time>
+        
+          <span class="dot"></span>
+          <a class="category-link" href="/categories/%E4%B8%AD%E9%97%B4%E4%BB%B6/">中间件</a>
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/2021/04/02/%E7%BD%91%E6%98%93%E5%BE%AE%E8%AF%BE%E5%A0%82%E4%B9%8B%E4%B8%AD%E9%97%B4%E4%BB%B6%E5%AD%A6%E4%B9%A0/'>
+            Read More
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow">
+  
+  
+  
+  
+    
+    <h2 class="article-title" >
+      <a href="/2021/04/02/mysql%E5%AD%A6%E4%B9%A0/">
+        mysql学习
+      </a>
+    </h2>
+  
+  <div class='md'>
+    
+      
+        安装环境
+使用虚拟机的docker安装mysql
+
+Mysql逻辑架构
+如图所示我们知道，Mysql可以分为server和存储引擎两大层。
+
+Server层：涵盖 MySQL 的大多数核心服务功能，以及所有的内置函数（如日期、时间、数学和加密函数等），所有跨存储引擎的功能都在这一层实现，比如存储过程、触发器、视图等。
+存储引擎层负责数据的存储和提取。其架构模式是插件式的，支持 InnoDB、...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+          
+          <a class='avatar' href='/'><img src='https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/qrcode/github@volantis.png'></a>
+        
+        <time>2021-04-02</time>
+        
+          <span class="dot"></span>
+          <a class="category-link" href="/categories/mysql/">mysql</a>
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/2021/04/02/mysql%E5%AD%A6%E4%B9%A0/'>
+            Read More
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
+      
+    
+  </section>
+  
+    
+      <br>
+      <div class="prev-next">
+        
+        <p class="current">
+          1 / 10
+        </p>
+        
+          <a class="next" rel="next" href="/page/2/">
+            <section class="post next white-box shadow">
+              &nbsp;Next&nbsp;<i class="fas fa-chevron-right" aria-hidden="true"></i>
+            </section>
+          </a>
+        
+      </div>
+    
+  
+
+
+</div>
+<aside class='l_side'>
+  
+  
+    
+    
+
+<section class="widget blogger blur desktop mobile">
+  <div class='content'>
+    
+      
+        <a class='avatar flat-box rectangle' href='/about/'>
+          <img no-lazy src='https://cdn.jsdelivr.net/gh/sivanWu0222/ImageHosting@master/uPic/IMG_0990_gaitubao_3852x2738.jpg'/>
+        </a>
+      
+    
+    
+      <div class='text'>
+        
+          <h2>逸如风</h2>
+        
+        
+          <p>忠于自己，披星戴月奔向理想和你!</p>
+
+        
+        
+      </div>
+    
+    
+      <div class="social-wrapper">
+        
+          
+            <a href="/atom.xml"
+              class="social fas fa-rss flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+              
+            </a>
+          
+        
+          
+            <a href="/yirufeng@foxmail.com"
+              class="social fas fa-envelope flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+              
+            </a>
+          
+        
+          
+            <a href="https://github.com/sivanWu0222/"
+              class="social fab fa-github flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+              
+            </a>
+          
+        
+      </div>
+    
+  </div>
+</section>
+
+  
+
+  
+    
+    
+
+<section class="widget blur desktop">
+  
+  <header>
+    
+      <i class="fas fa-award fa-fw" aria-hidden="true"></i><span class='name'>站点信息</span>
+    
+  </header>
+
+
+  <div class='content'>
+    <div class="webinfo">
+      
+        <div class="webinfo-item">
+          <div>文章数目：</div>
+          <div>91 篇</div>
+        </div>
+      
+
+      
+        <div class="webinfo-item">
+          <div>已运行时间：</div>
+          <div id="webinfo-runtime-count" publish_date="03/24/2020 21:34:09"></div>
+        </div>
+        <script>
+          var BirthDay = new Date(new Date('2016/01/01'));
+          var today = new Date();
+          var timeold = (today.getTime() - BirthDay.getTime());
+          var daysold = Math.floor(timeold / (24 * 60 * 60 * 1000));
+          document.getElementById('webinfo-runtime-count').innerHTML = daysold + ' 天';
+        </script>
+      
+
+
+      
+        <div class="webinfo-item">
+          <div>本站总字数：</div>
+          <div>99.1k 字</div>
+        </div>
+      
+
+      
+        <div class="webinfo-item">
+          <div>本站访客数：</div>
+          
+          <div><span id="busuanzi_value_site_uv"><i class="fas fa-fan fa-spin fa-fw" aria-hidden="true"></i></span> 人</div>
+          
+        </div>
+      
+
+      
+        <div class="webinfo-item">
+          <div>本站总访问量：</div>
+          
+          <div><span id="busuanzi_value_site_pv"><i class="fas fa-fan fa-spin fa-fw" aria-hidden="true"></i></span> 次</div>
+          
+        </div>
+      
+
+      
+        <div class="webinfo-item">
+          <div>最后活动时间：</div>
+          
+            <div id="last-update" style="display: none;">Sun May 30 2021 02:43:16 GMT+0000 (Coordinated Universal Time)</div>
+            <div id="last-update-show">2021-05-30 日</div>
+          
+        </div>
+        
+        <script>
+          function timeago(dateTimeStamp) {
+              var minute = 1000 * 60; //把分，时，天，周，半个月，一个月用毫秒表示
+              var hour = minute * 60;
+              var day = hour * 24;
+              var week = day * 7;
+              var month = day * 30;
+              var now = new Date().getTime(); //获取当前时间毫秒
+              var diffValue = now - dateTimeStamp; //时间差
+              if (diffValue < 0) {
+                  return;
+              }
+              var minC = diffValue / minute; //计算时间差的分，时，天，周，月
+              var hourC = diffValue / hour;
+              var dayC = diffValue / day;
+              var weekC = diffValue / week;
+              var monthC = diffValue / month;
+              if (monthC >= 1 && monthC <= 3) {
+                  result = " " + parseInt(monthC) + " 月前"
+              } else if (weekC >= 1 && weekC <= 3) {
+                  result = " " + parseInt(weekC) + " 周前"
+              } else if (dayC >= 1 && dayC <= 6) {
+                  result = " " + parseInt(dayC) + " 天前"
+              } else if (hourC >= 1 && hourC <= 23) {
+                  result = " " + parseInt(hourC) + " 小时前"
+              } else if (minC >= 1 && minC <= 59) {
+                  result = " " + parseInt(minC) + " 分钟前"
+              } else if (diffValue >= 0 && diffValue <= minute) {
+                  result = "刚刚"
+              } else {
+                  var datetime = new Date();
+                  datetime.setTime(dateTimeStamp);
+                  var Nyear = datetime.getFullYear();
+                  var Nmonth = datetime.getMonth() + 1 < 10 ? "0" + (datetime.getMonth() + 1) : datetime.getMonth() + 1;
+                  var Ndate = datetime.getDate() < 10 ? "0" + datetime.getDate() : datetime.getDate();
+                  var Nhour = datetime.getHours() < 10 ? "0" + datetime.getHours() : datetime.getHours();
+                  var Nminute = datetime.getMinutes() < 10 ? "0" + datetime.getMinutes() : datetime.getMinutes();
+                  var Nsecond = datetime.getSeconds() < 10 ? "0" + datetime.getSeconds() : datetime.getSeconds();
+                  result = Nyear + "-" + Nmonth + "-" + Ndate
+              }
+              return result;
+          }
+          var lastUpDate = document.getElementById('last-update').innerHTML;
+          try {
+            document.getElementById('last-update-show').innerHTML = timeago(new Date(lastUpDate));
+          } catch (error) {
+            document.getElementById('last-update-show').innerHTML = '2021-05-30 日';
+          }
+        </script>
+        
+      
+    </div>
+  </div>
+</section>
+
+  
+
+  
+    
+    
+  
+
+  <section class="widget tagcloud blur desktop mobile">
+    
+  <header>
+    
+      <a href='/tags/'><i class="fas fa-tags fa-fw" aria-hidden="true"></i><span class='name'>热门标签</span></a>
+    
+  </header>
+
+
+    <div class='content'>
+      <a href="/tags/AVL%E6%A0%91/" style="font-size: 14px; color: #999">AVL树</a> <a href="/tags/Algorithms/" style="font-size: 14px; color: #999">Algorithms</a> <a href="/tags/B-%E6%A0%91/" style="font-size: 14px; color: #999">B+树</a> <a href="/tags/BFPRT/" style="font-size: 14px; color: #999">BFPRT</a> <a href="/tags/B%E6%A0%91/" style="font-size: 14px; color: #999">B树</a> <a href="/tags/CORS/" style="font-size: 14px; color: #999">CORS</a> <a href="/tags/Centos/" style="font-size: 14px; color: #999">Centos</a> <a href="/tags/DP/" style="font-size: 15.11px; color: #919191">DP</a> <a href="/tags/Golang/" style="font-size: 16.22px; color: #8a8a8a">Golang</a> <a href="/tags/IO/" style="font-size: 14px; color: #999">IO</a> <a href="/tags/Idea/" style="font-size: 14px; color: #999">Idea</a> <a href="/tags/LeetCode/" style="font-size: 20.67px; color: #6c6c6c">LeetCode</a> <a href="/tags/Linux/" style="font-size: 15.11px; color: #919191">Linux</a> <a href="/tags/Maven/" style="font-size: 14px; color: #999">Maven</a> <a href="/tags/Mysql/" style="font-size: 14px; color: #999">Mysql</a> <a href="/tags/OS/" style="font-size: 17.33px; color: #828282">OS</a> <a href="/tags/Pycharm/" style="font-size: 14px; color: #999">Pycharm</a> <a href="/tags/Tools/" style="font-size: 18.44px; color: #7b7b7b">Tools</a> <a href="/tags/Ubuntu/" style="font-size: 14px; color: #999">Ubuntu</a> <a href="/tags/defer/" style="font-size: 14px; color: #999">defer</a> <a href="/tags/demo/" style="font-size: 14px; color: #999">demo</a> <a href="/tags/docker/" style="font-size: 16.22px; color: #8a8a8a">docker</a> <a href="/tags/dp/" style="font-size: 14px; color: #999">dp</a> <a href="/tags/error/" style="font-size: 14px; color: #999">error</a> <a href="/tags/flag/" style="font-size: 14px; color: #999">flag</a> <a href="/tags/gitlab/" style="font-size: 14px; color: #999">gitlab</a> <a href="/tags/go/" style="font-size: 21.78px; color: #646464">go</a> <a href="/tags/go%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" style="font-size: 15.11px; color: #919191">go的基本数据结构</a> <a href="/tags/hexo/" style="font-size: 14px; color: #999">hexo</a> <a href="/tags/iota/" style="font-size: 14px; color: #999">iota</a> <a href="/tags/jwt/" style="font-size: 14px; color: #999">jwt</a> <a href="/tags/jwt-gos/" style="font-size: 14px; color: #999">jwt-gos</a> <a href="/tags/linux/" style="font-size: 14px; color: #999">linux</a> <a href="/tags/maven/" style="font-size: 15.11px; color: #919191">maven</a> <a href="/tags/memcached/" style="font-size: 14px; color: #999">memcached</a> <a href="/tags/mysql/" style="font-size: 15.11px; color: #919191">mysql</a> <a href="/tags/nginx/" style="font-size: 15.11px; color: #919191">nginx</a> <a href="/tags/orm/" style="font-size: 14px; color: #999">orm</a> <a href="/tags/panic/" style="font-size: 14px; color: #999">panic</a> <a href="/tags/parallel-desktop/" style="font-size: 14px; color: #999">parallel desktop</a> <a href="/tags/pip/" style="font-size: 15.11px; color: #919191">pip</a> <a href="/tags/python/" style="font-size: 14px; color: #999">python</a> <a href="/tags/recover/" style="font-size: 14px; color: #999">recover</a> <a href="/tags/redis/" style="font-size: 16.22px; color: #8a8a8a">redis</a> <a href="/tags/tools/" style="font-size: 16.22px; color: #8a8a8a">tools</a> <a href="/tags/topK/" style="font-size: 14px; color: #999">topK</a> <a href="/tags/vs-code/" style="font-size: 14px; color: #999">vs code</a> <a href="/tags/%E4%B8%AD%E9%97%B4%E4%BB%B6/" style="font-size: 14px; color: #999">中间件</a> <a href="/tags/%E4%B8%BB%E4%BB%8E%E5%A4%8D%E5%88%B6/" style="font-size: 14px; color: #999">主从复制</a> <a href="/tags/%E4%BA%8C%E5%88%86/" style="font-size: 15.11px; color: #919191">二分</a> <a href="/tags/%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91/" style="font-size: 14px; color: #999">二叉搜索树</a> <a href="/tags/%E4%BA%8C%E5%8F%89%E6%A0%91/" style="font-size: 14px; color: #999">二叉树</a> <a href="/tags/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/" style="font-size: 14px; color: #999">云服务器</a> <a href="/tags/%E4%BD%8D%E8%BF%90%E7%AE%97/" style="font-size: 15.11px; color: #919191">位运算</a> <a href="/tags/%E5%85%A5%E8%81%8C/" style="font-size: 14px; color: #999">入职</a> <a href="/tags/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/" style="font-size: 15.11px; color: #919191">冒泡排序</a> <a href="/tags/%E5%88%B7%E9%A2%98/" style="font-size: 14px; color: #999">刷题</a> <a href="/tags/%E5%89%8D%E7%BC%80%E6%A0%91/" style="font-size: 14px; color: #999">前缀树</a> <a href="/tags/%E5%A0%86/" style="font-size: 14px; color: #999">堆</a> <a href="/tags/%E5%A0%86%E6%8E%92%E5%BA%8F/" style="font-size: 15.11px; color: #919191">堆排序</a> <a href="/tags/%E5%A4%9A%E8%B7%AF%E5%A4%8D%E7%94%A8/" style="font-size: 14px; color: #999">多路复用</a> <a href="/tags/%E5%A4%A7%E7%89%9B/" style="font-size: 14px; color: #999">大牛</a> <a href="/tags/%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/" style="font-size: 14px; color: #999">学习路线</a> <a href="/tags/%E5%B0%8F%E5%92%8C%E9%97%AE%E9%A2%98/" style="font-size: 14px; color: #999">小和问题</a> <a href="/tags/%E5%B2%97%E4%BD%8D/" style="font-size: 14px; color: #999">岗位</a> <a href="/tags/%E5%B7%A5%E5%85%B7/" style="font-size: 16.22px; color: #8a8a8a">工具</a> <a href="/tags/%E5%B8%83%E9%9A%86%E8%BF%87%E6%BB%A4%E5%99%A8/" style="font-size: 14px; color: #999">布隆过滤器</a> <a href="/tags/%E5%BA%8F%E5%88%97%E5%8C%96/" style="font-size: 14px; color: #999">序列化</a> <a href="/tags/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85/" style="font-size: 14px; color: #999">开发环境安装</a> <a href="/tags/%E5%BD%92%E5%B9%B6%E6%8E%92%E5%BA%8F/" style="font-size: 17.33px; color: #828282">归并排序</a> <a href="/tags/%E5%BE%AE%E6%9C%8D%E5%8A%A1/" style="font-size: 14px; color: #999">微服务</a> <a href="/tags/%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F/" style="font-size: 15.11px; color: #919191">快速排序</a> <a href="/tags/%E6%89%BE%E5%89%8D%E5%87%A0%E5%A4%A7%E6%88%96%E5%89%8D%E5%87%A0%E5%B0%8F/" style="font-size: 14px; color: #999">找前几大或前几小</a> <a href="/tags/%E6%89%BE%E7%AC%AC%E5%87%A0%E5%A4%A7%E6%88%96%E7%AC%AC%E5%87%A0%E5%B0%8F/" style="font-size: 14px; color: #999">找第几大或第几小</a> <a href="/tags/%E6%8E%92%E5%BA%8F/" style="font-size: 19.56px; color: #737373">排序</a> <a href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" style="font-size: 15.11px; color: #919191">数据结构</a> <a href="/tags/%E6%96%87%E4%BB%B6/" style="font-size: 14px; color: #999">文件</a> <a href="/tags/%E6%97%85%E8%A1%8C/" style="font-size: 14px; color: #999">旅行</a> <a href="/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/" style="font-size: 14px; color: #999">服务器</a> <a href="/tags/%E6%9D%82%E8%AE%B0/" style="font-size: 14px; color: #999">杂记</a> <a href="/tags/%E6%9E%81%E5%AE%A2%E6%97%B6%E9%97%B4/" style="font-size: 14px; color: #999">极客时间</a> <a href="/tags/%E6%9E%B6%E6%9E%84/" style="font-size: 15.11px; color: #919191">架构</a> <a href="/tags/%E6%A0%88/" style="font-size: 14px; color: #999">栈</a> <a href="/tags/%E6%A0%91/" style="font-size: 16.22px; color: #8a8a8a">树</a> <a href="/tags/%E6%A0%91%E5%BD%A2DP/" style="font-size: 15.11px; color: #919191">树形DP</a> <a href="/tags/%E6%A1%86%E6%9E%B6/" style="font-size: 14px; color: #999">框架</a> <a href="/tags/%E6%A1%B6%E6%8E%92%E5%BA%8F/" style="font-size: 14px; color: #999">桶排序</a> <a href="/tags/%E7%88%AC%E8%99%AB/" style="font-size: 14px; color: #999">爬虫</a> <a href="/tags/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/" style="font-size: 14px; color: #999">环境搭建</a> <a href="/tags/%E7%9B%B4%E6%8E%A5%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F/" style="font-size: 15.11px; color: #919191">直接插入排序</a> <a href="/tags/%E7%9F%A9%E9%98%B5/" style="font-size: 14px; color: #999">矩阵</a> <a href="/tags/%E7%AE%97%E6%B3%95/" style="font-size: 24px; color: #555">算法</a> <a href="/tags/%E7%BB%9F%E8%AE%A1%E9%80%86%E5%BA%8F%E5%AF%B9/" style="font-size: 14px; color: #999">统计逆序对</a> <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" style="font-size: 17.33px; color: #828282">计算机网络</a> <a href="/tags/%E8%B0%83%E8%AF%95/" style="font-size: 14px; color: #999">调试</a> <a href="/tags/%E8%B7%A8%E5%9F%9F%E9%97%AE%E9%A2%98/" style="font-size: 14px; color: #999">跨域问题</a> <a href="/tags/%E9%80%83%E9%80%B8%E5%88%86%E6%9E%90/" style="font-size: 14px; color: #999">逃逸分析</a> <a href="/tags/%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F/" style="font-size: 15.11px; color: #919191">选择排序</a> <a href="/tags/%E9%83%A8%E7%BD%B2/" style="font-size: 14px; color: #999">部署</a> <a href="/tags/%E9%94%99%E8%AF%AF/" style="font-size: 14px; color: #999">错误</a> <a href="/tags/%E9%98%85%E8%AF%BB%E6%B8%85%E5%8D%95/" style="font-size: 14px; color: #999">阅读清单</a> <a href="/tags/%E9%98%9F%E5%88%97/" style="font-size: 14px; color: #999">队列</a> <a href="/tags/%E9%9D%A2%E8%AF%95/" style="font-size: 22.89px; color: #5d5d5d">面试</a>
+    </div>
+  </section>
+
+
+  
+
+  
+    
+    
+  
+
+  <section class="widget category blur desktop">
+    
+  <header>
+    
+      <a href='/categories/'><i class="fas fa-folder-open fa-fw" aria-hidden="true"></i><span class='name'>文章分类</span></a>
+    
+  </header>
+
+
+    <div class='content'>
+      <ul class="entry navigation">
+        
+          <li><a class="flat-box"
+            title="/categories/CI-CD/" href="/categories/CI-CD/"
+            id="categoriesCI-CD"
+            ><div class='name'>CI/CD</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box"
+            title="/categories/Golang/" href="/categories/Golang/"
+            id="categoriesGolang"
+            ><div class='name'>Golang</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box"
+            title="/categories/LeetCode/" href="/categories/LeetCode/"
+            id="categoriesLeetCode"
+            ><div class='name'>LeetCode</div><div class='badge'>(9)</div></a></li>
+        
+          <li><a class="flat-box child"
+            title="/categories/LeetCode/dp/" href="/categories/LeetCode/dp/"
+            id="categoriesLeetCodedp"
+            ><div class='name'>dp</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box child"
+            title="/categories/LeetCode/%E4%BD%8D%E8%BF%90%E7%AE%97/" href="/categories/LeetCode/%E4%BD%8D%E8%BF%90%E7%AE%97/"
+            id="categoriesLeetCodeE4BD8DE8BF90E7AE97"
+            ><div class='name'>位运算</div><div class='badge'>(2)</div></a></li>
+        
+          <li><a class="flat-box child"
+            title="/categories/LeetCode/%E5%9B%9E%E6%BA%AF/" href="/categories/LeetCode/%E5%9B%9E%E6%BA%AF/"
+            id="categoriesLeetCodeE59B9EE6BAAF"
+            ><div class='name'>回溯</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box child"
+            title="/categories/LeetCode/%E7%AE%97%E6%B3%95/" href="/categories/LeetCode/%E7%AE%97%E6%B3%95/"
+            id="categoriesLeetCodeE7AE97E6B395"
+            ><div class='name'>算法</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box"
+            title="/categories/Linux/" href="/categories/Linux/"
+            id="categoriesLinux"
+            ><div class='name'>Linux</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box child"
+            title="/categories/Linux/%E7%BD%91%E7%BB%9C/" href="/categories/Linux/%E7%BD%91%E7%BB%9C/"
+            id="categoriesLinuxE7BD91E7BB9C"
+            ><div class='name'>网络</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box"
+            title="/categories/OS/" href="/categories/OS/"
+            id="categoriesOS"
+            ><div class='name'>OS</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box"
+            title="/categories/Tools/" href="/categories/Tools/"
+            id="categoriesTools"
+            ><div class='name'>Tools</div><div class='badge'>(2)</div></a></li>
+        
+          <li><a class="flat-box"
+            title="/categories/demo/" href="/categories/demo/"
+            id="categoriesdemo"
+            ><div class='name'>demo</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box"
+            title="/categories/docker/" href="/categories/docker/"
+            id="categoriesdocker"
+            ><div class='name'>docker</div><div class='badge'>(2)</div></a></li>
+        
+          <li><a class="flat-box"
+            title="/categories/go/" href="/categories/go/"
+            id="categoriesgo"
+            ><div class='name'>go</div><div class='badge'>(11)</div></a></li>
+        
+          <li><a class="flat-box child"
+            title="/categories/go/json/" href="/categories/go/json/"
+            id="categoriesgojson"
+            ><div class='name'>json</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box child"
+            title="/categories/go/%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" href="/categories/go/%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"
+            id="categoriesgoE59FBAE69CACE695B0E68DAEE7BB93E69E84"
+            ><div class='name'>基本数据结构</div><div class='badge'>(2)</div></a></li>
+        
+          <li><a class="flat-box child"
+            title="/categories/go/%E7%88%AC%E8%99%AB/" href="/categories/go/%E7%88%AC%E8%99%AB/"
+            id="categoriesgoE788ACE899AB"
+            ><div class='name'>爬虫</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box child"
+            title="/categories/go/%E9%80%83%E9%80%B8%E5%88%86%E6%9E%90/" href="/categories/go/%E9%80%83%E9%80%B8%E5%88%86%E6%9E%90/"
+            id="categoriesgoE98083E980B8E58886E69E90"
+            ><div class='name'>逃逸分析</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box child"
+            title="/categories/go/%E9%94%99%E8%AF%AF/" href="/categories/go/%E9%94%99%E8%AF%AF/"
+            id="categoriesgoE99499E8AFAF"
+            ><div class='name'>错误</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box"
+            title="/categories/golang/" href="/categories/golang/"
+            id="categoriesgolang"
+            ><div class='name'>golang</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box"
+            title="/categories/hexo/" href="/categories/hexo/"
+            id="categorieshexo"
+            ><div class='name'>hexo</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box"
+            title="/categories/jwt/" href="/categories/jwt/"
+            id="categoriesjwt"
+            ><div class='name'>jwt</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box child"
+            title="/categories/jwt/go/" href="/categories/jwt/go/"
+            id="categoriesjwtgo"
+            ><div class='name'>go</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box"
+            title="/categories/linux/" href="/categories/linux/"
+            id="categorieslinux"
+            ><div class='name'>linux</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box"
+            title="/categories/maven/" href="/categories/maven/"
+            id="categoriesmaven"
+            ><div class='name'>maven</div><div class='badge'>(3)</div></a></li>
+        
+          <li><a class="flat-box"
+            title="/categories/mysql/" href="/categories/mysql/"
+            id="categoriesmysql"
+            ><div class='name'>mysql</div><div class='badge'>(2)</div></a></li>
+        
+          <li><a class="flat-box"
+            title="/categories/nginx/" href="/categories/nginx/"
+            id="categoriesnginx"
+            ><div class='name'>nginx</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box"
+            title="/categories/python/" href="/categories/python/"
+            id="categoriespython"
+            ><div class='name'>python</div><div class='badge'>(3)</div></a></li>
+        
+          <li><a class="flat-box child"
+            title="/categories/python/pip/" href="/categories/python/pip/"
+            id="categoriespythonpip"
+            ><div class='name'>pip</div><div class='badge'>(2)</div></a></li>
+        
+          <li><a class="flat-box"
+            title="/categories/redis/" href="/categories/redis/"
+            id="categoriesredis"
+            ><div class='name'>redis</div><div class='badge'>(2)</div></a></li>
+        
+          <li><a class="flat-box"
+            title="/categories/tools/" href="/categories/tools/"
+            id="categoriestools"
+            ><div class='name'>tools</div><div class='badge'>(2)</div></a></li>
+        
+          <li><a class="flat-box"
+            title="/categories/%E4%B8%AD%E9%97%B4%E4%BB%B6/" href="/categories/%E4%B8%AD%E9%97%B4%E4%BB%B6/"
+            id="categoriesE4B8ADE997B4E4BBB6"
+            ><div class='name'>中间件</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box"
+            title="/categories/%E5%85%A5%E8%81%8C/" href="/categories/%E5%85%A5%E8%81%8C/"
+            id="categoriesE585A5E8818C"
+            ><div class='name'>入职</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box"
+            title="/categories/%E5%B2%97%E4%BD%8D/" href="/categories/%E5%B2%97%E4%BD%8D/"
+            id="categoriesE5B297E4BD8D"
+            ><div class='name'>岗位</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box"
+            title="/categories/%E5%B7%A5%E5%85%B7/" href="/categories/%E5%B7%A5%E5%85%B7/"
+            id="categoriesE5B7A5E585B7"
+            ><div class='name'>工具</div><div class='badge'>(2)</div></a></li>
+        
+          <li><a class="flat-box child"
+            title="/categories/%E5%B7%A5%E5%85%B7/git/" href="/categories/%E5%B7%A5%E5%85%B7/git/"
+            id="categoriesE5B7A5E585B7git"
+            ><div class='name'>git</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box"
+            title="/categories/%E5%B7%A5%E5%85%B7%E7%AF%87/" href="/categories/%E5%B7%A5%E5%85%B7%E7%AF%87/"
+            id="categoriesE5B7A5E585B7E7AF87"
+            ><div class='name'>工具篇</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box"
+            title="/categories/%E5%BE%AE%E6%9C%8D%E5%8A%A1/" href="/categories/%E5%BE%AE%E6%9C%8D%E5%8A%A1/"
+            id="categoriesE5BEAEE69C8DE58AA1"
+            ><div class='name'>微服务</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box child"
+            title="/categories/%E5%BE%AE%E6%9C%8D%E5%8A%A1/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/" href="/categories/%E5%BE%AE%E6%9C%8D%E5%8A%A1/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"
+            id="categoriesE5BEAEE69C8DE58AA1E78EAFE5A283E690ADE5BBBA"
+            ><div class='name'>环境搭建</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box"
+            title="/categories/%E6%97%85%E8%A1%8C/" href="/categories/%E6%97%85%E8%A1%8C/"
+            id="categoriesE69785E8A18C"
+            ><div class='name'>旅行</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box"
+            title="/categories/%E6%9E%B6%E6%9E%84/" href="/categories/%E6%9E%B6%E6%9E%84/"
+            id="categoriesE69EB6E69E84"
+            ><div class='name'>架构</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box child"
+            title="/categories/%E6%9E%B6%E6%9E%84/%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/" href="/categories/%E6%9E%B6%E6%9E%84/%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/"
+            id="categoriesE69EB6E69E84E5ADA6E4B9A0E8B7AFE7BABF"
+            ><div class='name'>学习路线</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box"
+            title="/categories/%E6%B1%87%E6%80%BB/" href="/categories/%E6%B1%87%E6%80%BB/"
+            id="categoriesE6B187E680BB"
+            ><div class='name'>汇总</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box"
+            title="/categories/%E7%AE%97%E6%B3%95/" href="/categories/%E7%AE%97%E6%B3%95/"
+            id="categoriesE7AE97E6B395"
+            ><div class='name'>算法</div><div class='badge'>(21)</div></a></li>
+        
+          <li><a class="flat-box child"
+            title="/categories/%E7%AE%97%E6%B3%95/BFPRT/" href="/categories/%E7%AE%97%E6%B3%95/BFPRT/"
+            id="categoriesE7AE97E6B395BFPRT"
+            ><div class='name'>BFPRT</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box child"
+            title="/categories/%E7%AE%97%E6%B3%95/%E4%BA%8C%E5%88%86/" href="/categories/%E7%AE%97%E6%B3%95/%E4%BA%8C%E5%88%86/"
+            id="categoriesE7AE97E6B395E4BA8CE58886"
+            ><div class='name'>二分</div><div class='badge'>(2)</div></a></li>
+        
+          <li><a class="flat-box child"
+            title="/categories/%E7%AE%97%E6%B3%95/%E6%8E%92%E5%BA%8F/" href="/categories/%E7%AE%97%E6%B3%95/%E6%8E%92%E5%BA%8F/"
+            id="categoriesE7AE97E6B395E68E92E5BA8F"
+            ><div class='name'>排序</div><div class='badge'>(8)</div></a></li>
+        
+          <li><a class="flat-box child"
+            title="/categories/%E7%AE%97%E6%B3%95/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" href="/categories/%E7%AE%97%E6%B3%95/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"
+            id="categoriesE7AE97E6B395E695B0E68DAEE7BB93E69E84"
+            ><div class='name'>数据结构</div><div class='badge'>(3)</div></a></li>
+        
+          <li><a class="flat-box child"
+            title="/categories/%E7%AE%97%E6%B3%95/%E6%A0%91/" href="/categories/%E7%AE%97%E6%B3%95/%E6%A0%91/"
+            id="categoriesE7AE97E6B395E6A091"
+            ><div class='name'>树</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box child"
+            title="/categories/%E7%AE%97%E6%B3%95/%E9%9D%A2%E8%AF%95/" href="/categories/%E7%AE%97%E6%B3%95/%E9%9D%A2%E8%AF%95/"
+            id="categoriesE7AE97E6B395E99DA2E8AF95"
+            ><div class='name'>面试</div><div class='badge'>(4)</div></a></li>
+        
+          <li><a class="flat-box child"
+            title="/categories/%E7%AE%97%E6%B3%95/%E9%9D%A2%E8%AF%95/%E4%BA%8C%E5%8F%89%E6%A0%91/" href="/categories/%E7%AE%97%E6%B3%95/%E9%9D%A2%E8%AF%95/%E4%BA%8C%E5%8F%89%E6%A0%91/"
+            id="categoriesE7AE97E6B395E99DA2E8AF95E4BA8CE58F89E6A091"
+            ><div class='name'>二叉树</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box"
+            title="/categories/%E9%9D%A2%E8%AF%95/" href="/categories/%E9%9D%A2%E8%AF%95/"
+            id="categoriesE99DA2E8AF95"
+            ><div class='name'>面试</div><div class='badge'>(10)</div></a></li>
+        
+          <li><a class="flat-box child"
+            title="/categories/%E9%9D%A2%E8%AF%95/OS/" href="/categories/%E9%9D%A2%E8%AF%95/OS/"
+            id="categoriesE99DA2E8AF95OS"
+            ><div class='name'>OS</div><div class='badge'>(2)</div></a></li>
+        
+          <li><a class="flat-box child"
+            title="/categories/%E9%9D%A2%E8%AF%95/%E7%AE%97%E6%B3%95/" href="/categories/%E9%9D%A2%E8%AF%95/%E7%AE%97%E6%B3%95/"
+            id="categoriesE99DA2E8AF95E7AE97E6B395"
+            ><div class='name'>算法</div><div class='badge'>(3)</div></a></li>
+        
+          <li><a class="flat-box child"
+            title="/categories/%E9%9D%A2%E8%AF%95/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" href="/categories/%E9%9D%A2%E8%AF%95/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"
+            id="categoriesE99DA2E8AF95E8AEA1E7AE97E69CBAE7BD91E7BB9C"
+            ><div class='name'>计算机网络</div><div class='badge'>(4)</div></a></li>
+        
+      </ul>
+    </div>
+  </section>
+
+
+  
+
+
+</aside>
+
+
+
+      </div>
+      
+  
+  <footer class="footer clearfix">
+    <br><br>
+    
+      
+        
+          <div><p><span id="lc-sv">本站总访问量为 <span id='number'><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 次</span> <span id="lc-uv">访客数为 <span id='number'><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 人</span></p>
+</div>
+        
+      
+    
+      
+        <div class='copyright'>
+        <p><a href="/">Copyright © 2016-2021 yirufeng</a></p>
+
+        </div>
+      
+    
+  </footer>
+
+
+      <a class="s-top fas fa-arrow-up fa-fw" href='javascript:void(0)'></a>
+    </div>
+  </div>
+  <div>
+    <!-- required -->
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5/dist/jquery.min.js"></script>
+
+<script>
+  function pjax_fancybox() {
+    $(".md .gallery").find("img").each(function () { //渲染 fancybox
+      var element = document.createElement("a"); // a 标签
+      $(element).attr("class", "fancybox");
+      $(element).attr("pjax-fancybox", "");  // 过滤 pjax
+      $(element).attr("href", $(this).attr("src"));
+      if ($(this).attr("data-original")) {
+        $(element).attr("href", $(this).attr("data-original"));
+      }
+      $(element).attr("data-fancybox", "images");
+      var caption = "";   // 描述信息
+      if ($(this).attr('alt')) {  // 判断当前页面是否存在描述信息
+        $(element).attr('data-caption', $(this).attr('alt'));
+        caption = $(this).attr('alt');
+      }
+      var div = document.createElement("div");
+      $(div).addClass("fancybox");
+      $(this).wrap(div); // 最外层套 div ，其实主要作用还是 class 样式
+      var span = document.createElement("span");
+      $(span).addClass("image-caption");
+      $(span).text(caption); // 加描述
+      $(this).after(span);  // 再套一层描述
+      $(this).wrap(element);  // 最后套 a 标签
+    })
+    $(".md .gallery").find("img").fancybox({
+      selector: '[data-fancybox="images"]',
+      hash: false,
+      loop: false,
+      closeClick: true,
+      helpers: {
+        overlay: {closeClick: true}
+      },
+      buttons: [
+        "zoom",
+        "close"
+      ]
+    });
+  };
+  function SCload_fancybox() {
+    if ($(".md .gallery").find("img").length == 0) return;
+    loadCSS("https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css", document.getElementById("loadcss"));
+    setTimeout(function() {
+      loadScript('https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js', pjax_fancybox)
+    }, 1);
+  };
+  $(function () {
+    SCload_fancybox();
+  });
+</script>
+
+
+<!-- internal -->
+
+  
+  
+  
+    
+<script src="https://cdn.jsdelivr.net/npm/jquery-backstretch@2.1.18/jquery.backstretch.min.js"></script>
+
+    <script type="text/javascript">
+      $(function(){
+        var imgs=["https://cdn.jsdelivr.net/gh/sivanWu0222/ImageHosting@master/uPic/JWiZ_bxne7M.jpg", "https://cdn.jsdelivr.net/gh/sivanWu0222/ImageHosting@master/uPic/h24WdfmRni4.jpg", "https://cdn.jsdelivr.net/gh/sivanWu0222/ImageHosting@master/uPic/8OaDRFBBzjY.jpg", "https://cdn.jsdelivr.net/gh/sivanWu0222/ImageHosting@master/uPic/psYs8v_MGn8.jpg", "https://cdn.jsdelivr.net/gh/sivanWu0222/ImageHosting@master/uPic/(null).jpg", "https://cdn.jsdelivr.net/gh/sivanWu0222/ImageHosting@master/uPic/Ar5FGfHXwMU.jpg", "https://cdn.jsdelivr.net/gh/sivanWu0222/ImageHosting@master/uPic/-XbckezAe-o.jpg"];
+        if ('true' == 'true') {
+          function shuffle(arr){
+            /*From countercurrent-time*/
+            var n = arr.length;
+            while(n--) {
+              var index = Math.floor(Math.random() * n);
+              var temp = arr[index];
+              arr[index] = arr[n];
+              arr[n] = temp;
+            }
+          }
+          shuffle(imgs);
+        }
+        if ('.cover-backstretch') {
+          $('.cover-backstretch').backstretch(
+            imgs,
+          {
+            duration: "10000",
+            fade: "1500"
+          });
+        } else {
+          $.backstretch(
+            imgs,
+          {
+            duration: "10000",
+            fade: "1500"
+          });
+        }
+      });
+    </script>
+  
+
+
+
+  
+  
+
+  <div id="rightmenu-wrapper">
+    <ul class="list-v rightmenu" id="rightmenu-content">
+      <li class='option'>
+        <a class='vlts-menu opt fix-cursor-default' id='menu-copy-text' onclick="document.execCommand('copy')"><i class='fa fa-copy fa-fw'></i>Copy Text</a>
+        <hr id='hr-text'>
+        <a class='vlts-menu opt fix-cursor-default' id='menu-copy-href'><i class='fa fa-link fa-fw'></i>Copy Link</a>
+        <a class='vlts-menu opt fix-cursor-default' id='menu-open-href'><i class='fa fa-external-link-square-alt fa-fw'></i>Open Link in New Tab</a>
+        <hr id='hr-href'>
+        <a class='vlts-menu opt fix-cursor-default' id='menu-copy-src'><i class='fa fa-image fa-fw'></i>Copy Image Link</a>
+        <hr id='hr-src'>
+      </li>
+      
+        <li class='navigation'>
+          <a class='nav icon-only fix-cursor-default' onclick='history.back()'><i class='fa fa-arrow-left fa-fw'></i></a>
+          <a class='nav icon-only fix-cursor-default' onclick='history.forward()'><i class='fa fa-arrow-right fa-fw'></i></a>
+          <a class='nav icon-only fix-cursor-default' onclick='window.location.reload()'><i class='fa fa-redo fa-fw'></i></a>
+          <a class='nav icon-only fix-cursor-default' href='/'><i class='fa fa-home fa-fw'></i></a>
+        </li>
+      
+      <hr>
+      
+        
+      
+        
+          
+    <li>
+      <a class='vlts-menu fix-cursor-default' href=https://volantis.js.org/faqs/
+        
+        
+        
+        
+          id="https:volantisjsorgfaqs"
+        >
+        <i class='fa fa-question fa-fw'></i> 常见问题
+      </a>
+    </li>
+  
+        
+      
+        
+          
+    <li>
+      <a class='vlts-menu fix-cursor-default' href=https://volantis.js.org/examples/
+        
+        
+        
+        
+          id="https:volantisjsorgexamples"
+        >
+        <i class='fa fa-rss fa-fw'></i> 示例博客
+      </a>
+    </li>
+  
+        
+      
+        
+          
+    <li>
+      <a class='vlts-menu fix-cursor-default' href=https://volantis.js.org/contributors/
+        
+        
+        
+        
+          id="https:volantisjsorgcontributors"
+        >
+        <i class='fa fa-fan fa-spin fa-fw'></i> 加入社区
+      </a>
+    </li>
+  
+        
+      
+        
+          <hr>
+        
+      
+        
+          
+    <li>
+      <a class='vlts-menu fix-cursor-default' href=https://github.com/sivanWu0222/sivanWu0222.github.io
+        
+        
+        
+        
+          id="https:githubcomsivanWu0222sivanWu0222githubio"
+        >
+        <i class='fa fa-code-branch fa-fw'></i> 本站源码
+      </a>
+    </li>
+  
+        
+      
+        
+          
+    <li>
+      <a class='vlts-menu fix-cursor-default' href=https://github.com/volantis-x/hexo-theme-volantis/
+        
+        
+        
+        
+          id="https:githubcomvolantis-xhexo-theme-volantis"
+        >
+        <i class='fa fa-code-branch fa-fw'></i> 主题源码
+      </a>
+    </li>
+  
+        
+      
+        
+          <hr>
+        
+      
+        
+          
+    <li>
+      <a class='vlts-menu fix-cursor-default' 
+        
+        
+        
+          onclick="document.execCommand('print')"
+        
+        >
+        <i class='fa fa-print fa-fw'></i> 打印页面
+      </a>
+    </li>
+  
+        
+      
+        
+          <hr>
+        
+      
+        
+          <li class='music name'>
+            <p class='nav music-title fix-cursor-default'></p>
+          </li>
+          <li class='music ctrl'>
+            <a class='nav icon-only backward fix-cursor-default' onclick='aplayerBackward()'><i class='fa fa-step-backward fa-fw'></i></a>
+            <a class='nav icon-only toggle fix-cursor-default' onclick='aplayerToggle()'><i class='fa fa-play fa-fw'></i></a>
+            <a class='nav icon-only forward fix-cursor-default' onclick='aplayerForward()'><i class='fa fa-step-forward fa-fw'></i></a>
+          </li>
+          <li class='music volume'>
+            <a class='nav volume'>
+              <div class="aplayer-volume-bar-wrap">
+                <div class="aplayer-volume-bar fix-cursor-pointer">
+                  <div class="aplayer-volume"></div>
+                  <i class='left fa fa-volume-off fa-fw'></i>
+                  <i class='right fa fa-volume-up fa-fw'></i>
+                </div>
+              </div>
+            </a>
+          </li>
+        
+      
+    </ul>
+  </div>
+
+  <script>
+    window.document.oncontextmenu = function (event) {
+      if (event.ctrlKey) return true;
+      if (/Android|webOS|BlackBerry/i.test(navigator.userAgent)) return true;
+      return popMenu(event);
+    };
+    document.addEventListener("click", function (event) {
+      var mymenu = document.getElementById('rightmenu-wrapper');
+      mymenu.style.display = "none";
+    });
+    function popMenu(event) {
+      var mymenu = document.getElementById('rightmenu-wrapper');
+      var menuContent = document.getElementById('rightmenu-content');
+      var screenWidth = document.documentElement.clientWidth || document.body.clientWidth;
+      var screenHeight = document.documentElement.clientHeight || document.body.clientHeight;
+      mymenu.style.left = event.clientX + "px"; // 获取鼠标位置
+      mymenu.style.top = event.clientY + "px";
+      mymenu.style.display = 'block';
+      if (event.clientX * 2 > screenWidth) {
+        menuContent.classList.add('left');
+      } else {
+        menuContent.classList.remove('left');
+      }
+      if (event.clientY * 2 > screenHeight) {
+        menuContent.classList.add('top');
+      } else {
+        menuContent.classList.remove('top');
+      }
+
+      let hrText = document.getElementById('hr-text');
+      let hrSrc = document.getElementById('hr-src');
+      let hrHref = document.getElementById('hr-href');
+
+      // 选中图片
+      let copySrc = document.getElementById('menu-copy-src');
+      if (copySrc != undefined) {
+        if (event.target.currentSrc) {
+          copySrc.style.display = 'block';
+          copySrc.addEventListener("click", function (e) {
+            copyString(event.target.currentSrc);
+          },{once: true});
+          hrSrc.style.display = 'block';
+        } else {
+          copySrc.style.display = 'none';
+          hrSrc.style.display = 'none';
+        }
+      }
+
+      // 选中按钮
+      // 判断是不是按钮
+      let href = '';
+      if (event.path) {
+        for (i = 0; i < event.path.length; i++) {
+          if (event.path[i].href != undefined && event.path[i].href.length > 0) {
+            href = event.path[i].href;
+          }
+        }
+      }
+
+      let copyText = document.getElementById('menu-copy-text');
+      copyText.style.display = 'none';
+      hrText.style.display = 'none';
+      if (href.length == 0) {
+        // 选中文本
+        if (window.getSelection().toString()) {
+          if ('true' == 'true') {
+            copyText.style.display = 'block';
+            hrText.style.display = 'block';
+          }
+        }
+      }
+
+      // 在新标签页打开
+      let openHref = document.getElementById('menu-open-href');
+      if (openHref != undefined) {
+        if (href.length > 0) {
+          openHref.style.display = 'block';
+          openHref.addEventListener("click", function (e) {
+            window.open(href);
+          },{once: true});
+          hrHref.style.display = 'block';
+        } else {
+          openHref.style.display = 'none';
+          hrHref.style.display = 'none';
+        }
+      }
+      // 复制链接
+      let copyHref = document.getElementById('menu-copy-href');
+      if (copyHref != undefined) {
+        if (href.length > 0) {
+          copyHref.style.display = 'block';
+          copyHref.addEventListener("click", function (e) {
+            copyString(href);
+          },{once: true});
+        } else {
+          copyHref.style.display = 'none';
+        }
+      }
+
+      // 有音乐播放器
+      if ('true' == true && ('home,help,examples,contributors,hr,source_docs,source_theme,hr,print,hr,music'||[]).includes('music')) {
+        // 如果有aplayer，初始化一下
+      	try {
+      		checkAPlayer();
+          updateTitle();
+      	} catch (error) {
+      		console.log(error);
+      	}
+      }
+
+      return false; // 该行代码确保系统自带的右键菜单不会被调出
+    }
+    function hideMenu() {
+      document.getElementById('rightmenu-wrapper').style.display = 'none';
+    }
+    function copyString(str) {
+      const input = document.createElement('input');
+      input.setAttribute('readonly', 'readonly');
+      document.body.appendChild(input);
+      input.setAttribute('value', str);
+      input.select();
+      document.execCommand('copy');
+      document.body.removeChild(input);
+    }
+    document.execCommand('click');
+  </script>
+
+
+
+
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.1.0/dist/lazyload.min.js"></script>
+<script>
+  // https://www.npmjs.com/package/vanilla-lazyload
+  // Set the options globally
+  // to make LazyLoad self-initialize
+  window.lazyLoadOptions = {
+    elements_selector: ".lazyload",
+    threshold: 0
+  };
+  // Listen to the initialization event
+  // and get the instance of LazyLoad
+  window.addEventListener(
+    "LazyLoad::Initialized",
+    function (event) {
+      window.lazyLoadInstance = event.detail.instance;
+    },
+    false
+  );
+  document.addEventListener('DOMContentLoaded', function () {
+    lazyLoadInstance.update();
+  });
+  document.addEventListener('pjax:complete', function () {
+    lazyLoadInstance.update();
+  });
+</script>
+
+
+
+
+  
+  
+    <script>
+      window.FPConfig = {
+        delay: 0,
+        ignoreKeywords: [],
+        maxRPS: 5,
+        hoverDelay: 25
+      };
+    </script>
+    <script defer src="https://cdn.jsdelivr.net/gh/gijo-varghese/flying-pages@2.1.2/flying-pages.min.js"></script>
+  
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+<script>
+    var clipboard = new ClipboardJS('.btn-copy', {
+        target: function (trigger) {
+            return trigger.nextElementSibling
+        }
+    });
+    function wait(callback, seconds) {
+        var timelag = null;
+        timelag = window.setTimeout(callback, seconds)
+    }
+    function pjax_initCopyCode() {
+		if($(".highlight .code pre").length+$(".article pre code").length==0)return;
+        var copyHtml = '';
+        copyHtml += '<button class="btn-copy" data-clipboard-snippet="">';
+        copyHtml += '<i class="fas fa-copy"></i><span>COPY</span>';
+        copyHtml += '</button>';
+        $(".highlight .code pre").before(copyHtml);
+        $(".article pre code").before(copyHtml);
+        clipboard.off('success').on('success', function (e) {
+            let $btn = $(e.trigger);
+            $btn.addClass('copied');
+            let $icon = $($btn.find('i'));
+            $icon.removeClass('fa-copy');
+            $icon.addClass('fa-check-circle');
+            let $span = $($btn.find('span'));
+            $span[0].innerText = 'COPIED';
+            wait(function () {
+                $icon.removeClass('fa-check-circle');
+                $icon.addClass('fa-copy');
+                $span[0].innerText = 'COPY'
+            }, 2000)
+        });
+        clipboard.off('error').on('error', function (e) {
+            e.clearSelection();
+            let $btn = $(e.trigger);
+            $btn.addClass('copy-failed');
+            let $icon = $($btn.find('i'));
+            $icon.removeClass('fa-copy');
+            $icon.addClass('fa-times-circle');
+            let $span = $($btn.find('span'));
+            $span[0].innerText = 'COPY FAILED';
+            wait(function () {
+                $icon.removeClass('fa-times-circle');
+                $icon.addClass('fa-copy');
+                $span[0].innerText = 'COPY'
+            }, 2000)
+        })
+    }
+    $(function () {
+        pjax_initCopyCode()
+    });
+</script>
+
+
+
+
+   <script src="https://cdn.jsdelivr.net/npm/scrollreveal@4.0.6/dist/scrollreveal.min.js"></script>
+<script type="text/javascript">
+  function pjax_scrollrebeal() {
+    ScrollReveal().reveal('.l_main .reveal', {
+      distance: '32px',
+      duration: '800',
+      interval: '20',
+      scale: '1',
+      easing: 'ease-out'
+    });
+  }
+  $(function () {
+    pjax_scrollrebeal();
+  });
+</script>
+
+
+
+
+  <script>
+  let APlayerController = new Object();
+  APlayerController.id = '3175833810';  // 设定全局音乐播放ID
+  APlayerController.volume = '0.7';
+</script>
+
+  
+<script src="https://cdn.jsdelivr.net/npm/aplayer@1.10/dist/APlayer.min.js"></script>
+
+
+  
+<script src="https://cdn.jsdelivr.net/npm/meting@2.0/dist/Meting.min.js"></script>
+
+
+
+
+  
+<script src="/js/aplayer.js"></script>
+
+
+
+
+
+
+  
+  
+<script src="/js/valine.js"></script>
+
+
+<script>
+  var GUEST_INFO = ['nick', 'mail', 'link'];
+  var meta = 'nick,mail,link'.split(',').filter(function (item) {
+    return GUEST_INFO.indexOf(item) > -1
+  });
+  var REQUIRED_FIELDS = ['nick', 'mail', 'link'];
+  var requiredFields = 'nick,mail'.split(',').filter(function (item) {
+    return REQUIRED_FIELDS.indexOf(item) > -1
+  });
+
+  function emoji(path, idx, ext) {
+    return path + "/" + path + "-" + idx + "." + ext;
+  }
+
+  var emojiMaps = {};
+  for (var i = 1; i <= 54; i++) {
+    emojiMaps['tieba-' + i] = emoji('tieba', i, 'png');
+  }
+  for (var i = 1; i <= 101; i++) {
+    emojiMaps['qq-' + i] = emoji('qq', i, 'gif');
+  }
+  for (var i = 1; i <= 116; i++) {
+    emojiMaps['aru-' + i] = emoji('aru', i, 'gif');
+  }
+  for (var i = 1; i <= 125; i++) {
+    emojiMaps['twemoji-' + i] = emoji('twemoji', i, 'png');
+  }
+  for (var i = 1; i <= 4; i++) {
+    emojiMaps['weibo-' + i] = emoji('weibo', i, 'png');
+  }
+
+  function pjax_valine() {
+    if(!document.querySelectorAll("#valine_container")[0])return;
+
+    let pagePlaceholder = $.trim($('#pjax-comment-placeholder').text()) || "快来评论吧~";
+
+    let path = $.trim($('#pjax-comment-path').text());
+    if (path.length == 0) {
+      let defaultPath = '';
+      path = defaultPath || decodeURI(window.location.pathname);
+    }
+
+    var valine = new Valine();
+    valine.init({
+      el: '#valine_container',
+      meta: meta,
+      placeholder: pagePlaceholder,
+      path: path,
+      appId: "",
+      appKey: "",
+      pageSize: '10',
+      avatar: 'robohash',
+      lang: 'zh-cn',
+      visitor: 'true',
+      highlight: 'true',
+      mathJax: 'false',
+      enableQQ: 'true',
+      requiredFields: requiredFields,
+      emojiCDN: 'https://cdn.jsdelivr.net/gh/volantis-x/cdn-emoji/valine/',
+      emojiMaps: emojiMaps
+    })
+  }
+
+  $(function () {
+    pjax_valine();
+  });
+</script>
+
+
+
+
+  
+<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5/lib/darkmode-js.min.js" aysc></script>
+
+<script type="text/javascript">
+function getClientHeight(){
+  var clientHeight=0;
+  if(document.body.clientHeight&&document.documentElement.clientHeight){
+  var clientHeight = (document.body.clientHeight<document.documentElement.clientHeight)?document.body.clientHeight:document.documentElement.clientHeight;
+  }else{
+  var clientHeight = (document.body.clientHeight>document.documentElement.clientHeight)?document.body.clientHeight:document.documentElement.clientHeight;
+  }
+  return clientHeight;
+}
+function supportCss3(style) {
+  var prefix = ['webkit', 'Moz', 'ms', 'o'],
+  i,
+  humpString = [],
+  htmlStyle = document.documentElement.style,
+  _toHumb = function (string) {
+  return string.replace(/-(\w)/g, function ($0, $1) {
+  return $1.toUpperCase();
+  });
+  };
+  for (i in prefix)
+  humpString.push(_toHumb(prefix[i] + '-' + style));
+  humpString.push(_toHumb(style));
+  for (i in humpString)
+  if (humpString[i] in htmlStyle) return true;
+  return false;
+};
+//配置信息
+var options = {
+  bottom: '32px',
+  right: 'unset',
+  left: '16px',
+  time: '0s',
+  mixColor: '#f4f4f4',
+  backgroundColor: '#f4f4f4',
+  buttonColorDark: '#333',
+  buttonColorLight: '#ddd',
+  saveInCookies: true,
+  label: '',
+  autoMatchOsTheme: true
+};
+// 卡片兼容处理 mix-blend-mode 与 effect: [blur] 冲突
+
+function pjax_darkmodejs(){
+  
+  if(!supportCss3('mix-blend-mode'))return;
+  var checkExist2 = setInterval(function() {
+     if (typeof jQuery == 'undefined'){return;}
+     clearInterval(checkExist2);
+     var TopFlag=getClientHeight();
+    $(window).scroll(function(){
+      var top = $(document).scrollTop();
+      if(top > TopFlag) {
+        $(".darkmode-layer").css("mix-blend-mode","normal");
+        $(".darkmode-layer").css("background-color","#222");
+      }else{
+        $(".darkmode-layer").css("mix-blend-mode","difference");
+        $(".darkmode-layer").css("background-color","");
+      }
+    })
+  }, 100);
+  
+}
+// mix-blend-mode support?
+if(supportCss3('mix-blend-mode')){
+  window.darkmode = new Darkmode(options);
+  
+  window.darkmode.showWidget();
+  
+  pjax_darkmodejs();
+}
+////////////////Development///////////////////////
+//////////////darkmode模式切换////////////////////
+//window.darkmode.toggle();                     //
+//////////////darkmode模式判断////////////////////
+//console.log(window.darkmode.isActivated())    //
+//////////////////////////////////////////////////
+</script>
+
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-busuanzi@2.3/js/busuanzi.pure.mini.js" data-pjax></script>
+
+
+  
+<script src="/js/app.js"></script>
+
+
+
+
+  
+    
+<script src="/js/search.js"></script>
+
+  
+
+
+<!-- optional -->
+
+  <script>
+const SearchServiceimagePath="https://cdn.jsdelivr.net/gh/volantis-x/cdn-volantis@master/img/";
+const ROOT =  ("/" || "/").endsWith('/') ? ("/" || "/") : ("//" || "/" );
+(function ($) {
+  
+    customSearch = new HexoSearch({
+      imagePath: SearchServiceimagePath
+    });
+  
+})(jQuery);
+
+</script>
+
+
+
+
+
+  
+<script src="https://cdn.jsdelivr.net/npm/node-waves@0.7.6/dist/waves.min.js"></script>
+
+  <script type="text/javascript">
+    $(function () {
+      Waves.attach('.flat-btn', ['waves-button']);
+      Waves.attach('.float-btn', ['waves-button', 'waves-float']);
+      Waves.attach('.float-btn-light', ['waves-button', 'waves-float', 'waves-light']);
+      Waves.attach('.flat-box', ['waves-block']);
+      Waves.attach('.float-box', ['waves-block', 'waves-float']);
+      Waves.attach('.waves-image');
+      Waves.init();
+    });
+  </script>
+
+
+
+
+
+  
+    
+<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/highlight.min.js"></script>
+
+    <script>hljs.initHighlightingOnLoad();</script>
+  
+
+
+
+
+<!-- more -->
+
+
+    
+      
+
+
+<script src="https://cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.min.js"></script>
+
+<!-- 样式位于：source/css/_third-party/pjaxanimate.styl -->
+
+<div class="pjax-animate">
+  
+    <script src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js"></script>
+    <div id="loading-bar-wrapper"><script>NProgress.configure({parent:"#loading-bar-wrapper",trickleSpeed: 100})</script></div>
+    <script>
+      window.ShowLoading = function() {
+        NProgress.start();
+      };
+      window.HideLoading = function() {
+        NProgress.done();
+      }
+    </script>
+  
+</div>
+
+<script>
+    var pjax;
+    document.addEventListener('DOMContentLoaded', function () {
+      pjax = new Pjax({
+        elements: 'a[href]:not([href^="#"]):not([href="javascript:void(0)"]):not([pjax-fancybox])',
+        selectors: [
+          "title",
+          "#pjax-container",
+          "#pjax-header-nav-list"
+        ],
+        cacheBust: false,   // url 地址追加时间戳，用以避免浏览器缓存
+        timeout: 5000
+      });
+    });
+
+    document.addEventListener('pjax:send', function (e) {
+      window.stop(); // 相当于点击了浏览器的停止按钮
+
+      try {
+        var currentUrl = window.location.pathname;
+        var targetUrl = e.triggerElement.href;
+        var banUrl = [""];
+        if (banUrl[0] != "") {
+          banUrl.forEach(item => {
+            if(currentUrl.indexOf(item) != -1 || targetUrl.indexOf(item) != -1) {
+              window.location.href = targetUrl;
+            }
+          });
+        }
+      } catch (error) {}
+
+      window.subData = null; // 移除标题（用于一二级导航栏切换处）
+      if (typeof $.fancybox != "undefined") {
+        $.fancybox.close();    // 关闭弹窗
+      }
+      $('.l_header .switcher .s-search').removeClass('active'); // 关闭移动端激活的搜索框
+      $('.l_header').removeClass('z_search-open'); // 关闭移动端激活的搜索框
+      $('.wrapper').removeClass('sub'); // 跳转页面时关闭二级导航
+
+      // 解绑事件 避免重复监听
+      $('.s-top').unbind('click');
+      $('.menu a').unbind('click');
+      $(window).unbind('resize');
+      $(window).unbind('scroll');
+      $(document).unbind('scroll');
+      $(document).unbind('click');
+      $('body').unbind('click');
+      window.ShowLoading();
+    });
+
+    document.addEventListener('pjax:complete', function () {
+      // 关于百度统计对 SPA 页面的处理：
+      // 方案一：百度统计>管理>单页应用设置中，打开开启按钮即可对SPA进行统计。 https://tongji.baidu.com/web/help/article?id=324
+      // 方案二：取消注释下列代码。 https://tongji.baidu.com/web/help/article?id=235
+      // 
+
+      // 关于谷歌统计对 SPA 页面的处理：
+      // 当应用以动态方式加载内容并更新地址栏中的网址时，也应该更新通过 gtag.js 存储的网页网址。
+      // https://developers.google.cn/analytics/devguides/collection/gtagjs/single-page-applications?hl=zh-cn
+      
+
+      $('.nav-main').find('.list-v').not('.menu-phone').removeAttr("style",""); // 移除小尾巴的移除
+      $('.menu-phone.list-v').removeAttr("style",""); // 移除小尾巴的移除
+      $('script[data-pjax], .pjax-reload script').each(function () {
+        $(this).parent().append($(this).remove());
+      });
+      try{
+          if (typeof $.fancybox == "undefined") {
+            SCload_fancybox();
+          } else {
+            pjax_fancybox();
+          }
+        
+          
+          if ('.cover-backstretch') {
+            $('.cover-backstretch').backstretch("resize");
+            if($('.cover-wrapper').is(':hidden')){
+              $('.cover-backstretch').backstretch("pause");
+            }else{
+              $('.cover-backstretch').backstretch("next");
+            }
+          } else {
+            $.backstretch("resize");
+            if($('.cover-wrapper').is(':hidden')){
+              $.backstretch("pause");
+            }else{
+              $.backstretch("next");
+            }
+          }
+        
+        
+        document.querySelectorAll('pre code').forEach((block) => {
+          hljs.highlightBlock(block);
+        });
+        
+        
+          pjax_scrollrebeal();
+        
+        
+        
+          pjax_initCopyCode();
+        
+        
+          pjax_valine();
+        
+        
+        
+        
+        
+          pjax_darkmodejs();
+        
+      } catch (e) {
+        console.log(e);
+      }
+      window.HideLoading();
+    });
+
+    document.addEventListener('pjax:error', function (e) {
+      window.HideLoading();
+      window.location.href = e.triggerElement.href;
+    });
+</script>
+
+    
+  </div>
+</body>
+</html>
